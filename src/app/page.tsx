@@ -12,7 +12,7 @@ export default async function Home() {
 
             <ReactMarkdown>{content}</ReactMarkdown>
 
-            <Link className="flex justify-center align-center w-full" href="/Home" className="opacity-50 hover:opacity-100 transition-opacity duration-300">*</Link>
+            <Link className="flex justify-center align-center w-full opacity-50 hover:opacity-100 transition-opacity duration-300" href="/Home" >*</Link>
         </div>
     )
 }
