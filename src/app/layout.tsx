@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "赵小霞的简历",
-  description: "这是一份简历",
+  description: "这是一份测试简历",
 };
 
 export default function RootLayout({
