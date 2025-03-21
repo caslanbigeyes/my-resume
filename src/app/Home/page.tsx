@@ -10,23 +10,20 @@ export default function BlogPost() {
         <Layout>
             {/* 文章内容 */}
             <article className="mt-6" >
-                <h2 className="text-2xl font-bold">linux 有关网络操作的 11 个命令</h2>
-                <p className="text-gray-500 text-sm mt-1">📅 发布于 2024-06-25 | 📂 分类于 <span className="text-blue-600">Linux</span></p>
-                <p className="mt-4 text-gray-700">
-                    下面的 11 个命令在进行 linux 网络操作很有用，特意记录下。
-                </p>
-                <div className="bg-gray-100 p-3 rounded-lg mt-4 border border-gray-300">
-                    <p className="text-gray-600 font-semibold">原文链接：</p>
-                    <a
-                        href="https://github.com/oldratlee/translations/blob/master/how-to-work-with-network-from-linux-terminal/README.md"
-                        className="text-blue-500 break-words"
-                    >
-                        https://github.com/oldratlee/translations/blob/master/how-to-work-with-network-from-linux-terminal/README.md
-                    </a>
+            <div className="flex flex-col items-center mt-4 p-4 border rounded-lg shadow-md bg-white">
+                <h2 className="text-xl font-semibold mb-2">访客统计</h2>
+                <div className="flex justify-between w-full mb-2">
+                    <div className="text-center">
+                        <p className="text-lg font-bold">当前在线访客</p>
+                        <p className="text-2xl text-blue-600">42</p>
+                    </div>
+                    <div className="text-center">
+                        <p className="text-lg font-bold">总访问量</p>
+                        <p className="text-2xl text-blue-600">1,234</p>
+                    </div>
                 </div>
-
-                <h3 className="text-lg font-bold mt-6">curl & wget</h3>
-                <p className="mt-2 text-gray-700">curl 和 wget 都可以下载文件</p>
+                <p className="text-gray-600 text-sm">数据更新于：{new Date().toLocaleString()}</p>
+            </div>
             </article>
         </Layout>
     );
