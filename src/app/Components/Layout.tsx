@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     const toggleNav = () => {
