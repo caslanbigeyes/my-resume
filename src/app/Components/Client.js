@@ -1,28 +1,16 @@
 'use client';
-import React, { useEffect } from 'react'
+import React from 'react'
 
-export default function Client({ content }) {
-
-  // Convert Markdown to Word format (simple conversion)
-  const wordContent = content.replace(/#/g, ''); // Basic conversion, you may want to improve this
-  const blob = new Blob([wordContent], { type: 'application/msword' });
-  const url = URL.createObjectURL(blob);
-
+export default function Client() {
   const handleDownload = () => {
+    // Create link to download local file
     const link = document.createElement('a');
-    link.href = url;
-    link.download = "赵小霞.doc";
+    link.href = '/zxx.docx';
+    link.download = 'zxx.docx';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revokeObjectURL(url); // 释放对象 URL
   };
-
-  useEffect(() => {
-    return () => {
-      URL.revokeObjectURL(url); // 组件卸载时释放对象 URL
-    };
-  }, [url]);
 
   return (
     <div className='flex justify-center align-center w-full opacity-50 hover:opacity-100 transition-opacity duration-300 mt-4'>
