@@ -54,26 +54,32 @@ console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]), 2222)
 // 输出：4
 // 解释：最长数字连续序列是 [1, 2, 3, 4]。它的长度为 4。
 var longestConsecutive = function (nums) {
-    let set = new Set(nums);
-    let max = 0;
-    for (let i = 0; i < nums.length; i++) {
-        let cur = nums[i];
-        console.log(cur, 'rr')
-        console.log(set, cur, set.has(cur), '22')
-        if (!set.has(cur - 1)) {
-            let count = 1
-            while (set.has(cur + 1)) {
-                console.log(22333)
-                count++;
-                cur++;
+    if (nums.length === 0) return 0;
+
+    // 使用Set去重
+    const numSet = new Set(nums);
+    let maxLength = 0;
+
+    for (const num of numSet) {
+        // 只从每个连续序列的最小值开始计算
+        if (!numSet.has(num - 1)) {
+            let currentNum = num;
+            let currentLength = 1;
+
+            // 计算当前连续序列的长度
+            while (numSet.has(currentNum + 1)) {
+                currentNum++;
+                currentLength++;
             }
-            max = Math.max(max, count);
+
+            maxLength = Math.max(maxLength, currentLength);
         }
     }
-    return max
-}
 
-longestConsecutive([3, 4, 2, 0])
+    return maxLength;
+};
+
+console.log(longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]), 'longestConsecutive')
 
 
 // LRU 缓存
@@ -198,4 +204,143 @@ var removeDuplicates = function (nums) {
     return arr.length
 };
 
-console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]), 'removeDuplicates')
+console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]), 'removeDuplicates')
+
+
+
+// 3423. 循环数组中相邻元素的最大差值
+// 输入：nums = [1,2,4]
+
+// 输出：3
+
+// 输入：nums = [-5,-10,-5]
+
+// 输出：5
+
+// 相邻元素 nums[0] 和 nums[1] 之间的绝对差值为最大值 |-5 - (-10)| = 5 。
+var minSubArrayLen = function (nums) {
+    let maxDistance = 0;
+    for (let i = 0; i < nums.length; i++) {
+        let difference = Math.abs(nums[(i + 1) % nums.length] - nums[i]);
+        maxDistance = Math.max(maxDistance, difference);
+    }
+    return maxDistance;
+}
+
+
+
+console.log(minSubArrayLen([1, 2, 4]), 'minSubArrayLen')
+
+
+// 2616. 最小化数对的最大差值
+// 输入：nums = [10,1,2,7,1,3], p = 2
+// 输出：1
+// 解释：第一个下标对选择 1 和 4 ，第二个下标对选择 2 和 5 。
+// 最大差值为 max(|nums[1] - nums[4]|, |nums[2] - nums[5]|) = max(0, 1) = 1 。所以我们返回 1 。
+var minPairSum = function (nums, p) {
+    nums.sort((a, b) => a - b);
+    let max = 0;
+    for (let i = 0; i < nums.length / 2; i++) {
+        max = Math.max(max, nums[i] + nums[nums.length - 1 - i])
+    }
+    return max;
+}
+console.log(minPairSum([10, 1, 2, 7, 1, 3], 2), 'minPairSum')
+
+
+// 1,1,2,3,7,10,
+
+
+// 2016. 增量元素之间的最大差值
+// 输入：nums = [7,1,5,4]
+// 输出：4
+var longestConsecutive = function (nums) {
+    let max = -1;
+    if (nums.length < 2) return -1;
+    for (let i = 0; i < nums.length - 1; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            let sub = nums[j] - nums[i];
+            max = Math.max(max, sub);
+        }
+    }
+    return max
+}
+
+// console.log(longestConsecutive([5, 2, 3, 4]), 22222)
+// 预期结果 是-1
+
+
+// 最长连续序列
+var longestConsecutive = function (nums) {
+    nums.sort((a, b) => a - b);
+    let count = 0, max = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        if (i > 0 && nums[i] === nums[i - 1]) continue;
+        if (i === 0 || nums[i] === nums[i - 1] + 1) {
+            console.log(nums[i], 'i')
+            count++;
+        } else {
+            max = Math.max(max, count);
+            count = 1;
+        }
+    }
+
+    max = Math.max(max, count);
+
+    return max;
+};
+console.log(longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]), 'longestConsecutive')
+
+
+// 283. 移动零
+var moveZeroes = function (nums) {
+    let slow = 0
+    for (let fast = 0; fast < nums.length; fast++) {
+        if (nums[fast] !== 0) {
+            nums[slow] = nums[fast]
+            slow++
+        }
+    }
+    console.log(slow, '111')
+    nums.fill(0, slow)
+    return nums
+};
+console.log(moveZeroes([0, 1, 0, 3, 12]), 'moveZeroes')
+
+
+// 输入：[1,8,6,2,5,4,8,3,7]
+// 输出：49 
+// 给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。
+
+// 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+
+// 返回容器可以储存的最大水量。
+
+var largestPerimeter = function (nums) {
+
+}
+
+
+// 3. 无重复字符的最长子串
+
+// 输入: s = "abcabcbb"
+// 输出: 3 
+// 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
+var lengthOfLongestSubstring = function (s) {
+    let arr = []; let max = 0;
+    for (let i = 0; i < s.length; i++) {
+        let index = arr.indexOf(s[i]);
+        if (index !== -1) {
+            arr.splice(0, index + 1);
+
+        }
+        arr.push(s[i])
+        console.log(arr, 'arr')
+        max = Math.max(max, arr.length)
+
+    }
+    return max;
+}
+
+console.log(lengthOfLongestSubstring('abcabcbb'), 3333333)
