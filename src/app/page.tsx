@@ -1,19 +1,18 @@
-import fs from "fs";
-import path from "path";
-import ReactMarkdown from "react-markdown";
-import Client from "./Components/Client";
+'use client'
+import React from "react";
+import Layout from './Components/Layout'
+import HomeContent from './Components/HomeContent'
 
+// 如果你想要服务端重定向，可以使用下面的代码替换：
+// import { redirect } from 'next/navigation'
+// export default function Home() {
+//     redirect('/Home')
+// }
 
-export default async function Home() {
-    const filePath = path.join(process.cwd(), "public", "zhao.md");
-    const content = fs.readFileSync(filePath, "utf-8");
+export default function Home() {
     return (
-        <div className="prose mx-auto p-6">
-
-            <ReactMarkdown>{content}</ReactMarkdown>
-
-            {/* <Link className="flex justify-center align-center w-full opacity-50 hover:opacity-100 transition-opacity duration-300" href="/Home" >*</Link> */}
-            <Client/>
-        </div>
-    )
+        <Layout>
+            <HomeContent />
+        </Layout>
+    );
 }

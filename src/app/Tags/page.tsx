@@ -1,89 +1,90 @@
 'use client'
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Layout from '../Components/Layout'
+import { tags, getArticlesByTag } from '@/lib/data'
+import Link from 'next/link'
 
-// 添加算法题表单组件
-const AlgorithmForm = ({ onSubmit }) => {
-    const [formData, setFormData] = useState({
-        title: '',
-        url: '',
-        category: '',
-        difficulty: ''
-    });
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        onSubmit(formData);
-    };
-
-    return (
-        <form onSubmit={handleSubmit} className="mb-6">
-            <input
-                type="text"
-                placeholder="题目名称"
-                value={formData.title}
-                onChange={(e) => setFormData({...formData, title: e.target.value})}
-                className="block w-full mb-2 p-2 border rounded"
-            />
-            <input
-                type="text"
-                placeholder="题目链接"
-                value={formData.url}
-                onChange={(e) => setFormData({...formData, url: e.target.value})}
-                className="block w-full mb-2 p-2 border rounded"
-            />
-            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
-                添加题目
-            </button>
-        </form>
-    );
-};
-
-export default function Page() {
-    const [algorithms, setAlgorithms] = useState([]);
-
-    useEffect(() => {
-        fetchAlgorithms();
-    }, []);
-
-    const fetchAlgorithms = async () => {
-        const response = await fetch('/api/algorithms');
-        const data = await response.json();
-        setAlgorithms(data);
-    };
-
-    const handleSubmit = async (formData) => {
-        try {
-            const response = await fetch('/api/algorithms', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-            if (response.ok) {
-                fetchAlgorithms(); // 重新获取列表
-            }
-        } catch (error) {
-            console.error('Error adding algorithm:', error);
-        }
-    };
-
+export default function TagsPage() {
     return (
         <Layout>
-            <div className="text-[18px] mb-4">算法随想录</div>
-            <AlgorithmForm onSubmit={handleSubmit} />
-            {algorithms.map((item) => (
-                <a 
-                    key={item.id} 
-                    className="block mb-2 hover:text-blue-500" 
-                    href={item.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                >
-                    {item.title}
-                </a>
-            ))}
+            <div className="max-w-4xl mx-auto px-4 py-8">
+                <h1 className="text-3xl font-bold mb-8 text-center">技术标签</h1>
+
+                {/* 标签云 */}
+                <div className="mb-12">
+                    <h2 className="text-xl font-semibold mb-6">标签云</h2>
+                    <div className="flex flex-wrap gap-3">
+                        {tags.map(tag => (
+                            <Link
+                                key={tag.id}
+                                href={`/tags/${tag.slug}`}
+                                className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105"
+                                style={{
+                                    backgroundColor: tag.color + '20',
+                                    color: tag.color,
+                                    border: `1px solid ${tag.color}40`
+                                }}
+                            >
+                                {tag.name}
+                                <span className="ml-2 text-xs opacity-75">
+                                    {tag.count}
+                                </span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                {/* 标签列表 */}
+                <div>
+                    <h2 className="text-xl font-semibold mb-6">所有标签</h2>
+                    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                        {tags.map(tag => {
+                            const articles = getArticlesByTag(tag.id);
+                            return (
+                                <div
+                                    key={tag.id}
+                                    className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
+                                >
+                                    <div className="flex items-center justify-between mb-3">
+                                        <h3 className="text-lg font-semibold" style={{ color: tag.color }}>
+                                            {tag.name}
+                                        </h3>
+                                        <span className="text-sm text-gray-500">
+                                            {tag.count} 篇文章
+                                        </span>
+                                    </div>
+
+                                    {tag.description && (
+                                        <p className="text-gray-600 text-sm mb-4">
+                                            {tag.description}
+                                        </p>
+                                    )}
+
+                                    <div className="space-y-2">
+                                        {articles.slice(0, 3).map(article => (
+                                            <Link
+                                                key={article.id}
+                                                href={`/articles/${article.slug}`}
+                                                className="block text-sm text-blue-600 hover:text-blue-800 truncate"
+                                            >
+                                                • {article.title}
+                                            </Link>
+                                        ))}
+                                        {articles.length > 3 && (
+                                            <Link
+                                                href={`/tags/${tag.slug}`}
+                                                className="block text-sm text-gray-500 hover:text-gray-700"
+                                            >
+                                                查看更多 ({articles.length - 3} 篇)
+                                            </Link>
+                                        )}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </div>
         </Layout>
     );
 }
