@@ -21,19 +21,19 @@ export default function CategoriesPage() {
                         </div>
                         <div className="p-4 bg-white rounded-lg shadow-md">
                             <div className="text-2xl font-bold text-green-600">
-                                {categories.reduce((sum, cat) => sum + cat.count, 0)}
+                                {categories.reduce((sum, cat) => sum + getArticlesByCategory(cat.slug).length, 0)}
                             </div>
                             <div className="text-sm text-gray-600">总文章数</div>
                         </div>
                         <div className="p-4 bg-white rounded-lg shadow-md">
                             <div className="text-2xl font-bold text-purple-600">
-                                {Math.max(...categories.map(cat => cat.count))}
+                                {Math.max(...categories.map(cat => getArticlesByCategory(cat.slug).length))}
                             </div>
                             <div className="text-sm text-gray-600">最多文章</div>
                         </div>
                         <div className="p-4 bg-white rounded-lg shadow-md">
                             <div className="text-2xl font-bold text-orange-600">
-                                {Math.round(categories.reduce((sum, cat) => sum + cat.count, 0) / categories.length)}
+                                {Math.round(categories.reduce((sum, cat) => sum + getArticlesByCategory(cat.slug).length, 0) / categories.length)}
                             </div>
                             <div className="text-sm text-gray-600">平均文章数</div>
                         </div>
@@ -43,10 +43,10 @@ export default function CategoriesPage() {
                 {/* 分类列表 */}
                 <div className="grid gap-6 md:grid-cols-2">
                     {categories.map(category => {
-                        const articles = getArticlesByCategory(category.id);
+                        const articles = getArticlesByCategory(category.slug);
                         return (
                             <div
-                                key={category.id}
+                                key={category._id}
                                 className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-l-4"
                                 style={{ borderLeftColor: category.color }}
                             >
@@ -61,7 +61,7 @@ export default function CategoriesPage() {
                                             color: category.color
                                         }}
                                     >
-                                        {category.count} 篇
+                                        {articles.length} 篇
                                     </span>
                                 </div>
 
@@ -75,7 +75,7 @@ export default function CategoriesPage() {
                                     <h4 className="text-sm font-semibold text-gray-700">最新文章：</h4>
                                     {articles.slice(0, 3).map(article => (
                                         <Link
-                                            key={article.id}
+                                            key={article._id}
                                             href={`/articles/${article.slug}`}
                                             className="block text-sm text-blue-600 hover:text-blue-800 truncate"
                                         >

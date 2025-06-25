@@ -1,0 +1,20 @@
+{
+  "name": "JavaScript",
+  "color": "#F7DF1E",
+  "description": "JavaScript 基础与进阶，包括 ES6+、异步编程、性能优化等",
+  "featured": true,
+  "body": {
+    "raw": "\n# JavaScript\n\nJavaScript 是 Web 开发的核心语言，从简单的页面交互到复杂的应用程序开发，JavaScript 都发挥着重要作用。\n\n## 语言特性\n\n- **动态类型**: 运行时确定变量类型\n- **原型继承**: 基于原型的面向对象编程\n- **函数式编程**: 支持高阶函数、闭包等特性\n- **异步编程**: Promise、async/await 等异步处理机制\n\n## 现代 JavaScript (ES6+)\n\n- 箭头函数\n- 模板字符串\n- 解构赋值\n- 模块系统\n- 类语法\n- Promise 和 async/await\n\n## 学习资源\n\n- [MDN JavaScript 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)\n- [JavaScript.info](https://zh.javascript.info/)\n- [ES6 入门教程](https://es6.ruanyifeng.com/)\n",
+    "html": "<h1>JavaScript</h1>\n<p>JavaScript 是 Web 开发的核心语言，从简单的页面交互到复杂的应用程序开发，JavaScript 都发挥着重要作用。</p>\n<h2>语言特性</h2>\n<ul>\n<li><strong>动态类型</strong>: 运行时确定变量类型</li>\n<li><strong>原型继承</strong>: 基于原型的面向对象编程</li>\n<li><strong>函数式编程</strong>: 支持高阶函数、闭包等特性</li>\n<li><strong>异步编程</strong>: Promise、async/await 等异步处理机制</li>\n</ul>\n<h2>现代 JavaScript (ES6+)</h2>\n<ul>\n<li>箭头函数</li>\n<li>模板字符串</li>\n<li>解构赋值</li>\n<li>模块系统</li>\n<li>类语法</li>\n<li>Promise 和 async/await</li>\n</ul>\n<h2>学习资源</h2>\n<ul>\n<li><a href=\"https://developer.mozilla.org/zh-CN/docs/Web/JavaScript\">MDN JavaScript 文档</a></li>\n<li><a href=\"https://zh.javascript.info/\">JavaScript.info</a></li>\n<li><a href=\"https://es6.ruanyifeng.com/\">ES6 入门教程</a></li>\n</ul>"
+  },
+  "_id": "tags/javascript.md",
+  "_raw": {
+    "sourceFilePath": "tags/javascript.md",
+    "sourceFileName": "javascript.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/javascript"
+  },
+  "type": "Tag",
+  "slug": "javascript"
+}

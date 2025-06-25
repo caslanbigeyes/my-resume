@@ -2,24 +2,24 @@
 import React from "react";
 import { useParams } from 'next/navigation';
 import Layout from '../../Components/Layout'
-import { getArticleBySlug, getRelatedArticles, getTagById, getCategoryById } from '@/lib/data'
+import { getArticleBySlug, getRelatedArticles, getTagBySlug, getCategoryBySlug } from '@/lib/data'
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 
 export default function ArticleDetailPage() {
     const params = useParams();
     const slug = params.slug as string;
-    
+
     const article = getArticleBySlug(slug);
-    
+
     if (!article) {
         return (
             <Layout>
                 <div className="max-w-4xl mx-auto px-4 py-8 text-center">
                     <h1 className="text-2xl font-bold text-gray-800 mb-4">文章未找到</h1>
                     <p className="text-gray-600 mb-6">抱歉，您访问的文章不存在或已被删除。</p>
-                    <Link 
-                        href="/articles" 
+                    <Link
+                        href="/articles"
                         className="inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
                     >
                         返回文章列表
@@ -29,8 +29,8 @@ export default function ArticleDetailPage() {
         );
     }
 
-    const category = getCategoryById(article.category);
-    const relatedArticles = getRelatedArticles(article.id);
+    const category = getCategoryBySlug(article.category);
+    const relatedArticles = getRelatedArticles(article.slug);
 
     return (
         <Layout>
@@ -40,14 +40,14 @@ export default function ArticleDetailPage() {
                     <Link href="/" className="hover:text-blue-600">首页</Link>
                     <span className="mx-2">/</span>
                     <Link href="/articles" className="hover:text-blue-600">文章</Link>
-                    {category && (
+                    {/* {category && (
                         <>
                             <span className="mx-2">/</span>
                             <Link href={`/categories/${category.slug}`} className="hover:text-blue-600">
                                 {category.name}
                             </Link>
                         </>
-                    )}
+                    )} */}
                     <span className="mx-2">/</span>
                     <span className="text-gray-800">{article.title}</span>
                 </nav>
@@ -56,11 +56,11 @@ export default function ArticleDetailPage() {
                 <header className="mb-8">
                     <div className="flex items-center gap-3 mb-4">
                         {category && (
-                            <span 
+                            <span
                                 className="px-3 py-1 text-sm rounded-full font-medium"
-                                style={{ 
+                                style={{
                                     backgroundColor: category.color + '20',
-                                    color: category.color 
+                                    color: category.color
                                 }}
                             >
                                 {category.name}
@@ -72,21 +72,21 @@ export default function ArticleDetailPage() {
                             </span>
                         )}
                         <span className="text-sm text-gray-500">
-                            {article.readingTime} 分钟阅读
+                            {article.readingTime.minutes} 分钟阅读
                         </span>
                     </div>
-                    
+
                     <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight">
                         {article.title}
                     </h1>
-                    
+
                     <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                         {article.excerpt}
                     </p>
-                    
+
                     <div className="flex items-center justify-between text-sm text-gray-500 border-b border-gray-200 pb-6">
                         <div className="flex items-center gap-4">
-                            <span>作者：{article.author.name}</span>
+                            <span>作者：{article.author}</span>
                             <span>发布于 {new Date(article.publishedAt).toLocaleDateString('zh-CN', {
                                 year: 'numeric',
                                 month: 'long',
@@ -132,7 +132,7 @@ export default function ArticleDetailPage() {
                             li: ({ children }) => <li className="mb-1">{children}</li>,
                         }}
                     >
-                        {article.content}
+                        {article.body.raw}
                     </ReactMarkdown>
                 </article>
 
@@ -140,14 +140,14 @@ export default function ArticleDetailPage() {
                 <div className="mb-8">
                     <h3 className="text-lg font-semibold mb-4 text-gray-800">标签</h3>
                     <div className="flex flex-wrap gap-2">
-                        {article.tags.map(tagId => {
-                            const tag = getTagById(tagId);
+                        {article.tags.map(tagSlug => {
+                            const tag = getTagBySlug(tagSlug);
                             return tag ? (
                                 <Link
-                                    key={tagId}
+                                    key={tagSlug}
                                     href={`/tags/${tag.slug}`}
                                     className="px-3 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity"
-                                    style={{ 
+                                    style={{
                                         backgroundColor: tag.color + '20',
                                         color: tag.color,
                                         border: `1px solid ${tag.color}40`
@@ -166,23 +166,23 @@ export default function ArticleDetailPage() {
                         <h3 className="text-xl font-semibold mb-6 text-gray-800">相关文章</h3>
                         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                             {relatedArticles.map(relatedArticle => {
-                                const relatedCategory = getCategoryById(relatedArticle.category);
+                                const relatedCategory = getCategoryBySlug(relatedArticle.category);
                                 return (
-                                    <div key={relatedArticle.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
+                                    <div key={relatedArticle._id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
                                         <div className="flex items-center justify-between mb-3">
                                             {relatedCategory && (
-                                                <span 
+                                                <span
                                                     className="px-2 py-1 text-xs rounded-full font-medium"
-                                                    style={{ 
+                                                    style={{
                                                         backgroundColor: relatedCategory.color + '20',
-                                                        color: relatedCategory.color 
+                                                        color: relatedCategory.color
                                                     }}
                                                 >
                                                     {relatedCategory.name}
                                                 </span>
                                             )}
                                             <span className="text-xs text-gray-500">
-                                                {relatedArticle.readingTime} 分钟
+                                                {relatedArticle.readingTime.minutes} 分钟
                                             </span>
                                         </div>
                                         <h4 className="text-lg font-semibold mb-2 text-gray-800 line-clamp-2">
@@ -202,14 +202,14 @@ export default function ArticleDetailPage() {
 
                 {/* 导航按钮 */}
                 <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
-                    <Link 
-                        href="/articles" 
+                    <Link
+                        href="/articles"
                         className="inline-flex items-center px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
                     >
                         ← 返回文章列表
                     </Link>
                     <div className="flex gap-3">
-                        <button 
+                        <button
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
                         >

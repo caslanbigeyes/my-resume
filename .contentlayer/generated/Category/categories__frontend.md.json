@@ -1,0 +1,20 @@
+{
+  "name": "前端开发",
+  "color": "#FF6B6B",
+  "description": "前端技术、框架和最佳实践，包括 React、Vue、Angular 等现代前端技术栈",
+  "order": 1,
+  "body": {
+    "raw": "\n# 前端开发\n\n前端开发是构建用户界面和用户体验的技术领域。随着 Web 技术的快速发展，前端开发已经从简单的页面制作演进为复杂的应用程序开发。\n\n## 技术栈\n\n### 核心技术\n- **HTML**: 网页结构和语义\n- **CSS**: 样式和布局\n- **JavaScript**: 交互和逻辑\n\n### 现代框架\n- **React**: 组件化 UI 库\n- **Vue.js**: 渐进式框架\n- **Angular**: 企业级框架\n- **Svelte**: 编译时优化框架\n\n### 构建工具\n- **Webpack**: 模块打包器\n- **Vite**: 快速构建工具\n- **Rollup**: ES 模块打包器\n\n### CSS 框架\n- **Tailwind CSS**: 原子化 CSS 框架\n- **Bootstrap**: 响应式 CSS 框架\n- **Styled Components**: CSS-in-JS 解决方案\n\n## 发展趋势\n\n- 组件化开发\n- 服务端渲染 (SSR)\n- 静态站点生成 (SSG)\n- 微前端架构\n- Web Components\n- Progressive Web Apps (PWA)\n",
+    "html": "<h1>前端开发</h1>\n<p>前端开发是构建用户界面和用户体验的技术领域。随着 Web 技术的快速发展，前端开发已经从简单的页面制作演进为复杂的应用程序开发。</p>\n<h2>技术栈</h2>\n<h3>核心技术</h3>\n<ul>\n<li><strong>HTML</strong>: 网页结构和语义</li>\n<li><strong>CSS</strong>: 样式和布局</li>\n<li><strong>JavaScript</strong>: 交互和逻辑</li>\n</ul>\n<h3>现代框架</h3>\n<ul>\n<li><strong>React</strong>: 组件化 UI 库</li>\n<li><strong>Vue.js</strong>: 渐进式框架</li>\n<li><strong>Angular</strong>: 企业级框架</li>\n<li><strong>Svelte</strong>: 编译时优化框架</li>\n</ul>\n<h3>构建工具</h3>\n<ul>\n<li><strong>Webpack</strong>: 模块打包器</li>\n<li><strong>Vite</strong>: 快速构建工具</li>\n<li><strong>Rollup</strong>: ES 模块打包器</li>\n</ul>\n<h3>CSS 框架</h3>\n<ul>\n<li><strong>Tailwind CSS</strong>: 原子化 CSS 框架</li>\n<li><strong>Bootstrap</strong>: 响应式 CSS 框架</li>\n<li><strong>Styled Components</strong>: CSS-in-JS 解决方案</li>\n</ul>\n<h2>发展趋势</h2>\n<ul>\n<li>组件化开发</li>\n<li>服务端渲染 (SSR)</li>\n<li>静态站点生成 (SSG)</li>\n<li>微前端架构</li>\n<li>Web Components</li>\n<li>Progressive Web Apps (PWA)</li>\n</ul>"
+  },
+  "_id": "categories/frontend.md",
+  "_raw": {
+    "sourceFilePath": "categories/frontend.md",
+    "sourceFileName": "frontend.md",
+    "sourceFileDir": "categories",
+    "contentType": "markdown",
+    "flattenedPath": "categories/frontend"
+  },
+  "type": "Category",
+  "slug": "frontend"
+}

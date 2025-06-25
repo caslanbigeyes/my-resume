@@ -1,0 +1,62 @@
+[
+  {
+    "name": "后端开发",
+    "color": "#4ECDC4",
+    "description": "后端技术、API 设计和服务器开发，包括 Node.js、Python、数据库等",
+    "order": 2,
+    "body": {
+      "raw": "\n# 后端开发\n\n后端开发负责服务器端逻辑、数据库管理、API 设计等核心功能。它是 Web 应用的基础设施，为前端提供数据和服务支持。\n\n## 技术栈\n\n### 编程语言\n- **Node.js**: JavaScript 运行时\n- **Python**: 简洁优雅的语言\n- **Java**: 企业级开发语言\n- **Go**: 高性能并发语言\n- **Rust**: 系统级编程语言\n\n### 框架\n- **Express.js**: Node.js 轻量级框架\n- **NestJS**: Node.js 企业级框架\n- **Django**: Python 全功能框架\n- **FastAPI**: Python 现代 API 框架\n- **Spring Boot**: Java 微服务框架\n\n### 数据库\n- **关系型**: PostgreSQL, MySQL\n- **NoSQL**: MongoDB, Redis\n- **图数据库**: Neo4j\n- **时序数据库**: InfluxDB\n\n### 云服务\n- **AWS**: 亚马逊云服务\n- **Google Cloud**: 谷歌云平台\n- **Azure**: 微软云服务\n- **Vercel**: 前端部署平台\n\n## 核心概念\n\n- RESTful API 设计\n- GraphQL 查询语言\n- 微服务架构\n- 容器化部署\n- 缓存策略\n- 安全认证\n",
+      "html": "<h1>后端开发</h1>\n<p>后端开发负责服务器端逻辑、数据库管理、API 设计等核心功能。它是 Web 应用的基础设施，为前端提供数据和服务支持。</p>\n<h2>技术栈</h2>\n<h3>编程语言</h3>\n<ul>\n<li><strong>Node.js</strong>: JavaScript 运行时</li>\n<li><strong>Python</strong>: 简洁优雅的语言</li>\n<li><strong>Java</strong>: 企业级开发语言</li>\n<li><strong>Go</strong>: 高性能并发语言</li>\n<li><strong>Rust</strong>: 系统级编程语言</li>\n</ul>\n<h3>框架</h3>\n<ul>\n<li><strong>Express.js</strong>: Node.js 轻量级框架</li>\n<li><strong>NestJS</strong>: Node.js 企业级框架</li>\n<li><strong>Django</strong>: Python 全功能框架</li>\n<li><strong>FastAPI</strong>: Python 现代 API 框架</li>\n<li><strong>Spring Boot</strong>: Java 微服务框架</li>\n</ul>\n<h3>数据库</h3>\n<ul>\n<li><strong>关系型</strong>: PostgreSQL, MySQL</li>\n<li><strong>NoSQL</strong>: MongoDB, Redis</li>\n<li><strong>图数据库</strong>: Neo4j</li>\n<li><strong>时序数据库</strong>: InfluxDB</li>\n</ul>\n<h3>云服务</h3>\n<ul>\n<li><strong>AWS</strong>: 亚马逊云服务</li>\n<li><strong>Google Cloud</strong>: 谷歌云平台</li>\n<li><strong>Azure</strong>: 微软云服务</li>\n<li><strong>Vercel</strong>: 前端部署平台</li>\n</ul>\n<h2>核心概念</h2>\n<ul>\n<li>RESTful API 设计</li>\n<li>GraphQL 查询语言</li>\n<li>微服务架构</li>\n<li>容器化部署</li>\n<li>缓存策略</li>\n<li>安全认证</li>\n</ul>"
+    },
+    "_id": "categories/backend.md",
+    "_raw": {
+      "sourceFilePath": "categories/backend.md",
+      "sourceFileName": "backend.md",
+      "sourceFileDir": "categories",
+      "contentType": "markdown",
+      "flattenedPath": "categories/backend"
+    },
+    "type": "Category",
+    "slug": "backend"
+  },
+  {
+    "name": "前端开发",
+    "color": "#FF6B6B",
+    "description": "前端技术、框架和最佳实践，包括 React、Vue、Angular 等现代前端技术栈",
+    "order": 1,
+    "body": {
+      "raw": "\n# 前端开发\n\n前端开发是构建用户界面和用户体验的技术领域。随着 Web 技术的快速发展，前端开发已经从简单的页面制作演进为复杂的应用程序开发。\n\n## 技术栈\n\n### 核心技术\n- **HTML**: 网页结构和语义\n- **CSS**: 样式和布局\n- **JavaScript**: 交互和逻辑\n\n### 现代框架\n- **React**: 组件化 UI 库\n- **Vue.js**: 渐进式框架\n- **Angular**: 企业级框架\n- **Svelte**: 编译时优化框架\n\n### 构建工具\n- **Webpack**: 模块打包器\n- **Vite**: 快速构建工具\n- **Rollup**: ES 模块打包器\n\n### CSS 框架\n- **Tailwind CSS**: 原子化 CSS 框架\n- **Bootstrap**: 响应式 CSS 框架\n- **Styled Components**: CSS-in-JS 解决方案\n\n## 发展趋势\n\n- 组件化开发\n- 服务端渲染 (SSR)\n- 静态站点生成 (SSG)\n- 微前端架构\n- Web Components\n- Progressive Web Apps (PWA)\n",
+      "html": "<h1>前端开发</h1>\n<p>前端开发是构建用户界面和用户体验的技术领域。随着 Web 技术的快速发展，前端开发已经从简单的页面制作演进为复杂的应用程序开发。</p>\n<h2>技术栈</h2>\n<h3>核心技术</h3>\n<ul>\n<li><strong>HTML</strong>: 网页结构和语义</li>\n<li><strong>CSS</strong>: 样式和布局</li>\n<li><strong>JavaScript</strong>: 交互和逻辑</li>\n</ul>\n<h3>现代框架</h3>\n<ul>\n<li><strong>React</strong>: 组件化 UI 库</li>\n<li><strong>Vue.js</strong>: 渐进式框架</li>\n<li><strong>Angular</strong>: 企业级框架</li>\n<li><strong>Svelte</strong>: 编译时优化框架</li>\n</ul>\n<h3>构建工具</h3>\n<ul>\n<li><strong>Webpack</strong>: 模块打包器</li>\n<li><strong>Vite</strong>: 快速构建工具</li>\n<li><strong>Rollup</strong>: ES 模块打包器</li>\n</ul>\n<h3>CSS 框架</h3>\n<ul>\n<li><strong>Tailwind CSS</strong>: 原子化 CSS 框架</li>\n<li><strong>Bootstrap</strong>: 响应式 CSS 框架</li>\n<li><strong>Styled Components</strong>: CSS-in-JS 解决方案</li>\n</ul>\n<h2>发展趋势</h2>\n<ul>\n<li>组件化开发</li>\n<li>服务端渲染 (SSR)</li>\n<li>静态站点生成 (SSG)</li>\n<li>微前端架构</li>\n<li>Web Components</li>\n<li>Progressive Web Apps (PWA)</li>\n</ul>"
+    },
+    "_id": "categories/frontend.md",
+    "_raw": {
+      "sourceFilePath": "categories/frontend.md",
+      "sourceFileName": "frontend.md",
+      "sourceFileDir": "categories",
+      "contentType": "markdown",
+      "flattenedPath": "categories/frontend"
+    },
+    "type": "Category",
+    "slug": "frontend"
+  },
+  {
+    "name": "全栈开发",
+    "color": "#45B7D1",
+    "description": "全栈项目和技术栈整合，包括前后端协作、架构设计等",
+    "order": 3,
+    "body": {
+      "raw": "\n# 全栈开发\n\n全栈开发是指掌握前端和后端技术，能够独立完成整个 Web 应用开发的能力。全栈开发者需要了解从用户界面到数据库的整个技术栈。\n\n## 技术栈组合\n\n### MEAN/MERN 栈\n- **MongoDB**: NoSQL 数据库\n- **Express.js**: Node.js Web 框架\n- **Angular/React**: 前端框架\n- **Node.js**: JavaScript 运行时\n\n### JAMstack\n- **JavaScript**: 动态功能\n- **APIs**: 后端服务\n- **Markup**: 预构建标记\n\n### T3 栈\n- **Next.js**: 全栈 React 框架\n- **TypeScript**: 类型安全\n- **tRPC**: 端到端类型安全 API\n- **Prisma**: 数据库 ORM\n- **Tailwind CSS**: 样式框架\n\n## 核心技能\n\n- 前端开发 (HTML, CSS, JavaScript)\n- 后端开发 (API 设计, 数据库)\n- DevOps (部署, 监控, CI/CD)\n- 项目管理和架构设计\n\n## 发展趋势\n\n- 无服务器架构 (Serverless)\n- 微服务架构\n- 容器化部署\n- 云原生开发\n- 低代码/无代码平台\n",
+      "html": "<h1>全栈开发</h1>\n<p>全栈开发是指掌握前端和后端技术，能够独立完成整个 Web 应用开发的能力。全栈开发者需要了解从用户界面到数据库的整个技术栈。</p>\n<h2>技术栈组合</h2>\n<h3>MEAN/MERN 栈</h3>\n<ul>\n<li><strong>MongoDB</strong>: NoSQL 数据库</li>\n<li><strong>Express.js</strong>: Node.js Web 框架</li>\n<li><strong>Angular/React</strong>: 前端框架</li>\n<li><strong>Node.js</strong>: JavaScript 运行时</li>\n</ul>\n<h3>JAMstack</h3>\n<ul>\n<li><strong>JavaScript</strong>: 动态功能</li>\n<li><strong>APIs</strong>: 后端服务</li>\n<li><strong>Markup</strong>: 预构建标记</li>\n</ul>\n<h3>T3 栈</h3>\n<ul>\n<li><strong>Next.js</strong>: 全栈 React 框架</li>\n<li><strong>TypeScript</strong>: 类型安全</li>\n<li><strong>tRPC</strong>: 端到端类型安全 API</li>\n<li><strong>Prisma</strong>: 数据库 ORM</li>\n<li><strong>Tailwind CSS</strong>: 样式框架</li>\n</ul>\n<h2>核心技能</h2>\n<ul>\n<li>前端开发 (HTML, CSS, JavaScript)</li>\n<li>后端开发 (API 设计, 数据库)</li>\n<li>DevOps (部署, 监控, CI/CD)</li>\n<li>项目管理和架构设计</li>\n</ul>\n<h2>发展趋势</h2>\n<ul>\n<li>无服务器架构 (Serverless)</li>\n<li>微服务架构</li>\n<li>容器化部署</li>\n<li>云原生开发</li>\n<li>低代码/无代码平台</li>\n</ul>"
+    },
+    "_id": "categories/fullstack.md",
+    "_raw": {
+      "sourceFilePath": "categories/fullstack.md",
+      "sourceFileName": "fullstack.md",
+      "sourceFileDir": "categories",
+      "contentType": "markdown",
+      "flattenedPath": "categories/fullstack"
+    },
+    "type": "Category",
+    "slug": "fullstack"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "后端开发",
+  "color": "#4ECDC4",
+  "description": "后端技术、API 设计和服务器开发，包括 Node.js、Python、数据库等",
+  "order": 2,
+  "body": {
+    "raw": "\n# 后端开发\n\n后端开发负责服务器端逻辑、数据库管理、API 设计等核心功能。它是 Web 应用的基础设施，为前端提供数据和服务支持。\n\n## 技术栈\n\n### 编程语言\n- **Node.js**: JavaScript 运行时\n- **Python**: 简洁优雅的语言\n- **Java**: 企业级开发语言\n- **Go**: 高性能并发语言\n- **Rust**: 系统级编程语言\n\n### 框架\n- **Express.js**: Node.js 轻量级框架\n- **NestJS**: Node.js 企业级框架\n- **Django**: Python 全功能框架\n- **FastAPI**: Python 现代 API 框架\n- **Spring Boot**: Java 微服务框架\n\n### 数据库\n- **关系型**: PostgreSQL, MySQL\n- **NoSQL**: MongoDB, Redis\n- **图数据库**: Neo4j\n- **时序数据库**: InfluxDB\n\n### 云服务\n- **AWS**: 亚马逊云服务\n- **Google Cloud**: 谷歌云平台\n- **Azure**: 微软云服务\n- **Vercel**: 前端部署平台\n\n## 核心概念\n\n- RESTful API 设计\n- GraphQL 查询语言\n- 微服务架构\n- 容器化部署\n- 缓存策略\n- 安全认证\n",
+    "html": "<h1>后端开发</h1>\n<p>后端开发负责服务器端逻辑、数据库管理、API 设计等核心功能。它是 Web 应用的基础设施，为前端提供数据和服务支持。</p>\n<h2>技术栈</h2>\n<h3>编程语言</h3>\n<ul>\n<li><strong>Node.js</strong>: JavaScript 运行时</li>\n<li><strong>Python</strong>: 简洁优雅的语言</li>\n<li><strong>Java</strong>: 企业级开发语言</li>\n<li><strong>Go</strong>: 高性能并发语言</li>\n<li><strong>Rust</strong>: 系统级编程语言</li>\n</ul>\n<h3>框架</h3>\n<ul>\n<li><strong>Express.js</strong>: Node.js 轻量级框架</li>\n<li><strong>NestJS</strong>: Node.js 企业级框架</li>\n<li><strong>Django</strong>: Python 全功能框架</li>\n<li><strong>FastAPI</strong>: Python 现代 API 框架</li>\n<li><strong>Spring Boot</strong>: Java 微服务框架</li>\n</ul>\n<h3>数据库</h3>\n<ul>\n<li><strong>关系型</strong>: PostgreSQL, MySQL</li>\n<li><strong>NoSQL</strong>: MongoDB, Redis</li>\n<li><strong>图数据库</strong>: Neo4j</li>\n<li><strong>时序数据库</strong>: InfluxDB</li>\n</ul>\n<h3>云服务</h3>\n<ul>\n<li><strong>AWS</strong>: 亚马逊云服务</li>\n<li><strong>Google Cloud</strong>: 谷歌云平台</li>\n<li><strong>Azure</strong>: 微软云服务</li>\n<li><strong>Vercel</strong>: 前端部署平台</li>\n</ul>\n<h2>核心概念</h2>\n<ul>\n<li>RESTful API 设计</li>\n<li>GraphQL 查询语言</li>\n<li>微服务架构</li>\n<li>容器化部署</li>\n<li>缓存策略</li>\n<li>安全认证</li>\n</ul>"
+  },
+  "_id": "categories/backend.md",
+  "_raw": {
+    "sourceFilePath": "categories/backend.md",
+    "sourceFileName": "backend.md",
+    "sourceFileDir": "categories",
+    "contentType": "markdown",
+    "flattenedPath": "categories/backend"
+  },
+  "type": "Category",
+  "slug": "backend"
+}

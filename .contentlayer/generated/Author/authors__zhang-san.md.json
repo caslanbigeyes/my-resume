@@ -1,0 +1,24 @@
+{
+  "name": "李凌峰",
+  "avatar": "/avatars/li-lingfeng.jpg",
+  "bio": "前端开发工程师，6年工作经验，专注于React、Vue等现代前端技术栈。擅长微前端、性能优化、组件库建设。",
+  "email": "781650249@qq.com",
+  "website": "https://www.llfzxx.com",
+  "github": "llfzxx",
+  "twitter": "llfzxx_dev",
+  "linkedin": "li-lingfeng",
+  "body": {
+    "raw": "\n# 关于李凌峰\n\n我是一名充满激情的前端开发工程师，拥有 6 年的 Web 开发经验。我专注于：\n\n- **前端框架**: React, Vue, TypeScript, UniApp\n- **构建工具**: Webpack, Vite, pnpm + Lerna\n- **微前端**: QianKun.js微前端架构\n- **可视化**: Echarts, Antv, Canvas绘制\n- **性能优化**: SSR/SSG, ServiceWorker, CDN加速\n- **桌面应用**: Electron (3年+经验)\n\n## 技术理念\n\n我相信技术应该服务于业务，在当前业务环境与技术环境下发现痛点，并沉淀出完整的技术产品解决方案。我致力于：\n\n- 编写高质量、可维护的代码\n- 追求最佳的用户体验和性能优化\n- 持续学习新技术，保持技术敏感度\n- 分享知识，推动团队内部技术分享\n- 业务整合降本提效\n\n## 联系方式\n\n如果你想与我交流技术问题或合作机会，欢迎通过以下方式联系我：\n\n- 📧 邮箱: 781650249@qq.com\n- 🌐 个人网站: [www.llfzxx.com](https://www.llfzxx.com)\n- 🐙 GitHub: [@llfzxx](https://github.com/llfzxx)\n- 🐦 Twitter: [@llfzxx_dev](https://twitter.com/llfzxx_dev)\n- 💼 LinkedIn: [李凌峰](https://linkedin.com/in/li-lingfeng)\n- 📱 电话: 17389867465\n",
+    "html": "<h1>关于李凌峰</h1>\n<p>我是一名充满激情的前端开发工程师，拥有 6 年的 Web 开发经验。我专注于：</p>\n<ul>\n<li><strong>前端框架</strong>: React, Vue, TypeScript, UniApp</li>\n<li><strong>构建工具</strong>: Webpack, Vite, pnpm + Lerna</li>\n<li><strong>微前端</strong>: QianKun.js微前端架构</li>\n<li><strong>可视化</strong>: Echarts, Antv, Canvas绘制</li>\n<li><strong>性能优化</strong>: SSR/SSG, ServiceWorker, CDN加速</li>\n<li><strong>桌面应用</strong>: Electron (3年+经验)</li>\n</ul>\n<h2>技术理念</h2>\n<p>我相信技术应该服务于业务，在当前业务环境与技术环境下发现痛点，并沉淀出完整的技术产品解决方案。我致力于：</p>\n<ul>\n<li>编写高质量、可维护的代码</li>\n<li>追求最佳的用户体验和性能优化</li>\n<li>持续学习新技术，保持技术敏感度</li>\n<li>分享知识，推动团队内部技术分享</li>\n<li>业务整合降本提效</li>\n</ul>\n<h2>联系方式</h2>\n<p>如果你想与我交流技术问题或合作机会，欢迎通过以下方式联系我：</p>\n<ul>\n<li>📧 邮箱: 781650249@qq.com</li>\n<li>🌐 个人网站: <a href=\"https://www.llfzxx.com\">www.llfzxx.com</a></li>\n<li>🐙 GitHub: <a href=\"https://github.com/llfzxx\">@llfzxx</a></li>\n<li>🐦 Twitter: <a href=\"https://twitter.com/llfzxx_dev\">@llfzxx_dev</a></li>\n<li>💼 LinkedIn: <a href=\"https://linkedin.com/in/li-lingfeng\">李凌峰</a></li>\n<li>📱 电话: 17389867465</li>\n</ul>"
+  },
+  "_id": "authors/zhang-san.md",
+  "_raw": {
+    "sourceFilePath": "authors/zhang-san.md",
+    "sourceFileName": "zhang-san.md",
+    "sourceFileDir": "authors",
+    "contentType": "markdown",
+    "flattenedPath": "authors/zhang-san"
+  },
+  "type": "Author",
+  "slug": "zhang-san"
+}

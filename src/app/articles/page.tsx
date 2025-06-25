@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Layout from '../Components/Layout'
-import { getPublishedArticles, getFeaturedArticles, tags, categories, getTagById, getCategoryById } from '@/lib/data'
+import { getPublishedArticles, getFeaturedArticles, tags, categories, getTagBySlug, getCategoryBySlug } from '@/lib/data'
 import Link from 'next/link'
 
 export default function ArticlesPage() {
@@ -16,10 +16,10 @@ export default function ArticlesPage() {
     const filteredArticles = allArticles.filter(article => {
         const matchesTag = !selectedTag || article.tags.includes(selectedTag);
         const matchesCategory = !selectedCategory || article.category === selectedCategory;
-        const matchesSearch = !searchQuery || 
+        const matchesSearch = !searchQuery ||
             article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
             article.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-        
+
         return matchesTag && matchesCategory && matchesSearch;
     });
 
@@ -27,7 +27,7 @@ export default function ArticlesPage() {
         <Layout>
             <div className="max-w-6xl mx-auto px-4 py-8">
                 <h1 className="text-3xl font-bold mb-8 text-center">技术文章</h1>
-                
+
                 {/* 搜索和过滤 */}
                 <div className="mb-8 bg-white rounded-lg shadow-md p-6">
                     <div className="grid gap-4 md:grid-cols-3">
@@ -78,7 +78,7 @@ export default function ArticlesPage() {
                             </select>
                         </div>
                     </div>
-                    
+
                     {(selectedTag || selectedCategory || searchQuery) && (
                         <div className="mt-4 flex items-center gap-2">
                             <span className="text-sm text-gray-600">当前筛选：</span>
@@ -117,14 +117,14 @@ export default function ArticlesPage() {
                         <h2 className="text-2xl font-semibold mb-6">精选文章</h2>
                         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                             {featuredArticles.map(article => (
-                                <div key={article.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                                <div key={article._id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
                                     <div className="p-6">
                                         <div className="flex items-center justify-between mb-3">
                                             <span className="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">
                                                 精选
                                             </span>
                                             <span className="text-xs text-gray-500">
-                                                {article.readingTime} 分钟阅读
+                                                {article.readingTime.minutes} 分钟阅读
                                             </span>
                                         </div>
                                         <h3 className="text-lg font-semibold mb-3 text-gray-800 line-clamp-2">
@@ -136,15 +136,15 @@ export default function ArticlesPage() {
                                             {article.excerpt}
                                         </p>
                                         <div className="flex flex-wrap gap-2 mb-4">
-                                            {article.tags.slice(0, 3).map(tagId => {
-                                                const tag = getTagById(tagId);
+                                            {article.tags.slice(0, 3).map(tagSlug => {
+                                                const tag = getTagBySlug(tagSlug);
                                                 return tag ? (
                                                     <span
-                                                        key={tagId}
+                                                        key={tagSlug}
                                                         className="px-2 py-1 text-xs rounded-full"
-                                                        style={{ 
+                                                        style={{
                                                             backgroundColor: tag.color + '20',
-                                                            color: tag.color 
+                                                            color: tag.color
                                                         }}
                                                     >
                                                         {tag.name}
@@ -154,7 +154,7 @@ export default function ArticlesPage() {
                                         </div>
                                         <div className="flex items-center justify-between text-xs text-gray-500">
                                             <span>{new Date(article.publishedAt).toLocaleDateString('zh-CN')}</span>
-                                            <span>{article.author.name}</span>
+                                            <span>作者：{article.author}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ export default function ArticlesPage() {
                             共 {filteredArticles.length} 篇文章
                         </span>
                     </div>
-                    
+
                     {filteredArticles.length === 0 ? (
                         <div className="text-center py-12">
                             <p className="text-gray-500">没有找到符合条件的文章</p>
@@ -181,17 +181,17 @@ export default function ArticlesPage() {
                     ) : (
                         <div className="space-y-6">
                             {filteredArticles.map(article => {
-                                const category = getCategoryById(article.category);
+                                const category = getCategoryBySlug(article.category);
                                 return (
-                                    <div key={article.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
+                                    <div key={article._id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
                                         <div className="flex items-start justify-between mb-3">
                                             <div className="flex items-center gap-3">
                                                 {category && (
-                                                    <span 
+                                                    <span
                                                         className="px-3 py-1 text-xs rounded-full font-medium"
-                                                        style={{ 
+                                                        style={{
                                                             backgroundColor: category.color + '20',
-                                                            color: category.color 
+                                                            color: category.color
                                                         }}
                                                     >
                                                         {category.name}
@@ -204,31 +204,31 @@ export default function ArticlesPage() {
                                                 )}
                                             </div>
                                             <span className="text-xs text-gray-500">
-                                                {article.readingTime} 分钟阅读
+                                                {article.readingTime.minutes} 分钟阅读
                                             </span>
                                         </div>
-                                        
+
                                         <h3 className="text-xl font-semibold mb-3 text-gray-800">
                                             <Link href={`/articles/${article.slug}`} className="hover:text-blue-600">
                                                 {article.title}
                                             </Link>
                                         </h3>
-                                        
+
                                         <p className="text-gray-600 mb-4">
                                             {article.excerpt}
                                         </p>
-                                        
+
                                         <div className="flex flex-wrap gap-2 mb-4">
-                                            {article.tags.map(tagId => {
-                                                const tag = getTagById(tagId);
+                                            {article.tags.map(tagSlug => {
+                                                const tag = getTagBySlug(tagSlug);
                                                 return tag ? (
                                                     <Link
-                                                        key={tagId}
+                                                        key={tagSlug}
                                                         href={`/tags/${tag.slug}`}
                                                         className="px-2 py-1 text-xs rounded-full hover:opacity-80 transition-opacity"
-                                                        style={{ 
+                                                        style={{
                                                             backgroundColor: tag.color + '20',
-                                                            color: tag.color 
+                                                            color: tag.color
                                                         }}
                                                     >
                                                         {tag.name}
@@ -236,7 +236,7 @@ export default function ArticlesPage() {
                                                 ) : null;
                                             })}
                                         </div>
-                                        
+
                                         <div className="flex items-center justify-between text-sm text-gray-500">
                                             <span>发布于 {new Date(article.publishedAt).toLocaleDateString('zh-CN')}</span>
                                             <span>作者：{article.author.name}</span>

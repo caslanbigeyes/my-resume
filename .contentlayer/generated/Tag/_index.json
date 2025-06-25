@@ -1,0 +1,82 @@
+[
+  {
+    "name": "JavaScript",
+    "color": "#F7DF1E",
+    "description": "JavaScript 基础与进阶，包括 ES6+、异步编程、性能优化等",
+    "featured": true,
+    "body": {
+      "raw": "\n# JavaScript\n\nJavaScript 是 Web 开发的核心语言，从简单的页面交互到复杂的应用程序开发，JavaScript 都发挥着重要作用。\n\n## 语言特性\n\n- **动态类型**: 运行时确定变量类型\n- **原型继承**: 基于原型的面向对象编程\n- **函数式编程**: 支持高阶函数、闭包等特性\n- **异步编程**: Promise、async/await 等异步处理机制\n\n## 现代 JavaScript (ES6+)\n\n- 箭头函数\n- 模板字符串\n- 解构赋值\n- 模块系统\n- 类语法\n- Promise 和 async/await\n\n## 学习资源\n\n- [MDN JavaScript 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)\n- [JavaScript.info](https://zh.javascript.info/)\n- [ES6 入门教程](https://es6.ruanyifeng.com/)\n",
+      "html": "<h1>JavaScript</h1>\n<p>JavaScript 是 Web 开发的核心语言，从简单的页面交互到复杂的应用程序开发，JavaScript 都发挥着重要作用。</p>\n<h2>语言特性</h2>\n<ul>\n<li><strong>动态类型</strong>: 运行时确定变量类型</li>\n<li><strong>原型继承</strong>: 基于原型的面向对象编程</li>\n<li><strong>函数式编程</strong>: 支持高阶函数、闭包等特性</li>\n<li><strong>异步编程</strong>: Promise、async/await 等异步处理机制</li>\n</ul>\n<h2>现代 JavaScript (ES6+)</h2>\n<ul>\n<li>箭头函数</li>\n<li>模板字符串</li>\n<li>解构赋值</li>\n<li>模块系统</li>\n<li>类语法</li>\n<li>Promise 和 async/await</li>\n</ul>\n<h2>学习资源</h2>\n<ul>\n<li><a href=\"https://developer.mozilla.org/zh-CN/docs/Web/JavaScript\">MDN JavaScript 文档</a></li>\n<li><a href=\"https://zh.javascript.info/\">JavaScript.info</a></li>\n<li><a href=\"https://es6.ruanyifeng.com/\">ES6 入门教程</a></li>\n</ul>"
+    },
+    "_id": "tags/javascript.md",
+    "_raw": {
+      "sourceFilePath": "tags/javascript.md",
+      "sourceFileName": "javascript.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/javascript"
+    },
+    "type": "Tag",
+    "slug": "javascript"
+  },
+  {
+    "name": "Next.js",
+    "color": "#000000",
+    "description": "Next.js 框架相关文章，包括 SSR、SSG、App Router 等",
+    "featured": true,
+    "body": {
+      "raw": "\n# Next.js\n\nNext.js 是一个基于 React 的全栈框架，提供了生产级别的功能，如服务端渲染、静态站点生成、API 路由等。\n\n## 主要特性\n\n- **App Router**: 新一代路由系统\n- **服务端渲染 (SSR)**: 提升 SEO 和首屏加载速度\n- **静态站点生成 (SSG)**: 构建时预渲染页面\n- **API 路由**: 内置 API 开发能力\n- **图片优化**: 自动图片优化和懒加载\n\n## 适用场景\n\n- 企业级 Web 应用\n- 电商网站\n- 博客和内容网站\n- 营销页面\n",
+      "html": "<h1>Next.js</h1>\n<p>Next.js 是一个基于 React 的全栈框架，提供了生产级别的功能，如服务端渲染、静态站点生成、API 路由等。</p>\n<h2>主要特性</h2>\n<ul>\n<li><strong>App Router</strong>: 新一代路由系统</li>\n<li><strong>服务端渲染 (SSR)</strong>: 提升 SEO 和首屏加载速度</li>\n<li><strong>静态站点生成 (SSG)</strong>: 构建时预渲染页面</li>\n<li><strong>API 路由</strong>: 内置 API 开发能力</li>\n<li><strong>图片优化</strong>: 自动图片优化和懒加载</li>\n</ul>\n<h2>适用场景</h2>\n<ul>\n<li>企业级 Web 应用</li>\n<li>电商网站</li>\n<li>博客和内容网站</li>\n<li>营销页面</li>\n</ul>"
+    },
+    "_id": "tags/nextjs.md",
+    "_raw": {
+      "sourceFilePath": "tags/nextjs.md",
+      "sourceFileName": "nextjs.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/nextjs"
+    },
+    "type": "Tag",
+    "slug": "nextjs"
+  },
+  {
+    "name": "React",
+    "color": "#61DAFB",
+    "description": "React.js 相关技术文章，包括组件开发、状态管理、性能优化等",
+    "featured": true,
+    "body": {
+      "raw": "\n# React\n\nReact 是由 Facebook 开发的用于构建用户界面的 JavaScript 库。它采用组件化的开发模式，让开发者能够构建可复用、可维护的 UI 组件。\n\n## 核心特性\n\n- **组件化**: 将 UI 拆分为独立、可复用的组件\n- **虚拟 DOM**: 提供高效的 DOM 更新机制\n- **单向数据流**: 数据从父组件流向子组件\n- **JSX**: JavaScript 的语法扩展，让编写组件更直观\n\n## 学习资源\n\n- [React 官方文档](https://react.dev)\n- [React 中文文档](https://zh-hans.react.dev)\n- [React 生态系统](https://github.com/enaqx/awesome-react)\n",
+      "html": "<h1>React</h1>\n<p>React 是由 Facebook 开发的用于构建用户界面的 JavaScript 库。它采用组件化的开发模式，让开发者能够构建可复用、可维护的 UI 组件。</p>\n<h2>核心特性</h2>\n<ul>\n<li><strong>组件化</strong>: 将 UI 拆分为独立、可复用的组件</li>\n<li><strong>虚拟 DOM</strong>: 提供高效的 DOM 更新机制</li>\n<li><strong>单向数据流</strong>: 数据从父组件流向子组件</li>\n<li><strong>JSX</strong>: JavaScript 的语法扩展，让编写组件更直观</li>\n</ul>\n<h2>学习资源</h2>\n<ul>\n<li><a href=\"https://react.dev\">React 官方文档</a></li>\n<li><a href=\"https://zh-hans.react.dev\">React 中文文档</a></li>\n<li><a href=\"https://github.com/enaqx/awesome-react\">React 生态系统</a></li>\n</ul>"
+    },
+    "_id": "tags/react.md",
+    "_raw": {
+      "sourceFilePath": "tags/react.md",
+      "sourceFileName": "react.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/react"
+    },
+    "type": "Tag",
+    "slug": "react"
+  },
+  {
+    "name": "TypeScript",
+    "color": "#3178C6",
+    "description": "TypeScript 开发技巧，类型系统，高级类型等",
+    "featured": true,
+    "body": {
+      "raw": "\n# TypeScript\n\nTypeScript 是 JavaScript 的超集，添加了静态类型检查。它能够在开发时发现错误，提高代码质量和开发效率。\n\n## 核心优势\n\n- **静态类型检查**: 编译时发现错误\n- **更好的 IDE 支持**: 智能提示、重构等\n- **渐进式采用**: 可以逐步迁移现有 JavaScript 项目\n- **现代 JavaScript 特性**: 支持最新的 ECMAScript 特性\n\n## 学习路径\n\n1. 基础类型和接口\n2. 泛型和高级类型\n3. 装饰器和元数据\n4. 配置和工具链\n",
+      "html": "<h1>TypeScript</h1>\n<p>TypeScript 是 JavaScript 的超集，添加了静态类型检查。它能够在开发时发现错误，提高代码质量和开发效率。</p>\n<h2>核心优势</h2>\n<ul>\n<li><strong>静态类型检查</strong>: 编译时发现错误</li>\n<li><strong>更好的 IDE 支持</strong>: 智能提示、重构等</li>\n<li><strong>渐进式采用</strong>: 可以逐步迁移现有 JavaScript 项目</li>\n<li><strong>现代 JavaScript 特性</strong>: 支持最新的 ECMAScript 特性</li>\n</ul>\n<h2>学习路径</h2>\n<ol>\n<li>基础类型和接口</li>\n<li>泛型和高级类型</li>\n<li>装饰器和元数据</li>\n<li>配置和工具链</li>\n</ol>"
+    },
+    "_id": "tags/typescript.md",
+    "_raw": {
+      "sourceFilePath": "tags/typescript.md",
+      "sourceFileName": "typescript.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/typescript"
+    },
+    "type": "Tag",
+    "slug": "typescript"
+  }
+]

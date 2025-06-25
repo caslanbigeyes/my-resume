@@ -3,19 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "contentlayer dev & next dev --turbopack",
+    "build": "contentlayer build && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "contentlayer": "contentlayer build"
   },
   "dependencies": {
+    "contentlayer": "^0.3.4",
+    "date-fns": "^3.6.0",
+    "gray-matter": "^4.0.3",
     "next": "15.2.2",
+    "next-contentlayer": "^0.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0",
-    "date-fns": "^3.6.0",
-    "reading-time": "^1.5.0",
-    "gray-matter": "^4.0.3"
+    "reading-time": "^1.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -1,0 +1,20 @@
+{
+  "name": "TypeScript",
+  "color": "#3178C6",
+  "description": "TypeScript 开发技巧，类型系统，高级类型等",
+  "featured": true,
+  "body": {
+    "raw": "\n# TypeScript\n\nTypeScript 是 JavaScript 的超集，添加了静态类型检查。它能够在开发时发现错误，提高代码质量和开发效率。\n\n## 核心优势\n\n- **静态类型检查**: 编译时发现错误\n- **更好的 IDE 支持**: 智能提示、重构等\n- **渐进式采用**: 可以逐步迁移现有 JavaScript 项目\n- **现代 JavaScript 特性**: 支持最新的 ECMAScript 特性\n\n## 学习路径\n\n1. 基础类型和接口\n2. 泛型和高级类型\n3. 装饰器和元数据\n4. 配置和工具链\n",
+    "html": "<h1>TypeScript</h1>\n<p>TypeScript 是 JavaScript 的超集，添加了静态类型检查。它能够在开发时发现错误，提高代码质量和开发效率。</p>\n<h2>核心优势</h2>\n<ul>\n<li><strong>静态类型检查</strong>: 编译时发现错误</li>\n<li><strong>更好的 IDE 支持</strong>: 智能提示、重构等</li>\n<li><strong>渐进式采用</strong>: 可以逐步迁移现有 JavaScript 项目</li>\n<li><strong>现代 JavaScript 特性</strong>: 支持最新的 ECMAScript 特性</li>\n</ul>\n<h2>学习路径</h2>\n<ol>\n<li>基础类型和接口</li>\n<li>泛型和高级类型</li>\n<li>装饰器和元数据</li>\n<li>配置和工具链</li>\n</ol>"
+  },
+  "_id": "tags/typescript.md",
+  "_raw": {
+    "sourceFilePath": "tags/typescript.md",
+    "sourceFileName": "typescript.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/typescript"
+  },
+  "type": "Tag",
+  "slug": "typescript"
+}

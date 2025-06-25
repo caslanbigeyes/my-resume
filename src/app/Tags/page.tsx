@@ -16,7 +16,7 @@ export default function TagsPage() {
                     <div className="flex flex-wrap gap-3">
                         {tags.map(tag => (
                             <Link
-                                key={tag.id}
+                                key={tag._id}
                                 href={`/tags/${tag.slug}`}
                                 className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105"
                                 style={{
@@ -27,7 +27,7 @@ export default function TagsPage() {
                             >
                                 {tag.name}
                                 <span className="ml-2 text-xs opacity-75">
-                                    {tag.count}
+                                    {getArticlesByTag(tag.slug).length}
                                 </span>
                             </Link>
                         ))}
@@ -39,10 +39,10 @@ export default function TagsPage() {
                     <h2 className="text-xl font-semibold mb-6">所有标签</h2>
                     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                         {tags.map(tag => {
-                            const articles = getArticlesByTag(tag.id);
+                            const articles = getArticlesByTag(tag.slug);
                             return (
                                 <div
-                                    key={tag.id}
+                                    key={tag._id}
                                     className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
                                 >
                                     <div className="flex items-center justify-between mb-3">
@@ -50,7 +50,7 @@ export default function TagsPage() {
                                             {tag.name}
                                         </h3>
                                         <span className="text-sm text-gray-500">
-                                            {tag.count} 篇文章
+                                            {articles.length} 篇文章
                                         </span>
                                     </div>
 
@@ -63,7 +63,7 @@ export default function TagsPage() {
                                     <div className="space-y-2">
                                         {articles.slice(0, 3).map(article => (
                                             <Link
-                                                key={article.id}
+                                                key={article._id}
                                                 href={`/articles/${article.slug}`}
                                                 className="block text-sm text-blue-600 hover:text-blue-800 truncate"
                                             >

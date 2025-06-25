@@ -1,0 +1,20 @@
+{
+  "name": "React",
+  "color": "#61DAFB",
+  "description": "React.js 相关技术文章，包括组件开发、状态管理、性能优化等",
+  "featured": true,
+  "body": {
+    "raw": "\n# React\n\nReact 是由 Facebook 开发的用于构建用户界面的 JavaScript 库。它采用组件化的开发模式，让开发者能够构建可复用、可维护的 UI 组件。\n\n## 核心特性\n\n- **组件化**: 将 UI 拆分为独立、可复用的组件\n- **虚拟 DOM**: 提供高效的 DOM 更新机制\n- **单向数据流**: 数据从父组件流向子组件\n- **JSX**: JavaScript 的语法扩展，让编写组件更直观\n\n## 学习资源\n\n- [React 官方文档](https://react.dev)\n- [React 中文文档](https://zh-hans.react.dev)\n- [React 生态系统](https://github.com/enaqx/awesome-react)\n",
+    "html": "<h1>React</h1>\n<p>React 是由 Facebook 开发的用于构建用户界面的 JavaScript 库。它采用组件化的开发模式，让开发者能够构建可复用、可维护的 UI 组件。</p>\n<h2>核心特性</h2>\n<ul>\n<li><strong>组件化</strong>: 将 UI 拆分为独立、可复用的组件</li>\n<li><strong>虚拟 DOM</strong>: 提供高效的 DOM 更新机制</li>\n<li><strong>单向数据流</strong>: 数据从父组件流向子组件</li>\n<li><strong>JSX</strong>: JavaScript 的语法扩展，让编写组件更直观</li>\n</ul>\n<h2>学习资源</h2>\n<ul>\n<li><a href=\"https://react.dev\">React 官方文档</a></li>\n<li><a href=\"https://zh-hans.react.dev\">React 中文文档</a></li>\n<li><a href=\"https://github.com/enaqx/awesome-react\">React 生态系统</a></li>\n</ul>"
+  },
+  "_id": "tags/react.md",
+  "_raw": {
+    "sourceFilePath": "tags/react.md",
+    "sourceFileName": "react.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/react"
+  },
+  "type": "Tag",
+  "slug": "react"
+}

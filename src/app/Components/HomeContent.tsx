@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { getLatestArticles, getFeaturedArticles, getStats, getTagById, getCategoryById } from '@/lib/data'
+import { getLatestArticles, getFeaturedArticles, getStats, getTagBySlug, getCategoryBySlug } from '@/lib/data'
 import Link from 'next/link'
 
 export default function HomeContent() {
@@ -63,16 +63,16 @@ export default function HomeContent() {
                     </div>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {featuredArticles.slice(0, 3).map(article => {
-                            const category = getCategoryById(article.category);
+                            const category = getCategoryBySlug(article.category);
                             return (
-                                <div key={article.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                                <div key={article._id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
                                     <div className="p-6">
                                         <div className="flex items-center justify-between mb-3">
                                             <span className="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full font-medium">
                                                 精选
                                             </span>
                                             <span className="text-xs text-gray-500">
-                                                {article.readingTime} 分钟阅读
+                                                {article.readingTime.minutes} 分钟阅读
                                             </span>
                                         </div>
                                         <h3 className="text-lg font-semibold mb-3 text-gray-800 line-clamp-2">
@@ -117,9 +117,9 @@ export default function HomeContent() {
                 </div>
                 <div className="space-y-4">
                     {latestArticles.map(article => {
-                        const category = getCategoryById(article.category);
+                        const category = getCategoryBySlug(article.category);
                         return (
-                            <div key={article.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
+                            <div key={article._id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
                                 <div className="flex items-start justify-between">
                                     <div className="flex-1">
                                         <div className="flex items-center gap-3 mb-2">
@@ -150,8 +150,8 @@ export default function HomeContent() {
                                         </p>
                                         <div className="flex items-center gap-4 text-xs text-gray-500">
                                             <span>{new Date(article.publishedAt).toLocaleDateString('zh-CN')}</span>
-                                            <span>{article.readingTime} 分钟阅读</span>
-                                            <span>作者：{article.author.name}</span>
+                                            <span>{article.readingTime.minutes} 分钟阅读</span>
+                                            <span>作者：{article.author}</span>
                                         </div>
                                     </div>
                                 </div>

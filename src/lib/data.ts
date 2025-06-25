@@ -1,62 +1,100 @@
-import { articles, getArticleById, getArticleBySlug, getArticlesByTag, getArticlesByCategory, getFeaturedArticles, getPublishedArticles } from '@/data/articles';
-import { tags, getTagById, getTagBySlug } from '@/data/tags';
-import { categories, getCategoryById, getCategoryBySlug } from '@/data/categories';
-import { aboutContent, timeline, skills, projects } from '@/data/about';
-import { TechArticle, Tag, Category } from '@/types';
+import { allArticles, allTags, allCategories, allAuthors, allPages, allProjects } from 'contentlayer/generated';
+import type { Article, Tag, Category, Author, Page, Project } from 'contentlayer/generated';
+
+// 导出所有数据
+export const articles = allArticles;
+export const tags = allTags;
+export const categories = allCategories;
+export const authors = allAuthors;
+export const pages = allPages;
+export const projects = allProjects;
 
 // 文章相关函数
-export {
-  articles,
-  getArticleById,
-  getArticleBySlug,
-  getArticlesByTag,
-  getArticlesByCategory,
-  getFeaturedArticles,
-  getPublishedArticles
-};
+export function getArticleById(id: string): Article | undefined {
+  return allArticles.find(article => article._id === id);
+}
+
+export function getArticleBySlug(slug: string): Article | undefined {
+  return allArticles.find(article => article.slug === slug);
+}
+
+export function getArticlesByTag(tagSlug: string): Article[] {
+  return allArticles.filter(article =>
+    article.published && article.tags && article.tags.includes(tagSlug)
+  );
+}
+
+export function getArticlesByCategory(categorySlug: string): Article[] {
+  return allArticles.filter(article =>
+    article.published && article.category === categorySlug
+  );
+}
+
+export function getFeaturedArticles(): Article[] {
+  return allArticles.filter(article => article.featured && article.published);
+}
+
+export function getPublishedArticles(): Article[] {
+  return allArticles.filter(article => article.published);
+}
 
 // 标签相关函数
-export {
-  tags,
-  getTagById,
-  getTagBySlug
-};
+export function getTagById(id: string): Tag | undefined {
+  return allTags.find(tag => tag._id === id);
+}
+
+export function getTagBySlug(slug: string): Tag | undefined {
+  return allTags.find(tag => tag.slug === slug);
+}
 
 // 分类相关函数
-export {
-  categories,
-  getCategoryById,
-  getCategoryBySlug
-};
+export function getCategoryById(id: string): Category | undefined {
+  return allCategories.find(category => category._id === id);
+}
 
-// 关于页面相关数据
-export {
-  aboutContent,
-  timeline,
-  skills,
-  projects
-};
+export function getCategoryBySlug(slug: string): Category | undefined {
+  return allCategories.find(category => category.slug === slug);
+}
+
+// 作者相关函数
+export function getAuthorBySlug(slug: string): Author | undefined {
+  return allAuthors.find(author => author.slug === slug);
+}
+
+// 页面相关函数
+export function getPageBySlug(slug: string): Page | undefined {
+  return allPages.find(page => page.slug === slug);
+}
+
+// 项目相关函数
+export function getProjectBySlug(slug: string): Project | undefined {
+  return allProjects.find(project => project.slug === slug);
+}
+
+export function getFeaturedProjects(): Project[] {
+  return allProjects.filter(project => project.featured);
+}
 
 // 搜索功能
-export function searchArticles(query: string): TechArticle[] {
+export function searchArticles(query: string): Article[] {
   const lowercaseQuery = query.toLowerCase();
-  return articles.filter(article => 
+  return allArticles.filter(article =>
     article.published && (
       article.title.toLowerCase().includes(lowercaseQuery) ||
       article.excerpt.toLowerCase().includes(lowercaseQuery) ||
-      article.content.toLowerCase().includes(lowercaseQuery)
+      article.body.raw.toLowerCase().includes(lowercaseQuery)
     )
   );
 }
 
 // 获取相关文章
-export function getRelatedArticles(articleId: string, limit: number = 3): TechArticle[] {
-  const article = getArticleById(articleId);
+export function getRelatedArticles(articleSlug: string, limit: number = 3): Article[] {
+  const article = getArticleBySlug(articleSlug);
   if (!article) return [];
 
-  const relatedArticles = articles.filter(a => 
-    a.id !== articleId && 
-    a.published && 
+  const relatedArticles = allArticles.filter(a =>
+    a.slug !== articleSlug &&
+    a.published &&
     (a.category === article.category || a.tags.some(tag => article.tags.includes(tag)))
   );
 
@@ -64,7 +102,7 @@ export function getRelatedArticles(articleId: string, limit: number = 3): TechAr
 }
 
 // 获取最新文章
-export function getLatestArticles(limit: number = 5): TechArticle[] {
+export function getLatestArticles(limit: number = 5): Article[] {
   return getPublishedArticles()
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, limit);
@@ -72,14 +110,26 @@ export function getLatestArticles(limit: number = 5): TechArticle[] {
 
 // 获取热门标签
 export function getPopularTags(limit: number = 10): Tag[] {
-  return tags
+  // 计算每个标签的文章数量
+  const tagCounts = allTags.map(tag => ({
+    ...tag,
+    count: getArticlesByTag(tag.slug).length
+  }));
+
+  return tagCounts
     .sort((a, b) => b.count - a.count)
     .slice(0, limit);
 }
 
 // 获取热门分类
 export function getPopularCategories(limit: number = 5): Category[] {
-  return categories
+  // 计算每个分类的文章数量
+  const categoryCounts = allCategories.map(category => ({
+    ...category,
+    count: getArticlesByCategory(category.slug).length
+  }));
+
+  return categoryCounts
     .sort((a, b) => b.count - a.count)
     .slice(0, limit);
 }
@@ -87,9 +137,9 @@ export function getPopularCategories(limit: number = 5): Category[] {
 // 统计数据
 export function getStats() {
   const totalArticles = getPublishedArticles().length;
-  const totalTags = tags.length;
-  const totalCategories = categories.length;
-  const totalViews = getPublishedArticles().reduce((sum, article) => sum + (article.readingTime * 100), 0); // 模拟浏览量
+  const totalTags = allTags.length;
+  const totalCategories = allCategories.length;
+  const totalViews = getPublishedArticles().reduce((sum, article) => sum + (article.readingTime.minutes * 100), 0); // 模拟浏览量
 
   return {
     totalArticles,
@@ -100,9 +150,9 @@ export function getStats() {
 }
 
 // 按年份分组文章
-export function getArticlesByYear(): Record<string, TechArticle[]> {
-  const articlesByYear: Record<string, TechArticle[]> = {};
-  
+export function getArticlesByYear(): Record<string, Article[]> {
+  const articlesByYear: Record<string, Article[]> = {};
+
   getPublishedArticles().forEach(article => {
     const year = new Date(article.publishedAt).getFullYear().toString();
     if (!articlesByYear[year]) {
@@ -113,8 +163,8 @@ export function getArticlesByYear(): Record<string, TechArticle[]> {
 
   // 按年份降序排序
   const sortedYears = Object.keys(articlesByYear).sort((a, b) => parseInt(b) - parseInt(a));
-  const sortedArticlesByYear: Record<string, TechArticle[]> = {};
-  
+  const sortedArticlesByYear: Record<string, Article[]> = {};
+
   sortedYears.forEach(year => {
     sortedArticlesByYear[year] = articlesByYear[year].sort(
       (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
