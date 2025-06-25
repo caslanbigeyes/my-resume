@@ -54,7 +54,7 @@ export default function ArticlesPage() {
                             >
                                 <option value="">所有分类</option>
                                 {categories.map(category => (
-                                    <option key={category.id} value={category.id}>
+                                    <option key={category._id} value={category.slug}>
                                         {category.name}
                                     </option>
                                 ))}
@@ -71,7 +71,7 @@ export default function ArticlesPage() {
                             >
                                 <option value="">所有标签</option>
                                 {tags.map(tag => (
-                                    <option key={tag.id} value={tag.id}>
+                                    <option key={tag._id} value={tag.slug}>
                                         {tag.name}
                                     </option>
                                 ))}
@@ -84,17 +84,17 @@ export default function ArticlesPage() {
                             <span className="text-sm text-gray-600">当前筛选：</span>
                             {selectedCategory && (
                                 <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
-                                    {getCategoryById(selectedCategory)?.name}
+                                    {getCategoryBySlug(selectedCategory)?.name}
                                 </span>
                             )}
                             {selectedTag && (
                                 <span className="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">
-                                    {getTagById(selectedTag)?.name}
+                                    {getTagBySlug(selectedTag)?.name}
                                 </span>
                             )}
                             {searchQuery && (
                                 <span className="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">
-                                    "{searchQuery}"
+                                    "                                    &ldquo;{searchQuery}&rdquo;"
                                 </span>
                             )}
                             <button
@@ -239,7 +239,7 @@ export default function ArticlesPage() {
 
                                         <div className="flex items-center justify-between text-sm text-gray-500">
                                             <span>发布于 {new Date(article.publishedAt).toLocaleDateString('zh-CN')}</span>
-                                            <span>作者：{article.author.name}</span>
+                                            <span>作者：{article.author}</span>
                                         </div>
                                     </div>
                                 );

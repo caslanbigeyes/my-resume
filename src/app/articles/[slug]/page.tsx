@@ -8,8 +8,26 @@ import ReactMarkdown from 'react-markdown'
 
 export default function ArticleDetailPage() {
     const params = useParams();
-    const slug = params.slug as string;
 
+    // 检查 params 是否存在以及 slug 是否存在
+    if (!params || !params.slug) {
+        return (
+            <Layout>
+                <div className="max-w-4xl mx-auto px-4 py-8 text-center">
+                    <h1 className="text-2xl font-bold text-gray-800 mb-4">页面错误</h1>
+                    <p className="text-gray-600 mb-6">无法获取文章信息。</p>
+                    <Link
+                        href="/articles"
+                        className="inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    >
+                        返回文章列表
+                    </Link>
+                </div>
+            </Layout>
+        );
+    }
+
+    const slug = params.slug as string;
     const article = getArticleBySlug(slug);
 
     if (!article) {

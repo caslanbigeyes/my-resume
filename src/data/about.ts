@@ -1,4 +1,4 @@
-import { AboutContent, AboutSection, TimelineItem, Skill, Project } from '@/types';
+import { AboutContent, TimelineItem, Skill, Project } from '@/types';
 
 export const aboutContent: AboutContent = {
   id: 'about-me',
@@ -11,7 +11,7 @@ export const aboutContent: AboutContent = {
       title: '个人简介',
       content: `你好！我是张三，一名充满激情的全栈开发者。我热爱编程，享受解决复杂问题的过程，
       并且始终保持对新技术的好奇心。我相信技术能够改变世界，让生活变得更美好。
-      
+
       在过去的几年里，我专注于 React、Next.js、Node.js 等现代技术栈的学习和实践。
       我喜欢分享知识，经常在技术博客上发表文章，希望能够帮助更多的开发者成长。`,
       type: 'text',
@@ -122,18 +122,18 @@ export const skills: Skill[] = [
   { id: '5', name: 'Vue.js', category: '前端', level: 3, description: '了解 Vue 3 Composition API' },
   { id: '6', name: 'CSS/Sass', category: '前端', level: 4, description: '熟练使用现代 CSS 技术' },
   { id: '7', name: 'Tailwind CSS', category: '前端', level: 4, description: '熟练使用原子化 CSS 框架' },
-  
+
   // 后端技能
   { id: '8', name: 'Node.js', category: '后端', level: 4, description: '熟练开发 RESTful API 和微服务' },
   { id: '9', name: 'Express.js', category: '后端', level: 4, description: '熟练使用 Express 框架' },
   { id: '10', name: 'NestJS', category: '后端', level: 3, description: '了解企业级 Node.js 框架' },
   { id: '11', name: 'Python', category: '后端', level: 3, description: '能够编写自动化脚本和简单 API' },
-  
+
   // 数据库
   { id: '12', name: 'MongoDB', category: '数据库', level: 4, description: '熟练使用 NoSQL 数据库' },
   { id: '13', name: 'PostgreSQL', category: '数据库', level: 3, description: '了解关系型数据库设计' },
   { id: '14', name: 'Redis', category: '数据库', level: 3, description: '熟悉缓存和会话管理' },
-  
+
   // 工具和其他
   { id: '15', name: 'Git', category: '工具', level: 4, description: '熟练使用版本控制' },
   { id: '16', name: 'Docker', category: '工具', level: 3, description: '了解容器化部署' },
