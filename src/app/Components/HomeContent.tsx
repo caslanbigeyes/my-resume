@@ -12,7 +12,7 @@ export default function HomeContent() {
         <div className="space-y-8">
             {/* 欢迎区域 */}
             <section className="text-center py-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg">
-                <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome to My Blog</h1>
+                <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome Baby</h1>
                 <p className="text-lg text-gray-600 mb-6">分享技术心得，记录成长历程</p>
                 <div className="flex justify-center gap-4">
                     <Link
