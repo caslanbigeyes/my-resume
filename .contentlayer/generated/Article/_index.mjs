@@ -4,5 +4,6 @@ import articles__jsToRustMd from './articles__js-to-rust.md.json' assert { type:
 import articles__nextjsAppRouterGuideMd from './articles__nextjs-app-router-guide.md.json' assert { type: 'json' }
 import articles__react_18ConcurrentFeaturesMd from './articles__react-18-concurrent-features.md.json' assert { type: 'json' }
 import articles__typescriptAdvancedTypesMd from './articles__typescript-advanced-types.md.json' assert { type: 'json' }
+import articles__webhookToDeployMd from './articles__webhook-to-deploy.md.json' assert { type: 'json' }
 
-export const allArticles = [articles__jsToRustMd, articles__nextjsAppRouterGuideMd, articles__react_18ConcurrentFeaturesMd, articles__typescriptAdvancedTypesMd]
+export const allArticles = [articles__jsToRustMd, articles__nextjsAppRouterGuideMd, articles__react_18ConcurrentFeaturesMd, articles__typescriptAdvancedTypesMd, articles__webhookToDeployMd]
