@@ -46,7 +46,7 @@
         },
         "url": "/articles/js-to-rust"
       },
-      "documentHash": "1750906278502",
+      "documentHash": "1750949972839",
       "hasWarnings": false,
       "documentTypeName": "Article"
     },
@@ -95,7 +95,7 @@
         },
         "url": "/articles/nextjs-app-router-guide"
       },
-      "documentHash": "1750825318275",
+      "documentHash": "1750949972839",
       "hasWarnings": false,
       "documentTypeName": "Article"
     },
@@ -145,7 +145,7 @@
         },
         "url": "/articles/react-18-concurrent-features"
       },
-      "documentHash": "1750847758051",
+      "documentHash": "1750949972839",
       "hasWarnings": false,
       "documentTypeName": "Article"
     },
@@ -194,287 +194,9 @@
         },
         "url": "/articles/typescript-advanced-types"
       },
-      "documentHash": "1750825356105",
+      "documentHash": "1750949972840",
       "hasWarnings": false,
       "documentTypeName": "Article"
-    },
-    "categories/backend.md": {
-      "document": {
-        "name": "后端开发",
-        "color": "#4ECDC4",
-        "description": "后端技术、API 设计和服务器开发，包括 Node.js、Python、数据库等",
-        "order": 2,
-        "body": {
-          "raw": "\n# 后端开发\n\n后端开发负责服务器端逻辑、数据库管理、API 设计等核心功能。它是 Web 应用的基础设施，为前端提供数据和服务支持。\n\n## 技术栈\n\n### 编程语言\n- **Node.js**: JavaScript 运行时\n- **Python**: 简洁优雅的语言\n- **Java**: 企业级开发语言\n- **Go**: 高性能并发语言\n- **Rust**: 系统级编程语言\n\n### 框架\n- **Express.js**: Node.js 轻量级框架\n- **NestJS**: Node.js 企业级框架\n- **Django**: Python 全功能框架\n- **FastAPI**: Python 现代 API 框架\n- **Spring Boot**: Java 微服务框架\n\n### 数据库\n- **关系型**: PostgreSQL, MySQL\n- **NoSQL**: MongoDB, Redis\n- **图数据库**: Neo4j\n- **时序数据库**: InfluxDB\n\n### 云服务\n- **AWS**: 亚马逊云服务\n- **Google Cloud**: 谷歌云平台\n- **Azure**: 微软云服务\n- **Vercel**: 前端部署平台\n\n## 核心概念\n\n- RESTful API 设计\n- GraphQL 查询语言\n- 微服务架构\n- 容器化部署\n- 缓存策略\n- 安全认证\n",
-          "html": "<h1>后端开发</h1>\n<p>后端开发负责服务器端逻辑、数据库管理、API 设计等核心功能。它是 Web 应用的基础设施，为前端提供数据和服务支持。</p>\n<h2>技术栈</h2>\n<h3>编程语言</h3>\n<ul>\n<li><strong>Node.js</strong>: JavaScript 运行时</li>\n<li><strong>Python</strong>: 简洁优雅的语言</li>\n<li><strong>Java</strong>: 企业级开发语言</li>\n<li><strong>Go</strong>: 高性能并发语言</li>\n<li><strong>Rust</strong>: 系统级编程语言</li>\n</ul>\n<h3>框架</h3>\n<ul>\n<li><strong>Express.js</strong>: Node.js 轻量级框架</li>\n<li><strong>NestJS</strong>: Node.js 企业级框架</li>\n<li><strong>Django</strong>: Python 全功能框架</li>\n<li><strong>FastAPI</strong>: Python 现代 API 框架</li>\n<li><strong>Spring Boot</strong>: Java 微服务框架</li>\n</ul>\n<h3>数据库</h3>\n<ul>\n<li><strong>关系型</strong>: PostgreSQL, MySQL</li>\n<li><strong>NoSQL</strong>: MongoDB, Redis</li>\n<li><strong>图数据库</strong>: Neo4j</li>\n<li><strong>时序数据库</strong>: InfluxDB</li>\n</ul>\n<h3>云服务</h3>\n<ul>\n<li><strong>AWS</strong>: 亚马逊云服务</li>\n<li><strong>Google Cloud</strong>: 谷歌云平台</li>\n<li><strong>Azure</strong>: 微软云服务</li>\n<li><strong>Vercel</strong>: 前端部署平台</li>\n</ul>\n<h2>核心概念</h2>\n<ul>\n<li>RESTful API 设计</li>\n<li>GraphQL 查询语言</li>\n<li>微服务架构</li>\n<li>容器化部署</li>\n<li>缓存策略</li>\n<li>安全认证</li>\n</ul>"
-        },
-        "_id": "categories/backend.md",
-        "_raw": {
-          "sourceFilePath": "categories/backend.md",
-          "sourceFileName": "backend.md",
-          "sourceFileDir": "categories",
-          "contentType": "markdown",
-          "flattenedPath": "categories/backend"
-        },
-        "type": "Category",
-        "slug": "backend"
-      },
-      "documentHash": "1750821435844",
-      "hasWarnings": false,
-      "documentTypeName": "Category"
-    },
-    "categories/frontend.md": {
-      "document": {
-        "name": "前端开发",
-        "color": "#FF6B6B",
-        "description": "前端技术、框架和最佳实践，包括 React、Vue、Angular 等现代前端技术栈",
-        "order": 1,
-        "body": {
-          "raw": "\n# 前端开发\n\n前端开发是构建用户界面和用户体验的技术领域。随着 Web 技术的快速发展，前端开发已经从简单的页面制作演进为复杂的应用程序开发。\n\n## 技术栈\n\n### 核心技术\n- **HTML**: 网页结构和语义\n- **CSS**: 样式和布局\n- **JavaScript**: 交互和逻辑\n\n### 现代框架\n- **React**: 组件化 UI 库\n- **Vue.js**: 渐进式框架\n- **Angular**: 企业级框架\n- **Svelte**: 编译时优化框架\n\n### 构建工具\n- **Webpack**: 模块打包器\n- **Vite**: 快速构建工具\n- **Rollup**: ES 模块打包器\n\n### CSS 框架\n- **Tailwind CSS**: 原子化 CSS 框架\n- **Bootstrap**: 响应式 CSS 框架\n- **Styled Components**: CSS-in-JS 解决方案\n\n## 发展趋势\n\n- 组件化开发\n- 服务端渲染 (SSR)\n- 静态站点生成 (SSG)\n- 微前端架构\n- Web Components\n- Progressive Web Apps (PWA)\n",
-          "html": "<h1>前端开发</h1>\n<p>前端开发是构建用户界面和用户体验的技术领域。随着 Web 技术的快速发展，前端开发已经从简单的页面制作演进为复杂的应用程序开发。</p>\n<h2>技术栈</h2>\n<h3>核心技术</h3>\n<ul>\n<li><strong>HTML</strong>: 网页结构和语义</li>\n<li><strong>CSS</strong>: 样式和布局</li>\n<li><strong>JavaScript</strong>: 交互和逻辑</li>\n</ul>\n<h3>现代框架</h3>\n<ul>\n<li><strong>React</strong>: 组件化 UI 库</li>\n<li><strong>Vue.js</strong>: 渐进式框架</li>\n<li><strong>Angular</strong>: 企业级框架</li>\n<li><strong>Svelte</strong>: 编译时优化框架</li>\n</ul>\n<h3>构建工具</h3>\n<ul>\n<li><strong>Webpack</strong>: 模块打包器</li>\n<li><strong>Vite</strong>: 快速构建工具</li>\n<li><strong>Rollup</strong>: ES 模块打包器</li>\n</ul>\n<h3>CSS 框架</h3>\n<ul>\n<li><strong>Tailwind CSS</strong>: 原子化 CSS 框架</li>\n<li><strong>Bootstrap</strong>: 响应式 CSS 框架</li>\n<li><strong>Styled Components</strong>: CSS-in-JS 解决方案</li>\n</ul>\n<h2>发展趋势</h2>\n<ul>\n<li>组件化开发</li>\n<li>服务端渲染 (SSR)</li>\n<li>静态站点生成 (SSG)</li>\n<li>微前端架构</li>\n<li>Web Components</li>\n<li>Progressive Web Apps (PWA)</li>\n</ul>"
-        },
-        "_id": "categories/frontend.md",
-        "_raw": {
-          "sourceFilePath": "categories/frontend.md",
-          "sourceFileName": "frontend.md",
-          "sourceFileDir": "categories",
-          "contentType": "markdown",
-          "flattenedPath": "categories/frontend"
-        },
-        "type": "Category",
-        "slug": "frontend"
-      },
-      "documentHash": "1750821424206",
-      "hasWarnings": false,
-      "documentTypeName": "Category"
-    },
-    "categories/fullstack.md": {
-      "document": {
-        "name": "全栈开发",
-        "color": "#45B7D1",
-        "description": "全栈项目和技术栈整合，包括前后端协作、架构设计等",
-        "order": 3,
-        "body": {
-          "raw": "\n# 全栈开发\n\n全栈开发是指掌握前端和后端技术，能够独立完成整个 Web 应用开发的能力。全栈开发者需要了解从用户界面到数据库的整个技术栈。\n\n## 技术栈组合\n\n### MEAN/MERN 栈\n- **MongoDB**: NoSQL 数据库\n- **Express.js**: Node.js Web 框架\n- **Angular/React**: 前端框架\n- **Node.js**: JavaScript 运行时\n\n### JAMstack\n- **JavaScript**: 动态功能\n- **APIs**: 后端服务\n- **Markup**: 预构建标记\n\n### T3 栈\n- **Next.js**: 全栈 React 框架\n- **TypeScript**: 类型安全\n- **tRPC**: 端到端类型安全 API\n- **Prisma**: 数据库 ORM\n- **Tailwind CSS**: 样式框架\n\n## 核心技能\n\n- 前端开发 (HTML, CSS, JavaScript)\n- 后端开发 (API 设计, 数据库)\n- DevOps (部署, 监控, CI/CD)\n- 项目管理和架构设计\n\n## 发展趋势\n\n- 无服务器架构 (Serverless)\n- 微服务架构\n- 容器化部署\n- 云原生开发\n- 低代码/无代码平台\n",
-          "html": "<h1>全栈开发</h1>\n<p>全栈开发是指掌握前端和后端技术，能够独立完成整个 Web 应用开发的能力。全栈开发者需要了解从用户界面到数据库的整个技术栈。</p>\n<h2>技术栈组合</h2>\n<h3>MEAN/MERN 栈</h3>\n<ul>\n<li><strong>MongoDB</strong>: NoSQL 数据库</li>\n<li><strong>Express.js</strong>: Node.js Web 框架</li>\n<li><strong>Angular/React</strong>: 前端框架</li>\n<li><strong>Node.js</strong>: JavaScript 运行时</li>\n</ul>\n<h3>JAMstack</h3>\n<ul>\n<li><strong>JavaScript</strong>: 动态功能</li>\n<li><strong>APIs</strong>: 后端服务</li>\n<li><strong>Markup</strong>: 预构建标记</li>\n</ul>\n<h3>T3 栈</h3>\n<ul>\n<li><strong>Next.js</strong>: 全栈 React 框架</li>\n<li><strong>TypeScript</strong>: 类型安全</li>\n<li><strong>tRPC</strong>: 端到端类型安全 API</li>\n<li><strong>Prisma</strong>: 数据库 ORM</li>\n<li><strong>Tailwind CSS</strong>: 样式框架</li>\n</ul>\n<h2>核心技能</h2>\n<ul>\n<li>前端开发 (HTML, CSS, JavaScript)</li>\n<li>后端开发 (API 设计, 数据库)</li>\n<li>DevOps (部署, 监控, CI/CD)</li>\n<li>项目管理和架构设计</li>\n</ul>\n<h2>发展趋势</h2>\n<ul>\n<li>无服务器架构 (Serverless)</li>\n<li>微服务架构</li>\n<li>容器化部署</li>\n<li>云原生开发</li>\n<li>低代码/无代码平台</li>\n</ul>"
-        },
-        "_id": "categories/fullstack.md",
-        "_raw": {
-          "sourceFilePath": "categories/fullstack.md",
-          "sourceFileName": "fullstack.md",
-          "sourceFileDir": "categories",
-          "contentType": "markdown",
-          "flattenedPath": "categories/fullstack"
-        },
-        "type": "Category",
-        "slug": "fullstack"
-      },
-      "documentHash": "1750822110648",
-      "hasWarnings": false,
-      "documentTypeName": "Category"
-    },
-    "authors/li-lingfeng.md": {
-      "document": {
-        "name": "李凌峰",
-        "avatar": "/avatars/li-lingfeng.jpg",
-        "bio": "前端开发工程师，6年工作经验，专注于React、Vue等现代前端技术栈。擅长微前端、性能优化、组件库建设。",
-        "email": "781650249@qq.com",
-        "website": "https://www.llfzxx.com",
-        "github": "llfzxx",
-        "twitter": "llfzxx_dev",
-        "linkedin": "li-lingfeng",
-        "body": {
-          "raw": "\n# 关于李凌峰\n\n我是一名充满激情的前端开发工程师，拥有 6 年的 Web 开发经验。我专注于：\n\n- **前端框架**: React, Vue, TypeScript, UniApp\n- **构建工具**: Webpack, Vite, pnpm + Lerna\n- **微前端**: QianKun.js微前端架构\n- **可视化**: Echarts, Antv, Canvas绘制\n- **性能优化**: SSR/SSG, ServiceWorker, CDN加速\n- **桌面应用**: Electron (3年+经验)\n\n## 技术理念\n\n我相信技术应该服务于业务，在当前业务环境与技术环境下发现痛点，并沉淀出完整的技术产品解决方案。我致力于：\n\n- 编写高质量、可维护的代码\n- 追求最佳的用户体验和性能优化\n- 持续学习新技术，保持技术敏感度\n- 分享知识，推动团队内部技术分享\n- 业务整合降本提效\n\n## 联系方式\n\n如果你想与我交流技术问题或合作机会，欢迎通过以下方式联系我：\n\n- 📧 邮箱: 781650249@qq.com\n- 🌐 个人网站: [www.llfzxx.com](https://www.llfzxx.com)\n- 🐙 GitHub: [@llfzxx](https://github.com/llfzxx)\n- 🐦 Twitter: [@llfzxx_dev](https://twitter.com/llfzxx_dev)\n- 💼 LinkedIn: [李凌峰](https://linkedin.com/in/li-lingfeng)\n- 📱 电话: 17389867465\n",
-          "html": "<h1>关于李凌峰</h1>\n<p>我是一名充满激情的前端开发工程师，拥有 6 年的 Web 开发经验。我专注于：</p>\n<ul>\n<li><strong>前端框架</strong>: React, Vue, TypeScript, UniApp</li>\n<li><strong>构建工具</strong>: Webpack, Vite, pnpm + Lerna</li>\n<li><strong>微前端</strong>: QianKun.js微前端架构</li>\n<li><strong>可视化</strong>: Echarts, Antv, Canvas绘制</li>\n<li><strong>性能优化</strong>: SSR/SSG, ServiceWorker, CDN加速</li>\n<li><strong>桌面应用</strong>: Electron (3年+经验)</li>\n</ul>\n<h2>技术理念</h2>\n<p>我相信技术应该服务于业务，在当前业务环境与技术环境下发现痛点，并沉淀出完整的技术产品解决方案。我致力于：</p>\n<ul>\n<li>编写高质量、可维护的代码</li>\n<li>追求最佳的用户体验和性能优化</li>\n<li>持续学习新技术，保持技术敏感度</li>\n<li>分享知识，推动团队内部技术分享</li>\n<li>业务整合降本提效</li>\n</ul>\n<h2>联系方式</h2>\n<p>如果你想与我交流技术问题或合作机会，欢迎通过以下方式联系我：</p>\n<ul>\n<li>📧 邮箱: 781650249@qq.com</li>\n<li>🌐 个人网站: <a href=\"https://www.llfzxx.com\">www.llfzxx.com</a></li>\n<li>🐙 GitHub: <a href=\"https://github.com/llfzxx\">@llfzxx</a></li>\n<li>🐦 Twitter: <a href=\"https://twitter.com/llfzxx_dev\">@llfzxx_dev</a></li>\n<li>💼 LinkedIn: <a href=\"https://linkedin.com/in/li-lingfeng\">李凌峰</a></li>\n<li>📱 电话: 17389867465</li>\n</ul>"
-        },
-        "_id": "authors/li-lingfeng.md",
-        "_raw": {
-          "sourceFilePath": "authors/li-lingfeng.md",
-          "sourceFileName": "li-lingfeng.md",
-          "sourceFileDir": "authors",
-          "contentType": "markdown",
-          "flattenedPath": "authors/li-lingfeng"
-        },
-        "type": "Author",
-        "slug": "li-lingfeng"
-      },
-      "documentHash": "1750825277623",
-      "hasWarnings": false,
-      "documentTypeName": "Author"
-    },
-    "pages/about.md": {
-      "document": {
-        "title": "关于我",
-        "description": "了解我的技术背景、工作经历和个人项目",
-        "lastUpdated": "2024-12-25T00:00:00.000Z",
-        "layout": "about",
-        "seoTitle": "关于我 - 李凌峰的个人简介",
-        "seoDescription": "前端开发工程师李凌峰的个人简介，包括技术背景、工作经历和项目经验",
-        "seoKeywords": [
-          "李凌峰",
-          "前端开发",
-          "React",
-          "Vue",
-          "个人简介"
-        ],
-        "body": {
-          "raw": "\n# 关于我\n\n你好！我是**李凌峰**，一名拥有6年工作经验的前端开发工程师。我专注于前端技术栈的深度研究与实践，在多个领域都有丰富的项目经验。\n\n## 个人信息\n\n- **姓名**: 李凌峰\n- **性别**: 男\n- **年龄**: 29岁\n- **联系方式**: 17389867465 | 781650249@qq.com\n- **工作经验**: 6年\n- **求职意向**: 前端开发工程师\n- **期望城市**: 上海\n\n## 个人优势\n\n我在前端开发领域拥有全面的技术能力和丰富的项目经验：\n\n1. **框架精通**: 熟练掌握前端流行框架，具备Vue、React从0-1搭建项目落地到上线的实战经验\n2. **跨端开发**: 有移动端H5、微信小程序开发能力，拥有项目实操及从0到上线的完整经验\n3. **管理后台**: 多年管理后台及中台方向经验、具备业务整合降本提效的丰富经验\n4. **桌面应用**: Electron端经验丰富，具备3年+人工智能行业经验\n5. **数据可视化**: 具备数据大屏、echarts、canvas绘制开发能力，有2年+可视化项目实践经验\n6. **工程化**: 熟练使用Webpack、Vite等构建打包工具，对前端工程化有过深入了解及实践\n7. **性能优化**: 对浏览器渲染原理、页面性能优化、用户体验有过深入了解及实践\n8. **视频技术**: 理解常见视频封装、编码格式，能根据应用场景搭建流畅的视频播放体系\n9. **网络基础**: 了解 HTTP/HTTPS/TCP 掌握计算机网络基础，了解微前端，具备微前端(qiankun)项目拆分实战经验\n10. **技术产品**: 擅长在当前业务环境与技术环境下，发现痛点，并且沉淀出完整的技术产品解决方案\n11. **团队协作**: 喜欢分享，推动团队内部技术分享；工作认真负责注重效率，曾多次获得年度优秀员工\n\n## 技术栈\n\n### 前端框架\n- **React**: React + TypeScript + React-Redux + Antv + QianKun.js\n- **Vue**: Vue + Vuex + Element UI + Echarts\n- **跨端开发**: UniApp + Vue + Vuex + Uview + Ucharts\n\n### 构建工具与工程化\n- **构建工具**: Webpack (4.x → 5.x升级经验)、Vite\n- **包管理**: pnpm + Lerna (Monorepo架构)\n- **代码质量**: Prettier、Stylelint、ESLint、Husky、lint-staged\n\n### 移动端与跨端\n- **小程序**: 微信小程序开发\n- **移动应用**: UniApp开发Android和iOS应用\n- **H5开发**: 移动端H5页面开发\n\n### 可视化与图表\n- **图表库**: Echarts、Antv\n- **Canvas**: Canvas绘制、水印、电子签名\n- **地图**: LeafLet地图开发\n\n### 微前端与架构\n- **微前端**: QianKun.js微前端架构\n- **组件库**: 基于Ant Design构建内部组件库\n- **低代码**: React + Canvas + React-dnd页面设计器\n\n### 性能优化与监控\n- **性能优化**: ServiceWorker、代码压缩、CDN加速、按需加载\n- **错误监控**: Sentry.js错误监控、埋点SDK\n- **SEO优化**: SSR/SSG、结构化数据、多语言站点地图\n\n### 其他技术\n- **桌面应用**: Electron (3年+经验)\n- **视频技术**: 视频封装、编码格式、播放体系\n- **网络协议**: HTTP/HTTPS/TCP\n- **原生集成**: iOS/Android SDK集成、JSBridge通信\n\n## 工作经历\n\n### 前端开发工程师 | 上海甄云信息科技有限公司\n**2021.05 - 至今**\n\n在这家专注于提供国内采购数字化管理平台的C轮公司工作，技术规模200+人，前端团队40+人。\n\n**主要职责:**\n- 负责二开埋点库设计，i18 SDK、sentry 接入性能优化等工作\n- 参与一站式采购数字化管理平台(C端)的开发与维护\n- 负责组件库建设，基于antd搭建内部通用组件库\n- 负责bincial官网的从0到1搭建和SEO优化\n\n**技术成就:**\n- 采用 Monorepo 单体仓库架构，基于 pnpm + Lerna + Ant Design 构建高复用性前端组件库\n- 制定组件开发规范，提高组件一致性和可维护性，提升开发效率\n- 官网SEO优化：新增约200条Google索引，2000+条百度索引，收录十几万页面\n- 性能优化：全站SSR向SSG迁移，用户首次进入资源体积减小700KB，Core Web Vitals性能得分从60分提升到85分以上\n\n**主要技术**: React + TypeScript + React-Redux + Antv + QianKun.js\n\n### 前端开发工程师 | 喜相逢集团\n**2019.09 - 2021.05**\n\n在这家致力于提供多元化服务与产品，涵盖出行、餐饮、旅游、文化等多个领域的跨行业上市企业工作。\n\n**主要职责:**\n- 负责租车，金融租赁，库存管理等模块业务开发\n- 参与快呀租车(C端)和喜相逢金融业务系统的开发\n- 负责车辆管理核心功能开发和微前端架构实施\n\n**项目成果:**\n- 使用 QianKun 构建项目，解决多个子应用之间的版本兼容性和样式兼容性问题\n- 开发车辆监控模块，实现地图上精确标记点位和区域划分功能\n- 负责webpack版本从4.x升级到5.x，项目打包构建时间从15s降低至6s\n- 整合iOS和Android SDK，实现车架号扫描、电子签名、PDF预览等功能\n\n**主要技术**: React + Dva + Umi + Echarts + LeafLet + QianKun.js, UniApp + Vue + Vuex + Uview + Ucharts\n\n### AI营销平台负责人 | 个人项目\n**2024.10 - 至今**\n\n负责设计并实施多样化的营销场景配置平台，包括行业报告、客户合作案例、AI仿写及产品介绍等功能。\n\n**项目亮点:**\n- 开发客户可自定义模板配置系统，通过大型模型实现中英文文案的自动生成\n- 引入实时预览功能，用户在编辑器中能即时查看文案生成效果\n- 系统支持集成多种互动元素，如话题标签、产品推广、采购需求、活动报名及投票等\n- 实现Markdown编辑器功能，用户可以轻松导出Markdown格式的文案\n- 在移动应用端（app侧）成功部署，获得了显著的营销成效\n\n**主要技术**: React + TypeScript + AI集成\n\n## 教育背景\n\n### 软件工程学士 | 闽江学院\n\n- **专业**: 软件工程\n- **学历**: 本科\n- **主修课程**: 数据结构与算法、计算机网络、数据库系统、软件工程、面向对象程序设计\n\n## 核心项目经历\n\n### 产研SaaS飞搭平台 | 前端开发工程师\n**2023.01 - 2023.12**\n\n这是一个低代码平台，主要有四个部分：权限管理、模型设计、事件处理和页面设计器，我主要负责页面设计器部分的核心开发。\n\n**技术栈**: React + Canvas + Mobx + TypeScript + React-dnd\n\n**核心成就**:\n- 采用React-dnd和React-grid-layout设计并实现一套完整的页面设计器\n- 设计json-schema的结构模式，将组件与属性面板进行解耦\n- 引入json-schema来规范后端难以校验的json数据，解决了渲染引擎在渲染时经常丢失数据的问题\n- 项目成果：目前该平台发布至beta版本，已有14个项目团队试用，分公司甄知、甄汇已正式投入使用，同时该项目已被售卖至陕重汽公司\n\n### 前端异常监控平台 | 负责人\n**2022.06 - 2022.09**\n\n这是一个错误类型收集平台，主要在商城和协同模块使用，我主要负责整个项目的开发与搭建。\n\n**技术栈**: React + Echarts + Mobx\n\n**核心功能**:\n- 利用埋点监控SDK收集错误行为的监控以及脚本错误、DOM操作等关键信息的上报\n- 搭建可视化平台，采用Echarts进行图表展示，设置不同等级的告警信息查看（高中低）\n- 监控特定租户项目中的错误数量，以评估系统的稳定性，大大地提升了用户方对于系统的满意度\n- 将监控数据与员工的绩效考核（KPI）挂钩，实现数据驱动的绩效管理\n\n### 个人博客系统 | 负责人\n**2018.02 - 2024.01**\n\n这是由我个人开发的博客系统，前后端都由自己搭建，主要记录难点和新学的知识点。\n\n**技术栈**: React + Umi + Mobx + Ant Design + Egg + Next.js\n\n**技术亮点**:\n- 使用 Next.js 作为服务端渲染框架，旨在提升博客页面的加载速度，同时优化 SEO\n- 采用 React Hooks 编写组件，相较于传统类组件更加简洁高效\n- 使用 Ant Design 实现了用户界面的交互设计，充分利用按需加载功能，并实现了栅格化布局\n- 后端基于 Egg.js（整合了 Koa）开发，对功能目录进行了合理分层，数据库部分使用 MySQL\n\n## 资格证书\n\n- **CET-6**: 英语六级证书\n\n## 技术文章\n\n我经常在个人博客和技术平台上发表文章：\n\n- 《React 18 并发特性深度解析》\n- 《Next.js App Router 完全指南》\n- 《TypeScript 高级类型实战》\n- 《前端性能优化最佳实践》\n- 《微前端架构实战经验分享》\n\n## 个人特点\n\n- **工作认真负责注重效率**，曾多次获得年度优秀员工\n- **喜欢分享**，推动团队内部技术分享\n- **持续学习**，保持对新技术的敏感度和学习能力\n- **业务导向**，擅长在业务环境下发现痛点并提供技术解决方案\n\n## 联系方式\n\n如果你对我的项目感兴趣，或者想要交流技术问题，欢迎联系我：\n\n- **邮箱**: 781650249@qq.com\n- **个人网站**: [www.llfzxx.com](https://www.llfzxx.com)\n- **GitHub**: [@llfzxx](https://github.com/llfzxx)\n- **Twitter**: [@llfzxx_dev](https://twitter.com/llfzxx_dev)\n- **LinkedIn**: [李凌峰](https://linkedin.com/in/li-lingfeng)\n- **电话**: 17389867465\n\n## 未来规划\n\n我希望在未来几年内：\n\n- 深入研究前端架构设计和微前端技术\n- 探索 AI 在前端开发中的应用，特别是代码生成和智能化工具\n- 继续在组件库和工程化方向深耕，提升团队开发效率\n- 分享更多技术经验，帮助前端社区发展\n- 在性能优化和用户体验方向成为专家\n\n---\n\n感谢你花时间了解我！如果你有任何问题或想法，随时欢迎与我交流。让我们一起在前端技术的道路上不断前进！\n",
-          "html": "<h1>关于我</h1>\n<p>你好！我是<strong>李凌峰</strong>，一名拥有6年工作经验的前端开发工程师。我专注于前端技术栈的深度研究与实践，在多个领域都有丰富的项目经验。</p>\n<h2>个人信息</h2>\n<ul>\n<li><strong>姓名</strong>: 李凌峰</li>\n<li><strong>性别</strong>: 男</li>\n<li><strong>年龄</strong>: 29岁</li>\n<li><strong>联系方式</strong>: 17389867465 | 781650249@qq.com</li>\n<li><strong>工作经验</strong>: 6年</li>\n<li><strong>求职意向</strong>: 前端开发工程师</li>\n<li><strong>期望城市</strong>: 上海</li>\n</ul>\n<h2>个人优势</h2>\n<p>我在前端开发领域拥有全面的技术能力和丰富的项目经验：</p>\n<ol>\n<li><strong>框架精通</strong>: 熟练掌握前端流行框架，具备Vue、React从0-1搭建项目落地到上线的实战经验</li>\n<li><strong>跨端开发</strong>: 有移动端H5、微信小程序开发能力，拥有项目实操及从0到上线的完整经验</li>\n<li><strong>管理后台</strong>: 多年管理后台及中台方向经验、具备业务整合降本提效的丰富经验</li>\n<li><strong>桌面应用</strong>: Electron端经验丰富，具备3年+人工智能行业经验</li>\n<li><strong>数据可视化</strong>: 具备数据大屏、echarts、canvas绘制开发能力，有2年+可视化项目实践经验</li>\n<li><strong>工程化</strong>: 熟练使用Webpack、Vite等构建打包工具，对前端工程化有过深入了解及实践</li>\n<li><strong>性能优化</strong>: 对浏览器渲染原理、页面性能优化、用户体验有过深入了解及实践</li>\n<li><strong>视频技术</strong>: 理解常见视频封装、编码格式，能根据应用场景搭建流畅的视频播放体系</li>\n<li><strong>网络基础</strong>: 了解 HTTP/HTTPS/TCP 掌握计算机网络基础，了解微前端，具备微前端(qiankun)项目拆分实战经验</li>\n<li><strong>技术产品</strong>: 擅长在当前业务环境与技术环境下，发现痛点，并且沉淀出完整的技术产品解决方案</li>\n<li><strong>团队协作</strong>: 喜欢分享，推动团队内部技术分享；工作认真负责注重效率，曾多次获得年度优秀员工</li>\n</ol>\n<h2>技术栈</h2>\n<h3>前端框架</h3>\n<ul>\n<li><strong>React</strong>: React + TypeScript + React-Redux + Antv + QianKun.js</li>\n<li><strong>Vue</strong>: Vue + Vuex + Element UI + Echarts</li>\n<li><strong>跨端开发</strong>: UniApp + Vue + Vuex + Uview + Ucharts</li>\n</ul>\n<h3>构建工具与工程化</h3>\n<ul>\n<li><strong>构建工具</strong>: Webpack (4.x → 5.x升级经验)、Vite</li>\n<li><strong>包管理</strong>: pnpm + Lerna (Monorepo架构)</li>\n<li><strong>代码质量</strong>: Prettier、Stylelint、ESLint、Husky、lint-staged</li>\n</ul>\n<h3>移动端与跨端</h3>\n<ul>\n<li><strong>小程序</strong>: 微信小程序开发</li>\n<li><strong>移动应用</strong>: UniApp开发Android和iOS应用</li>\n<li><strong>H5开发</strong>: 移动端H5页面开发</li>\n</ul>\n<h3>可视化与图表</h3>\n<ul>\n<li><strong>图表库</strong>: Echarts、Antv</li>\n<li><strong>Canvas</strong>: Canvas绘制、水印、电子签名</li>\n<li><strong>地图</strong>: LeafLet地图开发</li>\n</ul>\n<h3>微前端与架构</h3>\n<ul>\n<li><strong>微前端</strong>: QianKun.js微前端架构</li>\n<li><strong>组件库</strong>: 基于Ant Design构建内部组件库</li>\n<li><strong>低代码</strong>: React + Canvas + React-dnd页面设计器</li>\n</ul>\n<h3>性能优化与监控</h3>\n<ul>\n<li><strong>性能优化</strong>: ServiceWorker、代码压缩、CDN加速、按需加载</li>\n<li><strong>错误监控</strong>: Sentry.js错误监控、埋点SDK</li>\n<li><strong>SEO优化</strong>: SSR/SSG、结构化数据、多语言站点地图</li>\n</ul>\n<h3>其他技术</h3>\n<ul>\n<li><strong>桌面应用</strong>: Electron (3年+经验)</li>\n<li><strong>视频技术</strong>: 视频封装、编码格式、播放体系</li>\n<li><strong>网络协议</strong>: HTTP/HTTPS/TCP</li>\n<li><strong>原生集成</strong>: iOS/Android SDK集成、JSBridge通信</li>\n</ul>\n<h2>工作经历</h2>\n<h3>前端开发工程师 | 上海甄云信息科技有限公司</h3>\n<p><strong>2021.05 - 至今</strong></p>\n<p>在这家专注于提供国内采购数字化管理平台的C轮公司工作，技术规模200+人，前端团队40+人。</p>\n<p><strong>主要职责:</strong></p>\n<ul>\n<li>负责二开埋点库设计，i18 SDK、sentry 接入性能优化等工作</li>\n<li>参与一站式采购数字化管理平台(C端)的开发与维护</li>\n<li>负责组件库建设，基于antd搭建内部通用组件库</li>\n<li>负责bincial官网的从0到1搭建和SEO优化</li>\n</ul>\n<p><strong>技术成就:</strong></p>\n<ul>\n<li>采用 Monorepo 单体仓库架构，基于 pnpm + Lerna + Ant Design 构建高复用性前端组件库</li>\n<li>制定组件开发规范，提高组件一致性和可维护性，提升开发效率</li>\n<li>官网SEO优化：新增约200条Google索引，2000+条百度索引，收录十几万页面</li>\n<li>性能优化：全站SSR向SSG迁移，用户首次进入资源体积减小700KB，Core Web Vitals性能得分从60分提升到85分以上</li>\n</ul>\n<p><strong>主要技术</strong>: React + TypeScript + React-Redux + Antv + QianKun.js</p>\n<h3>前端开发工程师 | 喜相逢集团</h3>\n<p><strong>2019.09 - 2021.05</strong></p>\n<p>在这家致力于提供多元化服务与产品，涵盖出行、餐饮、旅游、文化等多个领域的跨行业上市企业工作。</p>\n<p><strong>主要职责:</strong></p>\n<ul>\n<li>负责租车，金融租赁，库存管理等模块业务开发</li>\n<li>参与快呀租车(C端)和喜相逢金融业务系统的开发</li>\n<li>负责车辆管理核心功能开发和微前端架构实施</li>\n</ul>\n<p><strong>项目成果:</strong></p>\n<ul>\n<li>使用 QianKun 构建项目，解决多个子应用之间的版本兼容性和样式兼容性问题</li>\n<li>开发车辆监控模块，实现地图上精确标记点位和区域划分功能</li>\n<li>负责webpack版本从4.x升级到5.x，项目打包构建时间从15s降低至6s</li>\n<li>整合iOS和Android SDK，实现车架号扫描、电子签名、PDF预览等功能</li>\n</ul>\n<p><strong>主要技术</strong>: React + Dva + Umi + Echarts + LeafLet + QianKun.js, UniApp + Vue + Vuex + Uview + Ucharts</p>\n<h3>AI营销平台负责人 | 个人项目</h3>\n<p><strong>2024.10 - 至今</strong></p>\n<p>负责设计并实施多样化的营销场景配置平台，包括行业报告、客户合作案例、AI仿写及产品介绍等功能。</p>\n<p><strong>项目亮点:</strong></p>\n<ul>\n<li>开发客户可自定义模板配置系统，通过大型模型实现中英文文案的自动生成</li>\n<li>引入实时预览功能，用户在编辑器中能即时查看文案生成效果</li>\n<li>系统支持集成多种互动元素，如话题标签、产品推广、采购需求、活动报名及投票等</li>\n<li>实现Markdown编辑器功能，用户可以轻松导出Markdown格式的文案</li>\n<li>在移动应用端（app侧）成功部署，获得了显著的营销成效</li>\n</ul>\n<p><strong>主要技术</strong>: React + TypeScript + AI集成</p>\n<h2>教育背景</h2>\n<h3>软件工程学士 | 闽江学院</h3>\n<ul>\n<li><strong>专业</strong>: 软件工程</li>\n<li><strong>学历</strong>: 本科</li>\n<li><strong>主修课程</strong>: 数据结构与算法、计算机网络、数据库系统、软件工程、面向对象程序设计</li>\n</ul>\n<h2>核心项目经历</h2>\n<h3>产研SaaS飞搭平台 | 前端开发工程师</h3>\n<p><strong>2023.01 - 2023.12</strong></p>\n<p>这是一个低代码平台，主要有四个部分：权限管理、模型设计、事件处理和页面设计器，我主要负责页面设计器部分的核心开发。</p>\n<p><strong>技术栈</strong>: React + Canvas + Mobx + TypeScript + React-dnd</p>\n<p><strong>核心成就</strong>:</p>\n<ul>\n<li>采用React-dnd和React-grid-layout设计并实现一套完整的页面设计器</li>\n<li>设计json-schema的结构模式，将组件与属性面板进行解耦</li>\n<li>引入json-schema来规范后端难以校验的json数据，解决了渲染引擎在渲染时经常丢失数据的问题</li>\n<li>项目成果：目前该平台发布至beta版本，已有14个项目团队试用，分公司甄知、甄汇已正式投入使用，同时该项目已被售卖至陕重汽公司</li>\n</ul>\n<h3>前端异常监控平台 | 负责人</h3>\n<p><strong>2022.06 - 2022.09</strong></p>\n<p>这是一个错误类型收集平台，主要在商城和协同模块使用，我主要负责整个项目的开发与搭建。</p>\n<p><strong>技术栈</strong>: React + Echarts + Mobx</p>\n<p><strong>核心功能</strong>:</p>\n<ul>\n<li>利用埋点监控SDK收集错误行为的监控以及脚本错误、DOM操作等关键信息的上报</li>\n<li>搭建可视化平台，采用Echarts进行图表展示，设置不同等级的告警信息查看（高中低）</li>\n<li>监控特定租户项目中的错误数量，以评估系统的稳定性，大大地提升了用户方对于系统的满意度</li>\n<li>将监控数据与员工的绩效考核（KPI）挂钩，实现数据驱动的绩效管理</li>\n</ul>\n<h3>个人博客系统 | 负责人</h3>\n<p><strong>2018.02 - 2024.01</strong></p>\n<p>这是由我个人开发的博客系统，前后端都由自己搭建，主要记录难点和新学的知识点。</p>\n<p><strong>技术栈</strong>: React + Umi + Mobx + Ant Design + Egg + Next.js</p>\n<p><strong>技术亮点</strong>:</p>\n<ul>\n<li>使用 Next.js 作为服务端渲染框架，旨在提升博客页面的加载速度，同时优化 SEO</li>\n<li>采用 React Hooks 编写组件，相较于传统类组件更加简洁高效</li>\n<li>使用 Ant Design 实现了用户界面的交互设计，充分利用按需加载功能，并实现了栅格化布局</li>\n<li>后端基于 Egg.js（整合了 Koa）开发，对功能目录进行了合理分层，数据库部分使用 MySQL</li>\n</ul>\n<h2>资格证书</h2>\n<ul>\n<li><strong>CET-6</strong>: 英语六级证书</li>\n</ul>\n<h2>技术文章</h2>\n<p>我经常在个人博客和技术平台上发表文章：</p>\n<ul>\n<li>《React 18 并发特性深度解析》</li>\n<li>《Next.js App Router 完全指南》</li>\n<li>《TypeScript 高级类型实战》</li>\n<li>《前端性能优化最佳实践》</li>\n<li>《微前端架构实战经验分享》</li>\n</ul>\n<h2>个人特点</h2>\n<ul>\n<li><strong>工作认真负责注重效率</strong>，曾多次获得年度优秀员工</li>\n<li><strong>喜欢分享</strong>，推动团队内部技术分享</li>\n<li><strong>持续学习</strong>，保持对新技术的敏感度和学习能力</li>\n<li><strong>业务导向</strong>，擅长在业务环境下发现痛点并提供技术解决方案</li>\n</ul>\n<h2>联系方式</h2>\n<p>如果你对我的项目感兴趣，或者想要交流技术问题，欢迎联系我：</p>\n<ul>\n<li><strong>邮箱</strong>: 781650249@qq.com</li>\n<li><strong>个人网站</strong>: <a href=\"https://www.llfzxx.com\">www.llfzxx.com</a></li>\n<li><strong>GitHub</strong>: <a href=\"https://github.com/llfzxx\">@llfzxx</a></li>\n<li><strong>Twitter</strong>: <a href=\"https://twitter.com/llfzxx_dev\">@llfzxx_dev</a></li>\n<li><strong>LinkedIn</strong>: <a href=\"https://linkedin.com/in/li-lingfeng\">李凌峰</a></li>\n<li><strong>电话</strong>: 17389867465</li>\n</ul>\n<h2>未来规划</h2>\n<p>我希望在未来几年内：</p>\n<ul>\n<li>深入研究前端架构设计和微前端技术</li>\n<li>探索 AI 在前端开发中的应用，特别是代码生成和智能化工具</li>\n<li>继续在组件库和工程化方向深耕，提升团队开发效率</li>\n<li>分享更多技术经验，帮助前端社区发展</li>\n<li>在性能优化和用户体验方向成为专家</li>\n</ul>\n<hr>\n<p>感谢你花时间了解我！如果你有任何问题或想法，随时欢迎与我交流。让我们一起在前端技术的道路上不断前进！</p>"
-        },
-        "_id": "pages/about.md",
-        "_raw": {
-          "sourceFilePath": "pages/about.md",
-          "sourceFileName": "about.md",
-          "sourceFileDir": "pages",
-          "contentType": "markdown",
-          "flattenedPath": "pages/about"
-        },
-        "type": "Page",
-        "slug": "about",
-        "url": "/about"
-      },
-      "documentHash": "1750825593271",
-      "hasWarnings": false,
-      "documentTypeName": "Page"
-    },
-    "projects/tech-blog.md": {
-      "document": {
-        "title": "个人技术博客",
-        "description": "使用 Next.js 和 Contentlayer 构建的现代化技术博客，支持 Markdown 写作、代码高亮、标签分类等功能",
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "Contentlayer",
-          "MDX",
-          "Vercel"
-        ],
-        "githubUrl": "https://github.com/zhangsan/tech-blog",
-        "liveUrl": "https://zhangsan.dev",
-        "imageUrl": "/images/projects/tech-blog.jpg",
-        "featured": true,
-        "startDate": "2023-10-01T00:00:00.000Z",
-        "endDate": "2024-01-15T00:00:00.000Z",
-        "status": "completed",
-        "body": {
-          "raw": "\n# 个人技术博客\n\n这是我的个人技术博客项目，用于分享学习心得、技术文章和项目经验。项目采用现代化的技术栈，注重性能、SEO 和用户体验。\n\n## 项目背景\n\n作为一名开发者，我一直想要一个属于自己的技术博客来记录学习过程和分享技术心得。市面上虽然有很多博客平台，但都有各自的限制。因此，我决定从零开始构建一个完全符合自己需求的技术博客。\n\n## 技术选型\n\n### 前端框架\n- **Next.js 14**: 选择 Next.js 是因为它提供了出色的 SSR/SSG 支持，对 SEO 友好\n- **App Router**: 使用最新的 App Router 来获得更好的开发体验\n- **TypeScript**: 提供类型安全，减少运行时错误\n\n### 内容管理\n- **Contentlayer**: 将 Markdown 文件转换为类型安全的数据\n- **MDX**: 支持在 Markdown 中使用 React 组件\n- **Gray Matter**: 解析 Frontmatter 元数据\n\n### 样式系统\n- **Tailwind CSS**: 快速构建响应式 UI\n- **Headless UI**: 无样式的可访问组件\n- **Lucide Icons**: 现代化的图标库\n\n### 部署和托管\n- **Vercel**: 零配置部署，完美支持 Next.js\n- **GitHub**: 代码托管和版本控制\n\n## 核心功能\n\n### 1. 文章管理系统\n- 支持 Markdown 和 MDX 格式\n- 自动生成文章摘要和阅读时间\n- 标签和分类系统\n- 文章搜索和筛选\n\n### 2. 响应式设计\n- 移动端优先的设计理念\n- 适配各种屏幕尺寸\n- 暗色模式支持\n\n### 3. SEO 优化\n- 自动生成 sitemap\n- 结构化数据标记\n- Open Graph 和 Twitter Card 支持\n- 页面性能优化\n\n### 4. 代码高亮\n- 支持多种编程语言\n- 自定义主题\n- 代码复制功能\n- 行号显示\n\n## 项目架构\n\n```\ntech-blog/\n├── app/                    # Next.js App Router\n│   ├── (blog)/            # 博客路由组\n│   │   ├── articles/      # 文章页面\n│   │   ├── tags/          # 标签页面\n│   │   └── categories/    # 分类页面\n│   ├── components/        # React 组件\n│   └── globals.css        # 全局样式\n├── content/               # Markdown 内容\n│   ├── articles/          # 文章\n│   ├── pages/             # 页面\n│   └── authors/           # 作者信息\n├── lib/                   # 工具函数\n├── public/                # 静态资源\n└── contentlayer.config.ts # Contentlayer 配置\n```\n\n## 开发过程\n\n### 第一阶段：基础架构 (2023.10 - 2023.11)\n- 搭建 Next.js 项目基础结构\n- 配置 Contentlayer 和 MDX\n- 实现基本的文章展示功能\n- 设计响应式布局\n\n### 第二阶段：功能完善 (2023.11 - 2023.12)\n- 实现标签和分类系统\n- 添加搜索和筛选功能\n- 优化 SEO 和性能\n- 添加代码高亮和复制功能\n\n### 第三阶段：用户体验优化 (2023.12 - 2024.01)\n- 实现暗色模式\n- 添加阅读进度条\n- 优化移动端体验\n- 添加评论系统集成\n\n## 技术亮点\n\n### 1. 类型安全的内容管理\n使用 Contentlayer 将 Markdown 文件转换为 TypeScript 类型：\n\n```typescript\nexport const Article = defineDocumentType(() => ({\n  name: 'Article',\n  filePathPattern: `articles/**/*.md`,\n  contentType: 'markdown',\n  fields: {\n    title: { type: 'string', required: true },\n    excerpt: { type: 'string', required: true },\n    publishedAt: { type: 'date', required: true },\n    tags: { type: 'list', of: { type: 'string' } },\n  },\n  computedFields: {\n    slug: {\n      type: 'string',\n      resolve: (doc) => doc._raw.sourceFileName.replace(/\\.md$/, ''),\n    },\n    readingTime: {\n      type: 'json',\n      resolve: (doc) => readingTime(doc.body.raw),\n    },\n  },\n}))\n```\n\n### 2. 性能优化\n- 使用 Next.js 的 Image 组件优化图片加载\n- 实现代码分割和懒加载\n- 静态生成 (SSG) 提升页面加载速度\n- 使用 ISR (Incremental Static Regeneration) 更新内容\n\n### 3. 可访问性\n- 语义化 HTML 结构\n- 键盘导航支持\n- 屏幕阅读器友好\n- 颜色对比度优化\n\n## 性能指标\n\n通过 Lighthouse 测试，网站在各项指标上都达到了优秀水平：\n\n- **Performance**: 98/100\n- **Accessibility**: 100/100\n- **Best Practices**: 100/100\n- **SEO**: 100/100\n\n## 遇到的挑战\n\n### 1. Contentlayer 版本兼容性\n在项目初期，Contentlayer 与 Next.js 14 存在兼容性问题。通过研究源码和社区讨论，最终找到了解决方案。\n\n### 2. MDX 组件样式\n在 MDX 中使用自定义组件时，样式隔离是一个挑战。通过使用 CSS Modules 和 Tailwind CSS 的组合解决了这个问题。\n\n### 3. 搜索功能实现\n最初考虑使用 Algolia 等第三方搜索服务，但考虑到成本和复杂性，最终选择了客户端搜索的方案。\n\n## 学到的经验\n\n1. **内容优先**: 好的内容是博客成功的关键\n2. **性能重要**: 快速的加载速度直接影响用户体验\n3. **SEO 基础**: 良好的 SEO 实践有助于内容传播\n4. **持续迭代**: 根据用户反馈不断改进产品\n\n## 未来计划\n\n- **评论系统**: 集成 Giscus 或 Utterances\n- **RSS 订阅**: 生成 RSS feed\n- **全文搜索**: 使用 Algolia 或 Elasticsearch\n- **数据分析**: 集成 Google Analytics\n- **多语言支持**: 支持中英文切换\n- **PWA 支持**: 添加离线阅读功能\n\n## 总结\n\n这个技术博客项目不仅是我技术能力的展示，更是我学习和成长的记录。通过构建这个项目，我深入学习了 Next.js、Contentlayer、TypeScript 等技术，也对现代 Web 开发有了更深的理解。\n\n项目的成功不仅在于技术实现，更在于它真正解决了我的需求——拥有一个完全可控、性能优秀、用户体验良好的技术博客平台。\n\n如果你对这个项目感兴趣，欢迎查看源码或与我交流讨论！\n",
-          "html": "<h1>个人技术博客</h1>\n<p>这是我的个人技术博客项目，用于分享学习心得、技术文章和项目经验。项目采用现代化的技术栈，注重性能、SEO 和用户体验。</p>\n<h2>项目背景</h2>\n<p>作为一名开发者，我一直想要一个属于自己的技术博客来记录学习过程和分享技术心得。市面上虽然有很多博客平台，但都有各自的限制。因此，我决定从零开始构建一个完全符合自己需求的技术博客。</p>\n<h2>技术选型</h2>\n<h3>前端框架</h3>\n<ul>\n<li><strong>Next.js 14</strong>: 选择 Next.js 是因为它提供了出色的 SSR/SSG 支持，对 SEO 友好</li>\n<li><strong>App Router</strong>: 使用最新的 App Router 来获得更好的开发体验</li>\n<li><strong>TypeScript</strong>: 提供类型安全，减少运行时错误</li>\n</ul>\n<h3>内容管理</h3>\n<ul>\n<li><strong>Contentlayer</strong>: 将 Markdown 文件转换为类型安全的数据</li>\n<li><strong>MDX</strong>: 支持在 Markdown 中使用 React 组件</li>\n<li><strong>Gray Matter</strong>: 解析 Frontmatter 元数据</li>\n</ul>\n<h3>样式系统</h3>\n<ul>\n<li><strong>Tailwind CSS</strong>: 快速构建响应式 UI</li>\n<li><strong>Headless UI</strong>: 无样式的可访问组件</li>\n<li><strong>Lucide Icons</strong>: 现代化的图标库</li>\n</ul>\n<h3>部署和托管</h3>\n<ul>\n<li><strong>Vercel</strong>: 零配置部署，完美支持 Next.js</li>\n<li><strong>GitHub</strong>: 代码托管和版本控制</li>\n</ul>\n<h2>核心功能</h2>\n<h3>1. 文章管理系统</h3>\n<ul>\n<li>支持 Markdown 和 MDX 格式</li>\n<li>自动生成文章摘要和阅读时间</li>\n<li>标签和分类系统</li>\n<li>文章搜索和筛选</li>\n</ul>\n<h3>2. 响应式设计</h3>\n<ul>\n<li>移动端优先的设计理念</li>\n<li>适配各种屏幕尺寸</li>\n<li>暗色模式支持</li>\n</ul>\n<h3>3. SEO 优化</h3>\n<ul>\n<li>自动生成 sitemap</li>\n<li>结构化数据标记</li>\n<li>Open Graph 和 Twitter Card 支持</li>\n<li>页面性能优化</li>\n</ul>\n<h3>4. 代码高亮</h3>\n<ul>\n<li>支持多种编程语言</li>\n<li>自定义主题</li>\n<li>代码复制功能</li>\n<li>行号显示</li>\n</ul>\n<h2>项目架构</h2>\n<pre><code>tech-blog/\n├── app/                    # Next.js App Router\n│   ├── (blog)/            # 博客路由组\n│   │   ├── articles/      # 文章页面\n│   │   ├── tags/          # 标签页面\n│   │   └── categories/    # 分类页面\n│   ├── components/        # React 组件\n│   └── globals.css        # 全局样式\n├── content/               # Markdown 内容\n│   ├── articles/          # 文章\n│   ├── pages/             # 页面\n│   └── authors/           # 作者信息\n├── lib/                   # 工具函数\n├── public/                # 静态资源\n└── contentlayer.config.ts # Contentlayer 配置\n</code></pre>\n<h2>开发过程</h2>\n<h3>第一阶段：基础架构 (2023.10 - 2023.11)</h3>\n<ul>\n<li>搭建 Next.js 项目基础结构</li>\n<li>配置 Contentlayer 和 MDX</li>\n<li>实现基本的文章展示功能</li>\n<li>设计响应式布局</li>\n</ul>\n<h3>第二阶段：功能完善 (2023.11 - 2023.12)</h3>\n<ul>\n<li>实现标签和分类系统</li>\n<li>添加搜索和筛选功能</li>\n<li>优化 SEO 和性能</li>\n<li>添加代码高亮和复制功能</li>\n</ul>\n<h3>第三阶段：用户体验优化 (2023.12 - 2024.01)</h3>\n<ul>\n<li>实现暗色模式</li>\n<li>添加阅读进度条</li>\n<li>优化移动端体验</li>\n<li>添加评论系统集成</li>\n</ul>\n<h2>技术亮点</h2>\n<h3>1. 类型安全的内容管理</h3>\n<p>使用 Contentlayer 将 Markdown 文件转换为 TypeScript 类型：</p>\n<pre><code class=\"language-typescript\">export const Article = defineDocumentType(() => ({\n  name: 'Article',\n  filePathPattern: `articles/**/*.md`,\n  contentType: 'markdown',\n  fields: {\n    title: { type: 'string', required: true },\n    excerpt: { type: 'string', required: true },\n    publishedAt: { type: 'date', required: true },\n    tags: { type: 'list', of: { type: 'string' } },\n  },\n  computedFields: {\n    slug: {\n      type: 'string',\n      resolve: (doc) => doc._raw.sourceFileName.replace(/\\.md$/, ''),\n    },\n    readingTime: {\n      type: 'json',\n      resolve: (doc) => readingTime(doc.body.raw),\n    },\n  },\n}))\n</code></pre>\n<h3>2. 性能优化</h3>\n<ul>\n<li>使用 Next.js 的 Image 组件优化图片加载</li>\n<li>实现代码分割和懒加载</li>\n<li>静态生成 (SSG) 提升页面加载速度</li>\n<li>使用 ISR (Incremental Static Regeneration) 更新内容</li>\n</ul>\n<h3>3. 可访问性</h3>\n<ul>\n<li>语义化 HTML 结构</li>\n<li>键盘导航支持</li>\n<li>屏幕阅读器友好</li>\n<li>颜色对比度优化</li>\n</ul>\n<h2>性能指标</h2>\n<p>通过 Lighthouse 测试，网站在各项指标上都达到了优秀水平：</p>\n<ul>\n<li><strong>Performance</strong>: 98/100</li>\n<li><strong>Accessibility</strong>: 100/100</li>\n<li><strong>Best Practices</strong>: 100/100</li>\n<li><strong>SEO</strong>: 100/100</li>\n</ul>\n<h2>遇到的挑战</h2>\n<h3>1. Contentlayer 版本兼容性</h3>\n<p>在项目初期，Contentlayer 与 Next.js 14 存在兼容性问题。通过研究源码和社区讨论，最终找到了解决方案。</p>\n<h3>2. MDX 组件样式</h3>\n<p>在 MDX 中使用自定义组件时，样式隔离是一个挑战。通过使用 CSS Modules 和 Tailwind CSS 的组合解决了这个问题。</p>\n<h3>3. 搜索功能实现</h3>\n<p>最初考虑使用 Algolia 等第三方搜索服务，但考虑到成本和复杂性，最终选择了客户端搜索的方案。</p>\n<h2>学到的经验</h2>\n<ol>\n<li><strong>内容优先</strong>: 好的内容是博客成功的关键</li>\n<li><strong>性能重要</strong>: 快速的加载速度直接影响用户体验</li>\n<li><strong>SEO 基础</strong>: 良好的 SEO 实践有助于内容传播</li>\n<li><strong>持续迭代</strong>: 根据用户反馈不断改进产品</li>\n</ol>\n<h2>未来计划</h2>\n<ul>\n<li><strong>评论系统</strong>: 集成 Giscus 或 Utterances</li>\n<li><strong>RSS 订阅</strong>: 生成 RSS feed</li>\n<li><strong>全文搜索</strong>: 使用 Algolia 或 Elasticsearch</li>\n<li><strong>数据分析</strong>: 集成 Google Analytics</li>\n<li><strong>多语言支持</strong>: 支持中英文切换</li>\n<li><strong>PWA 支持</strong>: 添加离线阅读功能</li>\n</ul>\n<h2>总结</h2>\n<p>这个技术博客项目不仅是我技术能力的展示，更是我学习和成长的记录。通过构建这个项目，我深入学习了 Next.js、Contentlayer、TypeScript 等技术，也对现代 Web 开发有了更深的理解。</p>\n<p>项目的成功不仅在于技术实现，更在于它真正解决了我的需求——拥有一个完全可控、性能优秀、用户体验良好的技术博客平台。</p>\n<p>如果你对这个项目感兴趣，欢迎查看源码或与我交流讨论！</p>"
-        },
-        "_id": "projects/tech-blog.md",
-        "_raw": {
-          "sourceFilePath": "projects/tech-blog.md",
-          "sourceFileName": "tech-blog.md",
-          "sourceFileDir": "projects",
-          "contentType": "markdown",
-          "flattenedPath": "projects/tech-blog"
-        },
-        "type": "Project",
-        "slug": "tech-blog",
-        "url": "/projects/tech-blog"
-      },
-      "documentHash": "1750821599534",
-      "hasWarnings": false,
-      "documentTypeName": "Project"
-    },
-    "tags/javascript.md": {
-      "document": {
-        "name": "JavaScript",
-        "color": "#F7DF1E",
-        "description": "JavaScript 基础与进阶，包括 ES6+、异步编程、性能优化等",
-        "featured": true,
-        "body": {
-          "raw": "\n# JavaScript\n\nJavaScript 是 Web 开发的核心语言，从简单的页面交互到复杂的应用程序开发，JavaScript 都发挥着重要作用。\n\n## 语言特性\n\n- **动态类型**: 运行时确定变量类型\n- **原型继承**: 基于原型的面向对象编程\n- **函数式编程**: 支持高阶函数、闭包等特性\n- **异步编程**: Promise、async/await 等异步处理机制\n\n## 现代 JavaScript (ES6+)\n\n- 箭头函数\n- 模板字符串\n- 解构赋值\n- 模块系统\n- 类语法\n- Promise 和 async/await\n\n## 学习资源\n\n- [MDN JavaScript 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)\n- [JavaScript.info](https://zh.javascript.info/)\n- [ES6 入门教程](https://es6.ruanyifeng.com/)\n",
-          "html": "<h1>JavaScript</h1>\n<p>JavaScript 是 Web 开发的核心语言，从简单的页面交互到复杂的应用程序开发，JavaScript 都发挥着重要作用。</p>\n<h2>语言特性</h2>\n<ul>\n<li><strong>动态类型</strong>: 运行时确定变量类型</li>\n<li><strong>原型继承</strong>: 基于原型的面向对象编程</li>\n<li><strong>函数式编程</strong>: 支持高阶函数、闭包等特性</li>\n<li><strong>异步编程</strong>: Promise、async/await 等异步处理机制</li>\n</ul>\n<h2>现代 JavaScript (ES6+)</h2>\n<ul>\n<li>箭头函数</li>\n<li>模板字符串</li>\n<li>解构赋值</li>\n<li>模块系统</li>\n<li>类语法</li>\n<li>Promise 和 async/await</li>\n</ul>\n<h2>学习资源</h2>\n<ul>\n<li><a href=\"https://developer.mozilla.org/zh-CN/docs/Web/JavaScript\">MDN JavaScript 文档</a></li>\n<li><a href=\"https://zh.javascript.info/\">JavaScript.info</a></li>\n<li><a href=\"https://es6.ruanyifeng.com/\">ES6 入门教程</a></li>\n</ul>"
-        },
-        "_id": "tags/javascript.md",
-        "_raw": {
-          "sourceFilePath": "tags/javascript.md",
-          "sourceFileName": "javascript.md",
-          "sourceFileDir": "tags",
-          "contentType": "markdown",
-          "flattenedPath": "tags/javascript"
-        },
-        "type": "Tag",
-        "slug": "javascript"
-      },
-      "documentHash": "1750822096823",
-      "hasWarnings": false,
-      "documentTypeName": "Tag"
-    },
-    "tags/nextjs.md": {
-      "document": {
-        "name": "Next.js",
-        "color": "#000000",
-        "description": "Next.js 框架相关文章，包括 SSR、SSG、App Router 等",
-        "featured": true,
-        "body": {
-          "raw": "\n# Next.js\n\nNext.js 是一个基于 React 的全栈框架，提供了生产级别的功能，如服务端渲染、静态站点生成、API 路由等。\n\n## 主要特性\n\n- **App Router**: 新一代路由系统\n- **服务端渲染 (SSR)**: 提升 SEO 和首屏加载速度\n- **静态站点生成 (SSG)**: 构建时预渲染页面\n- **API 路由**: 内置 API 开发能力\n- **图片优化**: 自动图片优化和懒加载\n\n## 适用场景\n\n- 企业级 Web 应用\n- 电商网站\n- 博客和内容网站\n- 营销页面\n",
-          "html": "<h1>Next.js</h1>\n<p>Next.js 是一个基于 React 的全栈框架，提供了生产级别的功能，如服务端渲染、静态站点生成、API 路由等。</p>\n<h2>主要特性</h2>\n<ul>\n<li><strong>App Router</strong>: 新一代路由系统</li>\n<li><strong>服务端渲染 (SSR)</strong>: 提升 SEO 和首屏加载速度</li>\n<li><strong>静态站点生成 (SSG)</strong>: 构建时预渲染页面</li>\n<li><strong>API 路由</strong>: 内置 API 开发能力</li>\n<li><strong>图片优化</strong>: 自动图片优化和懒加载</li>\n</ul>\n<h2>适用场景</h2>\n<ul>\n<li>企业级 Web 应用</li>\n<li>电商网站</li>\n<li>博客和内容网站</li>\n<li>营销页面</li>\n</ul>"
-        },
-        "_id": "tags/nextjs.md",
-        "_raw": {
-          "sourceFilePath": "tags/nextjs.md",
-          "sourceFileName": "nextjs.md",
-          "sourceFileDir": "tags",
-          "contentType": "markdown",
-          "flattenedPath": "tags/nextjs"
-        },
-        "type": "Tag",
-        "slug": "nextjs"
-      },
-      "documentHash": "1750821398632",
-      "hasWarnings": false,
-      "documentTypeName": "Tag"
-    },
-    "tags/react.md": {
-      "document": {
-        "name": "React",
-        "color": "#61DAFB",
-        "description": "React.js 相关技术文章，包括组件开发、状态管理、性能优化等",
-        "featured": true,
-        "body": {
-          "raw": "\n# React\n\nReact 是由 Facebook 开发的用于构建用户界面的 JavaScript 库。它采用组件化的开发模式，让开发者能够构建可复用、可维护的 UI 组件。\n\n## 核心特性\n\n- **组件化**: 将 UI 拆分为独立、可复用的组件\n- **虚拟 DOM**: 提供高效的 DOM 更新机制\n- **单向数据流**: 数据从父组件流向子组件\n- **JSX**: JavaScript 的语法扩展，让编写组件更直观\n\n## 学习资源\n\n- [React 官方文档](https://react.dev)\n- [React 中文文档](https://zh-hans.react.dev)\n- [React 生态系统](https://github.com/enaqx/awesome-react)\n",
-          "html": "<h1>React</h1>\n<p>React 是由 Facebook 开发的用于构建用户界面的 JavaScript 库。它采用组件化的开发模式，让开发者能够构建可复用、可维护的 UI 组件。</p>\n<h2>核心特性</h2>\n<ul>\n<li><strong>组件化</strong>: 将 UI 拆分为独立、可复用的组件</li>\n<li><strong>虚拟 DOM</strong>: 提供高效的 DOM 更新机制</li>\n<li><strong>单向数据流</strong>: 数据从父组件流向子组件</li>\n<li><strong>JSX</strong>: JavaScript 的语法扩展，让编写组件更直观</li>\n</ul>\n<h2>学习资源</h2>\n<ul>\n<li><a href=\"https://react.dev\">React 官方文档</a></li>\n<li><a href=\"https://zh-hans.react.dev\">React 中文文档</a></li>\n<li><a href=\"https://github.com/enaqx/awesome-react\">React 生态系统</a></li>\n</ul>"
-        },
-        "_id": "tags/react.md",
-        "_raw": {
-          "sourceFilePath": "tags/react.md",
-          "sourceFileName": "react.md",
-          "sourceFileDir": "tags",
-          "contentType": "markdown",
-          "flattenedPath": "tags/react"
-        },
-        "type": "Tag",
-        "slug": "react"
-      },
-      "documentHash": "1750821386416",
-      "hasWarnings": false,
-      "documentTypeName": "Tag"
-    },
-    "tags/typescript.md": {
-      "document": {
-        "name": "TypeScript",
-        "color": "#3178C6",
-        "description": "TypeScript 开发技巧，类型系统，高级类型等",
-        "featured": true,
-        "body": {
-          "raw": "\n# TypeScript\n\nTypeScript 是 JavaScript 的超集，添加了静态类型检查。它能够在开发时发现错误，提高代码质量和开发效率。\n\n## 核心优势\n\n- **静态类型检查**: 编译时发现错误\n- **更好的 IDE 支持**: 智能提示、重构等\n- **渐进式采用**: 可以逐步迁移现有 JavaScript 项目\n- **现代 JavaScript 特性**: 支持最新的 ECMAScript 特性\n\n## 学习路径\n\n1. 基础类型和接口\n2. 泛型和高级类型\n3. 装饰器和元数据\n4. 配置和工具链\n",
-          "html": "<h1>TypeScript</h1>\n<p>TypeScript 是 JavaScript 的超集，添加了静态类型检查。它能够在开发时发现错误，提高代码质量和开发效率。</p>\n<h2>核心优势</h2>\n<ul>\n<li><strong>静态类型检查</strong>: 编译时发现错误</li>\n<li><strong>更好的 IDE 支持</strong>: 智能提示、重构等</li>\n<li><strong>渐进式采用</strong>: 可以逐步迁移现有 JavaScript 项目</li>\n<li><strong>现代 JavaScript 特性</strong>: 支持最新的 ECMAScript 特性</li>\n</ul>\n<h2>学习路径</h2>\n<ol>\n<li>基础类型和接口</li>\n<li>泛型和高级类型</li>\n<li>装饰器和元数据</li>\n<li>配置和工具链</li>\n</ol>"
-        },
-        "_id": "tags/typescript.md",
-        "_raw": {
-          "sourceFilePath": "tags/typescript.md",
-          "sourceFileName": "typescript.md",
-          "sourceFileDir": "tags",
-          "contentType": "markdown",
-          "flattenedPath": "tags/typescript"
-        },
-        "type": "Tag",
-        "slug": "typescript"
-      },
-      "documentHash": "1750821409945",
-      "hasWarnings": false,
-      "documentTypeName": "Tag"
     },
     "articles/webhook-to-deploy.md": {
       "document": {
@@ -524,9 +246,287 @@
         },
         "url": "/articles/webhook-to-deploy"
       },
-      "documentHash": "1750918647273",
+      "documentHash": "1750949972840",
       "hasWarnings": false,
       "documentTypeName": "Article"
+    },
+    "authors/li-lingfeng.md": {
+      "document": {
+        "name": "李凌峰",
+        "avatar": "/avatars/li-lingfeng.jpg",
+        "bio": "前端开发工程师，6年工作经验，专注于React、Vue等现代前端技术栈。擅长微前端、性能优化、组件库建设。",
+        "email": "781650249@qq.com",
+        "website": "https://www.llfzxx.com",
+        "github": "llfzxx",
+        "twitter": "llfzxx_dev",
+        "linkedin": "li-lingfeng",
+        "body": {
+          "raw": "\n# 关于李凌峰\n\n我是一名充满激情的前端开发工程师，拥有 6 年的 Web 开发经验。我专注于：\n\n- **前端框架**: React, Vue, TypeScript, UniApp\n- **构建工具**: Webpack, Vite, pnpm + Lerna\n- **微前端**: QianKun.js微前端架构\n- **可视化**: Echarts, Antv, Canvas绘制\n- **性能优化**: SSR/SSG, ServiceWorker, CDN加速\n- **桌面应用**: Electron (3年+经验)\n\n## 技术理念\n\n我相信技术应该服务于业务，在当前业务环境与技术环境下发现痛点，并沉淀出完整的技术产品解决方案。我致力于：\n\n- 编写高质量、可维护的代码\n- 追求最佳的用户体验和性能优化\n- 持续学习新技术，保持技术敏感度\n- 分享知识，推动团队内部技术分享\n- 业务整合降本提效\n\n## 联系方式\n\n如果你想与我交流技术问题或合作机会，欢迎通过以下方式联系我：\n\n- 📧 邮箱: 781650249@qq.com\n- 🌐 个人网站: [www.llfzxx.com](https://www.llfzxx.com)\n- 🐙 GitHub: [@llfzxx](https://github.com/llfzxx)\n- 🐦 Twitter: [@llfzxx_dev](https://twitter.com/llfzxx_dev)\n- 💼 LinkedIn: [李凌峰](https://linkedin.com/in/li-lingfeng)\n- 📱 电话: 17389867465\n",
+          "html": "<h1>关于李凌峰</h1>\n<p>我是一名充满激情的前端开发工程师，拥有 6 年的 Web 开发经验。我专注于：</p>\n<ul>\n<li><strong>前端框架</strong>: React, Vue, TypeScript, UniApp</li>\n<li><strong>构建工具</strong>: Webpack, Vite, pnpm + Lerna</li>\n<li><strong>微前端</strong>: QianKun.js微前端架构</li>\n<li><strong>可视化</strong>: Echarts, Antv, Canvas绘制</li>\n<li><strong>性能优化</strong>: SSR/SSG, ServiceWorker, CDN加速</li>\n<li><strong>桌面应用</strong>: Electron (3年+经验)</li>\n</ul>\n<h2>技术理念</h2>\n<p>我相信技术应该服务于业务，在当前业务环境与技术环境下发现痛点，并沉淀出完整的技术产品解决方案。我致力于：</p>\n<ul>\n<li>编写高质量、可维护的代码</li>\n<li>追求最佳的用户体验和性能优化</li>\n<li>持续学习新技术，保持技术敏感度</li>\n<li>分享知识，推动团队内部技术分享</li>\n<li>业务整合降本提效</li>\n</ul>\n<h2>联系方式</h2>\n<p>如果你想与我交流技术问题或合作机会，欢迎通过以下方式联系我：</p>\n<ul>\n<li>📧 邮箱: 781650249@qq.com</li>\n<li>🌐 个人网站: <a href=\"https://www.llfzxx.com\">www.llfzxx.com</a></li>\n<li>🐙 GitHub: <a href=\"https://github.com/llfzxx\">@llfzxx</a></li>\n<li>🐦 Twitter: <a href=\"https://twitter.com/llfzxx_dev\">@llfzxx_dev</a></li>\n<li>💼 LinkedIn: <a href=\"https://linkedin.com/in/li-lingfeng\">李凌峰</a></li>\n<li>📱 电话: 17389867465</li>\n</ul>"
+        },
+        "_id": "authors/li-lingfeng.md",
+        "_raw": {
+          "sourceFilePath": "authors/li-lingfeng.md",
+          "sourceFileName": "li-lingfeng.md",
+          "sourceFileDir": "authors",
+          "contentType": "markdown",
+          "flattenedPath": "authors/li-lingfeng"
+        },
+        "type": "Author",
+        "slug": "li-lingfeng"
+      },
+      "documentHash": "1750949972840",
+      "hasWarnings": false,
+      "documentTypeName": "Author"
+    },
+    "projects/tech-blog.md": {
+      "document": {
+        "title": "个人技术博客",
+        "description": "使用 Next.js 和 Contentlayer 构建的现代化技术博客，支持 Markdown 写作、代码高亮、标签分类等功能",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Contentlayer",
+          "MDX",
+          "Vercel"
+        ],
+        "githubUrl": "https://github.com/zhangsan/tech-blog",
+        "liveUrl": "https://zhangsan.dev",
+        "imageUrl": "/images/projects/tech-blog.jpg",
+        "featured": true,
+        "startDate": "2023-10-01T00:00:00.000Z",
+        "endDate": "2024-01-15T00:00:00.000Z",
+        "status": "completed",
+        "body": {
+          "raw": "\n# 个人技术博客\n\n这是我的个人技术博客项目，用于分享学习心得、技术文章和项目经验。项目采用现代化的技术栈，注重性能、SEO 和用户体验。\n\n## 项目背景\n\n作为一名开发者，我一直想要一个属于自己的技术博客来记录学习过程和分享技术心得。市面上虽然有很多博客平台，但都有各自的限制。因此，我决定从零开始构建一个完全符合自己需求的技术博客。\n\n## 技术选型\n\n### 前端框架\n- **Next.js 14**: 选择 Next.js 是因为它提供了出色的 SSR/SSG 支持，对 SEO 友好\n- **App Router**: 使用最新的 App Router 来获得更好的开发体验\n- **TypeScript**: 提供类型安全，减少运行时错误\n\n### 内容管理\n- **Contentlayer**: 将 Markdown 文件转换为类型安全的数据\n- **MDX**: 支持在 Markdown 中使用 React 组件\n- **Gray Matter**: 解析 Frontmatter 元数据\n\n### 样式系统\n- **Tailwind CSS**: 快速构建响应式 UI\n- **Headless UI**: 无样式的可访问组件\n- **Lucide Icons**: 现代化的图标库\n\n### 部署和托管\n- **Vercel**: 零配置部署，完美支持 Next.js\n- **GitHub**: 代码托管和版本控制\n\n## 核心功能\n\n### 1. 文章管理系统\n- 支持 Markdown 和 MDX 格式\n- 自动生成文章摘要和阅读时间\n- 标签和分类系统\n- 文章搜索和筛选\n\n### 2. 响应式设计\n- 移动端优先的设计理念\n- 适配各种屏幕尺寸\n- 暗色模式支持\n\n### 3. SEO 优化\n- 自动生成 sitemap\n- 结构化数据标记\n- Open Graph 和 Twitter Card 支持\n- 页面性能优化\n\n### 4. 代码高亮\n- 支持多种编程语言\n- 自定义主题\n- 代码复制功能\n- 行号显示\n\n## 项目架构\n\n```\ntech-blog/\n├── app/                    # Next.js App Router\n│   ├── (blog)/            # 博客路由组\n│   │   ├── articles/      # 文章页面\n│   │   ├── tags/          # 标签页面\n│   │   └── categories/    # 分类页面\n│   ├── components/        # React 组件\n│   └── globals.css        # 全局样式\n├── content/               # Markdown 内容\n│   ├── articles/          # 文章\n│   ├── pages/             # 页面\n│   └── authors/           # 作者信息\n├── lib/                   # 工具函数\n├── public/                # 静态资源\n└── contentlayer.config.ts # Contentlayer 配置\n```\n\n## 开发过程\n\n### 第一阶段：基础架构 (2023.10 - 2023.11)\n- 搭建 Next.js 项目基础结构\n- 配置 Contentlayer 和 MDX\n- 实现基本的文章展示功能\n- 设计响应式布局\n\n### 第二阶段：功能完善 (2023.11 - 2023.12)\n- 实现标签和分类系统\n- 添加搜索和筛选功能\n- 优化 SEO 和性能\n- 添加代码高亮和复制功能\n\n### 第三阶段：用户体验优化 (2023.12 - 2024.01)\n- 实现暗色模式\n- 添加阅读进度条\n- 优化移动端体验\n- 添加评论系统集成\n\n## 技术亮点\n\n### 1. 类型安全的内容管理\n使用 Contentlayer 将 Markdown 文件转换为 TypeScript 类型：\n\n```typescript\nexport const Article = defineDocumentType(() => ({\n  name: 'Article',\n  filePathPattern: `articles/**/*.md`,\n  contentType: 'markdown',\n  fields: {\n    title: { type: 'string', required: true },\n    excerpt: { type: 'string', required: true },\n    publishedAt: { type: 'date', required: true },\n    tags: { type: 'list', of: { type: 'string' } },\n  },\n  computedFields: {\n    slug: {\n      type: 'string',\n      resolve: (doc) => doc._raw.sourceFileName.replace(/\\.md$/, ''),\n    },\n    readingTime: {\n      type: 'json',\n      resolve: (doc) => readingTime(doc.body.raw),\n    },\n  },\n}))\n```\n\n### 2. 性能优化\n- 使用 Next.js 的 Image 组件优化图片加载\n- 实现代码分割和懒加载\n- 静态生成 (SSG) 提升页面加载速度\n- 使用 ISR (Incremental Static Regeneration) 更新内容\n\n### 3. 可访问性\n- 语义化 HTML 结构\n- 键盘导航支持\n- 屏幕阅读器友好\n- 颜色对比度优化\n\n## 性能指标\n\n通过 Lighthouse 测试，网站在各项指标上都达到了优秀水平：\n\n- **Performance**: 98/100\n- **Accessibility**: 100/100\n- **Best Practices**: 100/100\n- **SEO**: 100/100\n\n## 遇到的挑战\n\n### 1. Contentlayer 版本兼容性\n在项目初期，Contentlayer 与 Next.js 14 存在兼容性问题。通过研究源码和社区讨论，最终找到了解决方案。\n\n### 2. MDX 组件样式\n在 MDX 中使用自定义组件时，样式隔离是一个挑战。通过使用 CSS Modules 和 Tailwind CSS 的组合解决了这个问题。\n\n### 3. 搜索功能实现\n最初考虑使用 Algolia 等第三方搜索服务，但考虑到成本和复杂性，最终选择了客户端搜索的方案。\n\n## 学到的经验\n\n1. **内容优先**: 好的内容是博客成功的关键\n2. **性能重要**: 快速的加载速度直接影响用户体验\n3. **SEO 基础**: 良好的 SEO 实践有助于内容传播\n4. **持续迭代**: 根据用户反馈不断改进产品\n\n## 未来计划\n\n- **评论系统**: 集成 Giscus 或 Utterances\n- **RSS 订阅**: 生成 RSS feed\n- **全文搜索**: 使用 Algolia 或 Elasticsearch\n- **数据分析**: 集成 Google Analytics\n- **多语言支持**: 支持中英文切换\n- **PWA 支持**: 添加离线阅读功能\n\n## 总结\n\n这个技术博客项目不仅是我技术能力的展示，更是我学习和成长的记录。通过构建这个项目，我深入学习了 Next.js、Contentlayer、TypeScript 等技术，也对现代 Web 开发有了更深的理解。\n\n项目的成功不仅在于技术实现，更在于它真正解决了我的需求——拥有一个完全可控、性能优秀、用户体验良好的技术博客平台。\n\n如果你对这个项目感兴趣，欢迎查看源码或与我交流讨论！\n",
+          "html": "<h1>个人技术博客</h1>\n<p>这是我的个人技术博客项目，用于分享学习心得、技术文章和项目经验。项目采用现代化的技术栈，注重性能、SEO 和用户体验。</p>\n<h2>项目背景</h2>\n<p>作为一名开发者，我一直想要一个属于自己的技术博客来记录学习过程和分享技术心得。市面上虽然有很多博客平台，但都有各自的限制。因此，我决定从零开始构建一个完全符合自己需求的技术博客。</p>\n<h2>技术选型</h2>\n<h3>前端框架</h3>\n<ul>\n<li><strong>Next.js 14</strong>: 选择 Next.js 是因为它提供了出色的 SSR/SSG 支持，对 SEO 友好</li>\n<li><strong>App Router</strong>: 使用最新的 App Router 来获得更好的开发体验</li>\n<li><strong>TypeScript</strong>: 提供类型安全，减少运行时错误</li>\n</ul>\n<h3>内容管理</h3>\n<ul>\n<li><strong>Contentlayer</strong>: 将 Markdown 文件转换为类型安全的数据</li>\n<li><strong>MDX</strong>: 支持在 Markdown 中使用 React 组件</li>\n<li><strong>Gray Matter</strong>: 解析 Frontmatter 元数据</li>\n</ul>\n<h3>样式系统</h3>\n<ul>\n<li><strong>Tailwind CSS</strong>: 快速构建响应式 UI</li>\n<li><strong>Headless UI</strong>: 无样式的可访问组件</li>\n<li><strong>Lucide Icons</strong>: 现代化的图标库</li>\n</ul>\n<h3>部署和托管</h3>\n<ul>\n<li><strong>Vercel</strong>: 零配置部署，完美支持 Next.js</li>\n<li><strong>GitHub</strong>: 代码托管和版本控制</li>\n</ul>\n<h2>核心功能</h2>\n<h3>1. 文章管理系统</h3>\n<ul>\n<li>支持 Markdown 和 MDX 格式</li>\n<li>自动生成文章摘要和阅读时间</li>\n<li>标签和分类系统</li>\n<li>文章搜索和筛选</li>\n</ul>\n<h3>2. 响应式设计</h3>\n<ul>\n<li>移动端优先的设计理念</li>\n<li>适配各种屏幕尺寸</li>\n<li>暗色模式支持</li>\n</ul>\n<h3>3. SEO 优化</h3>\n<ul>\n<li>自动生成 sitemap</li>\n<li>结构化数据标记</li>\n<li>Open Graph 和 Twitter Card 支持</li>\n<li>页面性能优化</li>\n</ul>\n<h3>4. 代码高亮</h3>\n<ul>\n<li>支持多种编程语言</li>\n<li>自定义主题</li>\n<li>代码复制功能</li>\n<li>行号显示</li>\n</ul>\n<h2>项目架构</h2>\n<pre><code>tech-blog/\n├── app/                    # Next.js App Router\n│   ├── (blog)/            # 博客路由组\n│   │   ├── articles/      # 文章页面\n│   │   ├── tags/          # 标签页面\n│   │   └── categories/    # 分类页面\n│   ├── components/        # React 组件\n│   └── globals.css        # 全局样式\n├── content/               # Markdown 内容\n│   ├── articles/          # 文章\n│   ├── pages/             # 页面\n│   └── authors/           # 作者信息\n├── lib/                   # 工具函数\n├── public/                # 静态资源\n└── contentlayer.config.ts # Contentlayer 配置\n</code></pre>\n<h2>开发过程</h2>\n<h3>第一阶段：基础架构 (2023.10 - 2023.11)</h3>\n<ul>\n<li>搭建 Next.js 项目基础结构</li>\n<li>配置 Contentlayer 和 MDX</li>\n<li>实现基本的文章展示功能</li>\n<li>设计响应式布局</li>\n</ul>\n<h3>第二阶段：功能完善 (2023.11 - 2023.12)</h3>\n<ul>\n<li>实现标签和分类系统</li>\n<li>添加搜索和筛选功能</li>\n<li>优化 SEO 和性能</li>\n<li>添加代码高亮和复制功能</li>\n</ul>\n<h3>第三阶段：用户体验优化 (2023.12 - 2024.01)</h3>\n<ul>\n<li>实现暗色模式</li>\n<li>添加阅读进度条</li>\n<li>优化移动端体验</li>\n<li>添加评论系统集成</li>\n</ul>\n<h2>技术亮点</h2>\n<h3>1. 类型安全的内容管理</h3>\n<p>使用 Contentlayer 将 Markdown 文件转换为 TypeScript 类型：</p>\n<pre><code class=\"language-typescript\">export const Article = defineDocumentType(() => ({\n  name: 'Article',\n  filePathPattern: `articles/**/*.md`,\n  contentType: 'markdown',\n  fields: {\n    title: { type: 'string', required: true },\n    excerpt: { type: 'string', required: true },\n    publishedAt: { type: 'date', required: true },\n    tags: { type: 'list', of: { type: 'string' } },\n  },\n  computedFields: {\n    slug: {\n      type: 'string',\n      resolve: (doc) => doc._raw.sourceFileName.replace(/\\.md$/, ''),\n    },\n    readingTime: {\n      type: 'json',\n      resolve: (doc) => readingTime(doc.body.raw),\n    },\n  },\n}))\n</code></pre>\n<h3>2. 性能优化</h3>\n<ul>\n<li>使用 Next.js 的 Image 组件优化图片加载</li>\n<li>实现代码分割和懒加载</li>\n<li>静态生成 (SSG) 提升页面加载速度</li>\n<li>使用 ISR (Incremental Static Regeneration) 更新内容</li>\n</ul>\n<h3>3. 可访问性</h3>\n<ul>\n<li>语义化 HTML 结构</li>\n<li>键盘导航支持</li>\n<li>屏幕阅读器友好</li>\n<li>颜色对比度优化</li>\n</ul>\n<h2>性能指标</h2>\n<p>通过 Lighthouse 测试，网站在各项指标上都达到了优秀水平：</p>\n<ul>\n<li><strong>Performance</strong>: 98/100</li>\n<li><strong>Accessibility</strong>: 100/100</li>\n<li><strong>Best Practices</strong>: 100/100</li>\n<li><strong>SEO</strong>: 100/100</li>\n</ul>\n<h2>遇到的挑战</h2>\n<h3>1. Contentlayer 版本兼容性</h3>\n<p>在项目初期，Contentlayer 与 Next.js 14 存在兼容性问题。通过研究源码和社区讨论，最终找到了解决方案。</p>\n<h3>2. MDX 组件样式</h3>\n<p>在 MDX 中使用自定义组件时，样式隔离是一个挑战。通过使用 CSS Modules 和 Tailwind CSS 的组合解决了这个问题。</p>\n<h3>3. 搜索功能实现</h3>\n<p>最初考虑使用 Algolia 等第三方搜索服务，但考虑到成本和复杂性，最终选择了客户端搜索的方案。</p>\n<h2>学到的经验</h2>\n<ol>\n<li><strong>内容优先</strong>: 好的内容是博客成功的关键</li>\n<li><strong>性能重要</strong>: 快速的加载速度直接影响用户体验</li>\n<li><strong>SEO 基础</strong>: 良好的 SEO 实践有助于内容传播</li>\n<li><strong>持续迭代</strong>: 根据用户反馈不断改进产品</li>\n</ol>\n<h2>未来计划</h2>\n<ul>\n<li><strong>评论系统</strong>: 集成 Giscus 或 Utterances</li>\n<li><strong>RSS 订阅</strong>: 生成 RSS feed</li>\n<li><strong>全文搜索</strong>: 使用 Algolia 或 Elasticsearch</li>\n<li><strong>数据分析</strong>: 集成 Google Analytics</li>\n<li><strong>多语言支持</strong>: 支持中英文切换</li>\n<li><strong>PWA 支持</strong>: 添加离线阅读功能</li>\n</ul>\n<h2>总结</h2>\n<p>这个技术博客项目不仅是我技术能力的展示，更是我学习和成长的记录。通过构建这个项目，我深入学习了 Next.js、Contentlayer、TypeScript 等技术，也对现代 Web 开发有了更深的理解。</p>\n<p>项目的成功不仅在于技术实现，更在于它真正解决了我的需求——拥有一个完全可控、性能优秀、用户体验良好的技术博客平台。</p>\n<p>如果你对这个项目感兴趣，欢迎查看源码或与我交流讨论！</p>"
+        },
+        "_id": "projects/tech-blog.md",
+        "_raw": {
+          "sourceFilePath": "projects/tech-blog.md",
+          "sourceFileName": "tech-blog.md",
+          "sourceFileDir": "projects",
+          "contentType": "markdown",
+          "flattenedPath": "projects/tech-blog"
+        },
+        "type": "Project",
+        "slug": "tech-blog",
+        "url": "/projects/tech-blog"
+      },
+      "documentHash": "1750949972842",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "categories/backend.md": {
+      "document": {
+        "name": "后端开发",
+        "color": "#4ECDC4",
+        "description": "后端技术、API 设计和服务器开发，包括 Node.js、Python、数据库等",
+        "order": 2,
+        "body": {
+          "raw": "\n# 后端开发\n\n后端开发负责服务器端逻辑、数据库管理、API 设计等核心功能。它是 Web 应用的基础设施，为前端提供数据和服务支持。\n\n## 技术栈\n\n### 编程语言\n- **Node.js**: JavaScript 运行时\n- **Python**: 简洁优雅的语言\n- **Java**: 企业级开发语言\n- **Go**: 高性能并发语言\n- **Rust**: 系统级编程语言\n\n### 框架\n- **Express.js**: Node.js 轻量级框架\n- **NestJS**: Node.js 企业级框架\n- **Django**: Python 全功能框架\n- **FastAPI**: Python 现代 API 框架\n- **Spring Boot**: Java 微服务框架\n\n### 数据库\n- **关系型**: PostgreSQL, MySQL\n- **NoSQL**: MongoDB, Redis\n- **图数据库**: Neo4j\n- **时序数据库**: InfluxDB\n\n### 云服务\n- **AWS**: 亚马逊云服务\n- **Google Cloud**: 谷歌云平台\n- **Azure**: 微软云服务\n- **Vercel**: 前端部署平台\n\n## 核心概念\n\n- RESTful API 设计\n- GraphQL 查询语言\n- 微服务架构\n- 容器化部署\n- 缓存策略\n- 安全认证\n",
+          "html": "<h1>后端开发</h1>\n<p>后端开发负责服务器端逻辑、数据库管理、API 设计等核心功能。它是 Web 应用的基础设施，为前端提供数据和服务支持。</p>\n<h2>技术栈</h2>\n<h3>编程语言</h3>\n<ul>\n<li><strong>Node.js</strong>: JavaScript 运行时</li>\n<li><strong>Python</strong>: 简洁优雅的语言</li>\n<li><strong>Java</strong>: 企业级开发语言</li>\n<li><strong>Go</strong>: 高性能并发语言</li>\n<li><strong>Rust</strong>: 系统级编程语言</li>\n</ul>\n<h3>框架</h3>\n<ul>\n<li><strong>Express.js</strong>: Node.js 轻量级框架</li>\n<li><strong>NestJS</strong>: Node.js 企业级框架</li>\n<li><strong>Django</strong>: Python 全功能框架</li>\n<li><strong>FastAPI</strong>: Python 现代 API 框架</li>\n<li><strong>Spring Boot</strong>: Java 微服务框架</li>\n</ul>\n<h3>数据库</h3>\n<ul>\n<li><strong>关系型</strong>: PostgreSQL, MySQL</li>\n<li><strong>NoSQL</strong>: MongoDB, Redis</li>\n<li><strong>图数据库</strong>: Neo4j</li>\n<li><strong>时序数据库</strong>: InfluxDB</li>\n</ul>\n<h3>云服务</h3>\n<ul>\n<li><strong>AWS</strong>: 亚马逊云服务</li>\n<li><strong>Google Cloud</strong>: 谷歌云平台</li>\n<li><strong>Azure</strong>: 微软云服务</li>\n<li><strong>Vercel</strong>: 前端部署平台</li>\n</ul>\n<h2>核心概念</h2>\n<ul>\n<li>RESTful API 设计</li>\n<li>GraphQL 查询语言</li>\n<li>微服务架构</li>\n<li>容器化部署</li>\n<li>缓存策略</li>\n<li>安全认证</li>\n</ul>"
+        },
+        "_id": "categories/backend.md",
+        "_raw": {
+          "sourceFilePath": "categories/backend.md",
+          "sourceFileName": "backend.md",
+          "sourceFileDir": "categories",
+          "contentType": "markdown",
+          "flattenedPath": "categories/backend"
+        },
+        "type": "Category",
+        "slug": "backend"
+      },
+      "documentHash": "1750949972840",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "categories/frontend.md": {
+      "document": {
+        "name": "前端开发",
+        "color": "#FF6B6B",
+        "description": "前端技术、框架和最佳实践，包括 React、Vue、Angular 等现代前端技术栈",
+        "order": 1,
+        "body": {
+          "raw": "\n# 前端开发\n\n前端开发是构建用户界面和用户体验的技术领域。随着 Web 技术的快速发展，前端开发已经从简单的页面制作演进为复杂的应用程序开发。\n\n## 技术栈\n\n### 核心技术\n- **HTML**: 网页结构和语义\n- **CSS**: 样式和布局\n- **JavaScript**: 交互和逻辑\n\n### 现代框架\n- **React**: 组件化 UI 库\n- **Vue.js**: 渐进式框架\n- **Angular**: 企业级框架\n- **Svelte**: 编译时优化框架\n\n### 构建工具\n- **Webpack**: 模块打包器\n- **Vite**: 快速构建工具\n- **Rollup**: ES 模块打包器\n\n### CSS 框架\n- **Tailwind CSS**: 原子化 CSS 框架\n- **Bootstrap**: 响应式 CSS 框架\n- **Styled Components**: CSS-in-JS 解决方案\n\n## 发展趋势\n\n- 组件化开发\n- 服务端渲染 (SSR)\n- 静态站点生成 (SSG)\n- 微前端架构\n- Web Components\n- Progressive Web Apps (PWA)\n",
+          "html": "<h1>前端开发</h1>\n<p>前端开发是构建用户界面和用户体验的技术领域。随着 Web 技术的快速发展，前端开发已经从简单的页面制作演进为复杂的应用程序开发。</p>\n<h2>技术栈</h2>\n<h3>核心技术</h3>\n<ul>\n<li><strong>HTML</strong>: 网页结构和语义</li>\n<li><strong>CSS</strong>: 样式和布局</li>\n<li><strong>JavaScript</strong>: 交互和逻辑</li>\n</ul>\n<h3>现代框架</h3>\n<ul>\n<li><strong>React</strong>: 组件化 UI 库</li>\n<li><strong>Vue.js</strong>: 渐进式框架</li>\n<li><strong>Angular</strong>: 企业级框架</li>\n<li><strong>Svelte</strong>: 编译时优化框架</li>\n</ul>\n<h3>构建工具</h3>\n<ul>\n<li><strong>Webpack</strong>: 模块打包器</li>\n<li><strong>Vite</strong>: 快速构建工具</li>\n<li><strong>Rollup</strong>: ES 模块打包器</li>\n</ul>\n<h3>CSS 框架</h3>\n<ul>\n<li><strong>Tailwind CSS</strong>: 原子化 CSS 框架</li>\n<li><strong>Bootstrap</strong>: 响应式 CSS 框架</li>\n<li><strong>Styled Components</strong>: CSS-in-JS 解决方案</li>\n</ul>\n<h2>发展趋势</h2>\n<ul>\n<li>组件化开发</li>\n<li>服务端渲染 (SSR)</li>\n<li>静态站点生成 (SSG)</li>\n<li>微前端架构</li>\n<li>Web Components</li>\n<li>Progressive Web Apps (PWA)</li>\n</ul>"
+        },
+        "_id": "categories/frontend.md",
+        "_raw": {
+          "sourceFilePath": "categories/frontend.md",
+          "sourceFileName": "frontend.md",
+          "sourceFileDir": "categories",
+          "contentType": "markdown",
+          "flattenedPath": "categories/frontend"
+        },
+        "type": "Category",
+        "slug": "frontend"
+      },
+      "documentHash": "1750949972841",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "categories/fullstack.md": {
+      "document": {
+        "name": "全栈开发",
+        "color": "#45B7D1",
+        "description": "全栈项目和技术栈整合，包括前后端协作、架构设计等",
+        "order": 3,
+        "body": {
+          "raw": "\n# 全栈开发\n\n全栈开发是指掌握前端和后端技术，能够独立完成整个 Web 应用开发的能力。全栈开发者需要了解从用户界面到数据库的整个技术栈。\n\n## 技术栈组合\n\n### MEAN/MERN 栈\n- **MongoDB**: NoSQL 数据库\n- **Express.js**: Node.js Web 框架\n- **Angular/React**: 前端框架\n- **Node.js**: JavaScript 运行时\n\n### JAMstack\n- **JavaScript**: 动态功能\n- **APIs**: 后端服务\n- **Markup**: 预构建标记\n\n### T3 栈\n- **Next.js**: 全栈 React 框架\n- **TypeScript**: 类型安全\n- **tRPC**: 端到端类型安全 API\n- **Prisma**: 数据库 ORM\n- **Tailwind CSS**: 样式框架\n\n## 核心技能\n\n- 前端开发 (HTML, CSS, JavaScript)\n- 后端开发 (API 设计, 数据库)\n- DevOps (部署, 监控, CI/CD)\n- 项目管理和架构设计\n\n## 发展趋势\n\n- 无服务器架构 (Serverless)\n- 微服务架构\n- 容器化部署\n- 云原生开发\n- 低代码/无代码平台\n",
+          "html": "<h1>全栈开发</h1>\n<p>全栈开发是指掌握前端和后端技术，能够独立完成整个 Web 应用开发的能力。全栈开发者需要了解从用户界面到数据库的整个技术栈。</p>\n<h2>技术栈组合</h2>\n<h3>MEAN/MERN 栈</h3>\n<ul>\n<li><strong>MongoDB</strong>: NoSQL 数据库</li>\n<li><strong>Express.js</strong>: Node.js Web 框架</li>\n<li><strong>Angular/React</strong>: 前端框架</li>\n<li><strong>Node.js</strong>: JavaScript 运行时</li>\n</ul>\n<h3>JAMstack</h3>\n<ul>\n<li><strong>JavaScript</strong>: 动态功能</li>\n<li><strong>APIs</strong>: 后端服务</li>\n<li><strong>Markup</strong>: 预构建标记</li>\n</ul>\n<h3>T3 栈</h3>\n<ul>\n<li><strong>Next.js</strong>: 全栈 React 框架</li>\n<li><strong>TypeScript</strong>: 类型安全</li>\n<li><strong>tRPC</strong>: 端到端类型安全 API</li>\n<li><strong>Prisma</strong>: 数据库 ORM</li>\n<li><strong>Tailwind CSS</strong>: 样式框架</li>\n</ul>\n<h2>核心技能</h2>\n<ul>\n<li>前端开发 (HTML, CSS, JavaScript)</li>\n<li>后端开发 (API 设计, 数据库)</li>\n<li>DevOps (部署, 监控, CI/CD)</li>\n<li>项目管理和架构设计</li>\n</ul>\n<h2>发展趋势</h2>\n<ul>\n<li>无服务器架构 (Serverless)</li>\n<li>微服务架构</li>\n<li>容器化部署</li>\n<li>云原生开发</li>\n<li>低代码/无代码平台</li>\n</ul>"
+        },
+        "_id": "categories/fullstack.md",
+        "_raw": {
+          "sourceFilePath": "categories/fullstack.md",
+          "sourceFileName": "fullstack.md",
+          "sourceFileDir": "categories",
+          "contentType": "markdown",
+          "flattenedPath": "categories/fullstack"
+        },
+        "type": "Category",
+        "slug": "fullstack"
+      },
+      "documentHash": "1750949972841",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "pages/about.md": {
+      "document": {
+        "title": "关于我",
+        "description": "了解我的技术背景、工作经历和个人项目",
+        "lastUpdated": "2024-12-25T00:00:00.000Z",
+        "layout": "about",
+        "seoTitle": "关于我 - 李凌峰的个人简介",
+        "seoDescription": "前端开发工程师李凌峰的个人简介，包括技术背景、工作经历和项目经验",
+        "seoKeywords": [
+          "李凌峰",
+          "前端开发",
+          "React",
+          "Vue",
+          "个人简介"
+        ],
+        "body": {
+          "raw": "\n# 关于我\n\n你好！我是**李凌峰**，一名拥有6年工作经验的前端开发工程师。我专注于前端技术栈的深度研究与实践，在多个领域都有丰富的项目经验。\n\n## 个人信息\n\n- **姓名**: 李凌峰\n- **性别**: 男\n- **年龄**: 29岁\n- **联系方式**: 17389867465 | 781650249@qq.com\n- **工作经验**: 6年\n- **求职意向**: 前端开发工程师\n- **期望城市**: 上海\n\n## 个人优势\n\n我在前端开发领域拥有全面的技术能力和丰富的项目经验：\n\n1. **框架精通**: 熟练掌握前端流行框架，具备Vue、React从0-1搭建项目落地到上线的实战经验\n2. **跨端开发**: 有移动端H5、微信小程序开发能力，拥有项目实操及从0到上线的完整经验\n3. **管理后台**: 多年管理后台及中台方向经验、具备业务整合降本提效的丰富经验\n4. **桌面应用**: Electron端经验丰富，具备3年+人工智能行业经验\n5. **数据可视化**: 具备数据大屏、echarts、canvas绘制开发能力，有2年+可视化项目实践经验\n6. **工程化**: 熟练使用Webpack、Vite等构建打包工具，对前端工程化有过深入了解及实践\n7. **性能优化**: 对浏览器渲染原理、页面性能优化、用户体验有过深入了解及实践\n8. **视频技术**: 理解常见视频封装、编码格式，能根据应用场景搭建流畅的视频播放体系\n9. **网络基础**: 了解 HTTP/HTTPS/TCP 掌握计算机网络基础，了解微前端，具备微前端(qiankun)项目拆分实战经验\n10. **技术产品**: 擅长在当前业务环境与技术环境下，发现痛点，并且沉淀出完整的技术产品解决方案\n11. **团队协作**: 喜欢分享，推动团队内部技术分享；工作认真负责注重效率，曾多次获得年度优秀员工\n\n## 技术栈\n\n### 前端框架\n- **React**: React + TypeScript + React-Redux + Antv + QianKun.js\n- **Vue**: Vue + Vuex + Element UI + Echarts\n- **跨端开发**: UniApp + Vue + Vuex + Uview + Ucharts\n\n### 构建工具与工程化\n- **构建工具**: Webpack (4.x → 5.x升级经验)、Vite\n- **包管理**: pnpm + Lerna (Monorepo架构)\n- **代码质量**: Prettier、Stylelint、ESLint、Husky、lint-staged\n\n### 移动端与跨端\n- **小程序**: 微信小程序开发\n- **移动应用**: UniApp开发Android和iOS应用\n- **H5开发**: 移动端H5页面开发\n\n### 可视化与图表\n- **图表库**: Echarts、Antv\n- **Canvas**: Canvas绘制、水印、电子签名\n- **地图**: LeafLet地图开发\n\n### 微前端与架构\n- **微前端**: QianKun.js微前端架构\n- **组件库**: 基于Ant Design构建内部组件库\n- **低代码**: React + Canvas + React-dnd页面设计器\n\n### 性能优化与监控\n- **性能优化**: ServiceWorker、代码压缩、CDN加速、按需加载\n- **错误监控**: Sentry.js错误监控、埋点SDK\n- **SEO优化**: SSR/SSG、结构化数据、多语言站点地图\n\n### 其他技术\n- **桌面应用**: Electron (3年+经验)\n- **视频技术**: 视频封装、编码格式、播放体系\n- **网络协议**: HTTP/HTTPS/TCP\n- **原生集成**: iOS/Android SDK集成、JSBridge通信\n\n## 工作经历\n\n### 前端开发工程师 | 上海甄云信息科技有限公司\n**2021.05 - 至今**\n\n在这家专注于提供国内采购数字化管理平台的C轮公司工作，技术规模200+人，前端团队40+人。\n\n**主要职责:**\n- 负责二开埋点库设计，i18 SDK、sentry 接入性能优化等工作\n- 参与一站式采购数字化管理平台(C端)的开发与维护\n- 负责组件库建设，基于antd搭建内部通用组件库\n- 负责bincial官网的从0到1搭建和SEO优化\n\n**技术成就:**\n- 采用 Monorepo 单体仓库架构，基于 pnpm + Lerna + Ant Design 构建高复用性前端组件库\n- 制定组件开发规范，提高组件一致性和可维护性，提升开发效率\n- 官网SEO优化：新增约200条Google索引，2000+条百度索引，收录十几万页面\n- 性能优化：全站SSR向SSG迁移，用户首次进入资源体积减小700KB，Core Web Vitals性能得分从60分提升到85分以上\n\n**主要技术**: React + TypeScript + React-Redux + Antv + QianKun.js\n\n### 前端开发工程师 | 喜相逢集团\n**2019.09 - 2021.05**\n\n在这家致力于提供多元化服务与产品，涵盖出行、餐饮、旅游、文化等多个领域的跨行业上市企业工作。\n\n**主要职责:**\n- 负责租车，金融租赁，库存管理等模块业务开发\n- 参与快呀租车(C端)和喜相逢金融业务系统的开发\n- 负责车辆管理核心功能开发和微前端架构实施\n\n**项目成果:**\n- 使用 QianKun 构建项目，解决多个子应用之间的版本兼容性和样式兼容性问题\n- 开发车辆监控模块，实现地图上精确标记点位和区域划分功能\n- 负责webpack版本从4.x升级到5.x，项目打包构建时间从15s降低至6s\n- 整合iOS和Android SDK，实现车架号扫描、电子签名、PDF预览等功能\n\n**主要技术**: React + Dva + Umi + Echarts + LeafLet + QianKun.js, UniApp + Vue + Vuex + Uview + Ucharts\n\n### AI营销平台负责人 | 个人项目\n**2024.10 - 至今**\n\n负责设计并实施多样化的营销场景配置平台，包括行业报告、客户合作案例、AI仿写及产品介绍等功能。\n\n**项目亮点:**\n- 开发客户可自定义模板配置系统，通过大型模型实现中英文文案的自动生成\n- 引入实时预览功能，用户在编辑器中能即时查看文案生成效果\n- 系统支持集成多种互动元素，如话题标签、产品推广、采购需求、活动报名及投票等\n- 实现Markdown编辑器功能，用户可以轻松导出Markdown格式的文案\n- 在移动应用端（app侧）成功部署，获得了显著的营销成效\n\n**主要技术**: React + TypeScript + AI集成\n\n## 教育背景\n\n### 软件工程学士 | 闽江学院\n\n- **专业**: 软件工程\n- **学历**: 本科\n- **主修课程**: 数据结构与算法、计算机网络、数据库系统、软件工程、面向对象程序设计\n\n## 核心项目经历\n\n### 产研SaaS飞搭平台 | 前端开发工程师\n**2023.01 - 2023.12**\n\n这是一个低代码平台，主要有四个部分：权限管理、模型设计、事件处理和页面设计器，我主要负责页面设计器部分的核心开发。\n\n**技术栈**: React + Canvas + Mobx + TypeScript + React-dnd\n\n**核心成就**:\n- 采用React-dnd和React-grid-layout设计并实现一套完整的页面设计器\n- 设计json-schema的结构模式，将组件与属性面板进行解耦\n- 引入json-schema来规范后端难以校验的json数据，解决了渲染引擎在渲染时经常丢失数据的问题\n- 项目成果：目前该平台发布至beta版本，已有14个项目团队试用，分公司甄知、甄汇已正式投入使用，同时该项目已被售卖至陕重汽公司\n\n### 前端异常监控平台 | 负责人\n**2022.06 - 2022.09**\n\n这是一个错误类型收集平台，主要在商城和协同模块使用，我主要负责整个项目的开发与搭建。\n\n**技术栈**: React + Echarts + Mobx\n\n**核心功能**:\n- 利用埋点监控SDK收集错误行为的监控以及脚本错误、DOM操作等关键信息的上报\n- 搭建可视化平台，采用Echarts进行图表展示，设置不同等级的告警信息查看（高中低）\n- 监控特定租户项目中的错误数量，以评估系统的稳定性，大大地提升了用户方对于系统的满意度\n- 将监控数据与员工的绩效考核（KPI）挂钩，实现数据驱动的绩效管理\n\n### 个人博客系统 | 负责人\n**2018.02 - 2024.01**\n\n这是由我个人开发的博客系统，前后端都由自己搭建，主要记录难点和新学的知识点。\n\n**技术栈**: React + Umi + Mobx + Ant Design + Egg + Next.js\n\n**技术亮点**:\n- 使用 Next.js 作为服务端渲染框架，旨在提升博客页面的加载速度，同时优化 SEO\n- 采用 React Hooks 编写组件，相较于传统类组件更加简洁高效\n- 使用 Ant Design 实现了用户界面的交互设计，充分利用按需加载功能，并实现了栅格化布局\n- 后端基于 Egg.js（整合了 Koa）开发，对功能目录进行了合理分层，数据库部分使用 MySQL\n\n## 资格证书\n\n- **CET-6**: 英语六级证书\n\n## 技术文章\n\n我经常在个人博客和技术平台上发表文章：\n\n- 《React 18 并发特性深度解析》\n- 《Next.js App Router 完全指南》\n- 《TypeScript 高级类型实战》\n- 《前端性能优化最佳实践》\n- 《微前端架构实战经验分享》\n\n## 个人特点\n\n- **工作认真负责注重效率**，曾多次获得年度优秀员工\n- **喜欢分享**，推动团队内部技术分享\n- **持续学习**，保持对新技术的敏感度和学习能力\n- **业务导向**，擅长在业务环境下发现痛点并提供技术解决方案\n\n## 联系方式\n\n如果你对我的项目感兴趣，或者想要交流技术问题，欢迎联系我：\n\n- **邮箱**: 781650249@qq.com\n- **个人网站**: [www.llfzxx.com](https://www.llfzxx.com)\n- **GitHub**: [@llfzxx](https://github.com/llfzxx)\n- **Twitter**: [@llfzxx_dev](https://twitter.com/llfzxx_dev)\n- **LinkedIn**: [李凌峰](https://linkedin.com/in/li-lingfeng)\n- **电话**: 17389867465\n\n## 未来规划\n\n我希望在未来几年内：\n\n- 深入研究前端架构设计和微前端技术\n- 探索 AI 在前端开发中的应用，特别是代码生成和智能化工具\n- 继续在组件库和工程化方向深耕，提升团队开发效率\n- 分享更多技术经验，帮助前端社区发展\n- 在性能优化和用户体验方向成为专家\n\n---\n\n感谢你花时间了解我！如果你有任何问题或想法，随时欢迎与我交流。让我们一起在前端技术的道路上不断前进！\n",
+          "html": "<h1>关于我</h1>\n<p>你好！我是<strong>李凌峰</strong>，一名拥有6年工作经验的前端开发工程师。我专注于前端技术栈的深度研究与实践，在多个领域都有丰富的项目经验。</p>\n<h2>个人信息</h2>\n<ul>\n<li><strong>姓名</strong>: 李凌峰</li>\n<li><strong>性别</strong>: 男</li>\n<li><strong>年龄</strong>: 29岁</li>\n<li><strong>联系方式</strong>: 17389867465 | 781650249@qq.com</li>\n<li><strong>工作经验</strong>: 6年</li>\n<li><strong>求职意向</strong>: 前端开发工程师</li>\n<li><strong>期望城市</strong>: 上海</li>\n</ul>\n<h2>个人优势</h2>\n<p>我在前端开发领域拥有全面的技术能力和丰富的项目经验：</p>\n<ol>\n<li><strong>框架精通</strong>: 熟练掌握前端流行框架，具备Vue、React从0-1搭建项目落地到上线的实战经验</li>\n<li><strong>跨端开发</strong>: 有移动端H5、微信小程序开发能力，拥有项目实操及从0到上线的完整经验</li>\n<li><strong>管理后台</strong>: 多年管理后台及中台方向经验、具备业务整合降本提效的丰富经验</li>\n<li><strong>桌面应用</strong>: Electron端经验丰富，具备3年+人工智能行业经验</li>\n<li><strong>数据可视化</strong>: 具备数据大屏、echarts、canvas绘制开发能力，有2年+可视化项目实践经验</li>\n<li><strong>工程化</strong>: 熟练使用Webpack、Vite等构建打包工具，对前端工程化有过深入了解及实践</li>\n<li><strong>性能优化</strong>: 对浏览器渲染原理、页面性能优化、用户体验有过深入了解及实践</li>\n<li><strong>视频技术</strong>: 理解常见视频封装、编码格式，能根据应用场景搭建流畅的视频播放体系</li>\n<li><strong>网络基础</strong>: 了解 HTTP/HTTPS/TCP 掌握计算机网络基础，了解微前端，具备微前端(qiankun)项目拆分实战经验</li>\n<li><strong>技术产品</strong>: 擅长在当前业务环境与技术环境下，发现痛点，并且沉淀出完整的技术产品解决方案</li>\n<li><strong>团队协作</strong>: 喜欢分享，推动团队内部技术分享；工作认真负责注重效率，曾多次获得年度优秀员工</li>\n</ol>\n<h2>技术栈</h2>\n<h3>前端框架</h3>\n<ul>\n<li><strong>React</strong>: React + TypeScript + React-Redux + Antv + QianKun.js</li>\n<li><strong>Vue</strong>: Vue + Vuex + Element UI + Echarts</li>\n<li><strong>跨端开发</strong>: UniApp + Vue + Vuex + Uview + Ucharts</li>\n</ul>\n<h3>构建工具与工程化</h3>\n<ul>\n<li><strong>构建工具</strong>: Webpack (4.x → 5.x升级经验)、Vite</li>\n<li><strong>包管理</strong>: pnpm + Lerna (Monorepo架构)</li>\n<li><strong>代码质量</strong>: Prettier、Stylelint、ESLint、Husky、lint-staged</li>\n</ul>\n<h3>移动端与跨端</h3>\n<ul>\n<li><strong>小程序</strong>: 微信小程序开发</li>\n<li><strong>移动应用</strong>: UniApp开发Android和iOS应用</li>\n<li><strong>H5开发</strong>: 移动端H5页面开发</li>\n</ul>\n<h3>可视化与图表</h3>\n<ul>\n<li><strong>图表库</strong>: Echarts、Antv</li>\n<li><strong>Canvas</strong>: Canvas绘制、水印、电子签名</li>\n<li><strong>地图</strong>: LeafLet地图开发</li>\n</ul>\n<h3>微前端与架构</h3>\n<ul>\n<li><strong>微前端</strong>: QianKun.js微前端架构</li>\n<li><strong>组件库</strong>: 基于Ant Design构建内部组件库</li>\n<li><strong>低代码</strong>: React + Canvas + React-dnd页面设计器</li>\n</ul>\n<h3>性能优化与监控</h3>\n<ul>\n<li><strong>性能优化</strong>: ServiceWorker、代码压缩、CDN加速、按需加载</li>\n<li><strong>错误监控</strong>: Sentry.js错误监控、埋点SDK</li>\n<li><strong>SEO优化</strong>: SSR/SSG、结构化数据、多语言站点地图</li>\n</ul>\n<h3>其他技术</h3>\n<ul>\n<li><strong>桌面应用</strong>: Electron (3年+经验)</li>\n<li><strong>视频技术</strong>: 视频封装、编码格式、播放体系</li>\n<li><strong>网络协议</strong>: HTTP/HTTPS/TCP</li>\n<li><strong>原生集成</strong>: iOS/Android SDK集成、JSBridge通信</li>\n</ul>\n<h2>工作经历</h2>\n<h3>前端开发工程师 | 上海甄云信息科技有限公司</h3>\n<p><strong>2021.05 - 至今</strong></p>\n<p>在这家专注于提供国内采购数字化管理平台的C轮公司工作，技术规模200+人，前端团队40+人。</p>\n<p><strong>主要职责:</strong></p>\n<ul>\n<li>负责二开埋点库设计，i18 SDK、sentry 接入性能优化等工作</li>\n<li>参与一站式采购数字化管理平台(C端)的开发与维护</li>\n<li>负责组件库建设，基于antd搭建内部通用组件库</li>\n<li>负责bincial官网的从0到1搭建和SEO优化</li>\n</ul>\n<p><strong>技术成就:</strong></p>\n<ul>\n<li>采用 Monorepo 单体仓库架构，基于 pnpm + Lerna + Ant Design 构建高复用性前端组件库</li>\n<li>制定组件开发规范，提高组件一致性和可维护性，提升开发效率</li>\n<li>官网SEO优化：新增约200条Google索引，2000+条百度索引，收录十几万页面</li>\n<li>性能优化：全站SSR向SSG迁移，用户首次进入资源体积减小700KB，Core Web Vitals性能得分从60分提升到85分以上</li>\n</ul>\n<p><strong>主要技术</strong>: React + TypeScript + React-Redux + Antv + QianKun.js</p>\n<h3>前端开发工程师 | 喜相逢集团</h3>\n<p><strong>2019.09 - 2021.05</strong></p>\n<p>在这家致力于提供多元化服务与产品，涵盖出行、餐饮、旅游、文化等多个领域的跨行业上市企业工作。</p>\n<p><strong>主要职责:</strong></p>\n<ul>\n<li>负责租车，金融租赁，库存管理等模块业务开发</li>\n<li>参与快呀租车(C端)和喜相逢金融业务系统的开发</li>\n<li>负责车辆管理核心功能开发和微前端架构实施</li>\n</ul>\n<p><strong>项目成果:</strong></p>\n<ul>\n<li>使用 QianKun 构建项目，解决多个子应用之间的版本兼容性和样式兼容性问题</li>\n<li>开发车辆监控模块，实现地图上精确标记点位和区域划分功能</li>\n<li>负责webpack版本从4.x升级到5.x，项目打包构建时间从15s降低至6s</li>\n<li>整合iOS和Android SDK，实现车架号扫描、电子签名、PDF预览等功能</li>\n</ul>\n<p><strong>主要技术</strong>: React + Dva + Umi + Echarts + LeafLet + QianKun.js, UniApp + Vue + Vuex + Uview + Ucharts</p>\n<h3>AI营销平台负责人 | 个人项目</h3>\n<p><strong>2024.10 - 至今</strong></p>\n<p>负责设计并实施多样化的营销场景配置平台，包括行业报告、客户合作案例、AI仿写及产品介绍等功能。</p>\n<p><strong>项目亮点:</strong></p>\n<ul>\n<li>开发客户可自定义模板配置系统，通过大型模型实现中英文文案的自动生成</li>\n<li>引入实时预览功能，用户在编辑器中能即时查看文案生成效果</li>\n<li>系统支持集成多种互动元素，如话题标签、产品推广、采购需求、活动报名及投票等</li>\n<li>实现Markdown编辑器功能，用户可以轻松导出Markdown格式的文案</li>\n<li>在移动应用端（app侧）成功部署，获得了显著的营销成效</li>\n</ul>\n<p><strong>主要技术</strong>: React + TypeScript + AI集成</p>\n<h2>教育背景</h2>\n<h3>软件工程学士 | 闽江学院</h3>\n<ul>\n<li><strong>专业</strong>: 软件工程</li>\n<li><strong>学历</strong>: 本科</li>\n<li><strong>主修课程</strong>: 数据结构与算法、计算机网络、数据库系统、软件工程、面向对象程序设计</li>\n</ul>\n<h2>核心项目经历</h2>\n<h3>产研SaaS飞搭平台 | 前端开发工程师</h3>\n<p><strong>2023.01 - 2023.12</strong></p>\n<p>这是一个低代码平台，主要有四个部分：权限管理、模型设计、事件处理和页面设计器，我主要负责页面设计器部分的核心开发。</p>\n<p><strong>技术栈</strong>: React + Canvas + Mobx + TypeScript + React-dnd</p>\n<p><strong>核心成就</strong>:</p>\n<ul>\n<li>采用React-dnd和React-grid-layout设计并实现一套完整的页面设计器</li>\n<li>设计json-schema的结构模式，将组件与属性面板进行解耦</li>\n<li>引入json-schema来规范后端难以校验的json数据，解决了渲染引擎在渲染时经常丢失数据的问题</li>\n<li>项目成果：目前该平台发布至beta版本，已有14个项目团队试用，分公司甄知、甄汇已正式投入使用，同时该项目已被售卖至陕重汽公司</li>\n</ul>\n<h3>前端异常监控平台 | 负责人</h3>\n<p><strong>2022.06 - 2022.09</strong></p>\n<p>这是一个错误类型收集平台，主要在商城和协同模块使用，我主要负责整个项目的开发与搭建。</p>\n<p><strong>技术栈</strong>: React + Echarts + Mobx</p>\n<p><strong>核心功能</strong>:</p>\n<ul>\n<li>利用埋点监控SDK收集错误行为的监控以及脚本错误、DOM操作等关键信息的上报</li>\n<li>搭建可视化平台，采用Echarts进行图表展示，设置不同等级的告警信息查看（高中低）</li>\n<li>监控特定租户项目中的错误数量，以评估系统的稳定性，大大地提升了用户方对于系统的满意度</li>\n<li>将监控数据与员工的绩效考核（KPI）挂钩，实现数据驱动的绩效管理</li>\n</ul>\n<h3>个人博客系统 | 负责人</h3>\n<p><strong>2018.02 - 2024.01</strong></p>\n<p>这是由我个人开发的博客系统，前后端都由自己搭建，主要记录难点和新学的知识点。</p>\n<p><strong>技术栈</strong>: React + Umi + Mobx + Ant Design + Egg + Next.js</p>\n<p><strong>技术亮点</strong>:</p>\n<ul>\n<li>使用 Next.js 作为服务端渲染框架，旨在提升博客页面的加载速度，同时优化 SEO</li>\n<li>采用 React Hooks 编写组件，相较于传统类组件更加简洁高效</li>\n<li>使用 Ant Design 实现了用户界面的交互设计，充分利用按需加载功能，并实现了栅格化布局</li>\n<li>后端基于 Egg.js（整合了 Koa）开发，对功能目录进行了合理分层，数据库部分使用 MySQL</li>\n</ul>\n<h2>资格证书</h2>\n<ul>\n<li><strong>CET-6</strong>: 英语六级证书</li>\n</ul>\n<h2>技术文章</h2>\n<p>我经常在个人博客和技术平台上发表文章：</p>\n<ul>\n<li>《React 18 并发特性深度解析》</li>\n<li>《Next.js App Router 完全指南》</li>\n<li>《TypeScript 高级类型实战》</li>\n<li>《前端性能优化最佳实践》</li>\n<li>《微前端架构实战经验分享》</li>\n</ul>\n<h2>个人特点</h2>\n<ul>\n<li><strong>工作认真负责注重效率</strong>，曾多次获得年度优秀员工</li>\n<li><strong>喜欢分享</strong>，推动团队内部技术分享</li>\n<li><strong>持续学习</strong>，保持对新技术的敏感度和学习能力</li>\n<li><strong>业务导向</strong>，擅长在业务环境下发现痛点并提供技术解决方案</li>\n</ul>\n<h2>联系方式</h2>\n<p>如果你对我的项目感兴趣，或者想要交流技术问题，欢迎联系我：</p>\n<ul>\n<li><strong>邮箱</strong>: 781650249@qq.com</li>\n<li><strong>个人网站</strong>: <a href=\"https://www.llfzxx.com\">www.llfzxx.com</a></li>\n<li><strong>GitHub</strong>: <a href=\"https://github.com/llfzxx\">@llfzxx</a></li>\n<li><strong>Twitter</strong>: <a href=\"https://twitter.com/llfzxx_dev\">@llfzxx_dev</a></li>\n<li><strong>LinkedIn</strong>: <a href=\"https://linkedin.com/in/li-lingfeng\">李凌峰</a></li>\n<li><strong>电话</strong>: 17389867465</li>\n</ul>\n<h2>未来规划</h2>\n<p>我希望在未来几年内：</p>\n<ul>\n<li>深入研究前端架构设计和微前端技术</li>\n<li>探索 AI 在前端开发中的应用，特别是代码生成和智能化工具</li>\n<li>继续在组件库和工程化方向深耕，提升团队开发效率</li>\n<li>分享更多技术经验，帮助前端社区发展</li>\n<li>在性能优化和用户体验方向成为专家</li>\n</ul>\n<hr>\n<p>感谢你花时间了解我！如果你有任何问题或想法，随时欢迎与我交流。让我们一起在前端技术的道路上不断前进！</p>"
+        },
+        "_id": "pages/about.md",
+        "_raw": {
+          "sourceFilePath": "pages/about.md",
+          "sourceFileName": "about.md",
+          "sourceFileDir": "pages",
+          "contentType": "markdown",
+          "flattenedPath": "pages/about"
+        },
+        "type": "Page",
+        "slug": "about",
+        "url": "/about"
+      },
+      "documentHash": "1750949972841",
+      "hasWarnings": false,
+      "documentTypeName": "Page"
+    },
+    "tags/javascript.md": {
+      "document": {
+        "name": "JavaScript",
+        "color": "#F7DF1E",
+        "description": "JavaScript 基础与进阶，包括 ES6+、异步编程、性能优化等",
+        "featured": true,
+        "body": {
+          "raw": "\n# JavaScript\n\nJavaScript 是 Web 开发的核心语言，从简单的页面交互到复杂的应用程序开发，JavaScript 都发挥着重要作用。\n\n## 语言特性\n\n- **动态类型**: 运行时确定变量类型\n- **原型继承**: 基于原型的面向对象编程\n- **函数式编程**: 支持高阶函数、闭包等特性\n- **异步编程**: Promise、async/await 等异步处理机制\n\n## 现代 JavaScript (ES6+)\n\n- 箭头函数\n- 模板字符串\n- 解构赋值\n- 模块系统\n- 类语法\n- Promise 和 async/await\n\n## 学习资源\n\n- [MDN JavaScript 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)\n- [JavaScript.info](https://zh.javascript.info/)\n- [ES6 入门教程](https://es6.ruanyifeng.com/)\n",
+          "html": "<h1>JavaScript</h1>\n<p>JavaScript 是 Web 开发的核心语言，从简单的页面交互到复杂的应用程序开发，JavaScript 都发挥着重要作用。</p>\n<h2>语言特性</h2>\n<ul>\n<li><strong>动态类型</strong>: 运行时确定变量类型</li>\n<li><strong>原型继承</strong>: 基于原型的面向对象编程</li>\n<li><strong>函数式编程</strong>: 支持高阶函数、闭包等特性</li>\n<li><strong>异步编程</strong>: Promise、async/await 等异步处理机制</li>\n</ul>\n<h2>现代 JavaScript (ES6+)</h2>\n<ul>\n<li>箭头函数</li>\n<li>模板字符串</li>\n<li>解构赋值</li>\n<li>模块系统</li>\n<li>类语法</li>\n<li>Promise 和 async/await</li>\n</ul>\n<h2>学习资源</h2>\n<ul>\n<li><a href=\"https://developer.mozilla.org/zh-CN/docs/Web/JavaScript\">MDN JavaScript 文档</a></li>\n<li><a href=\"https://zh.javascript.info/\">JavaScript.info</a></li>\n<li><a href=\"https://es6.ruanyifeng.com/\">ES6 入门教程</a></li>\n</ul>"
+        },
+        "_id": "tags/javascript.md",
+        "_raw": {
+          "sourceFilePath": "tags/javascript.md",
+          "sourceFileName": "javascript.md",
+          "sourceFileDir": "tags",
+          "contentType": "markdown",
+          "flattenedPath": "tags/javascript"
+        },
+        "type": "Tag",
+        "slug": "javascript"
+      },
+      "documentHash": "1750949972842",
+      "hasWarnings": false,
+      "documentTypeName": "Tag"
+    },
+    "tags/nextjs.md": {
+      "document": {
+        "name": "Next.js",
+        "color": "#000000",
+        "description": "Next.js 框架相关文章，包括 SSR、SSG、App Router 等",
+        "featured": true,
+        "body": {
+          "raw": "\n# Next.js\n\nNext.js 是一个基于 React 的全栈框架，提供了生产级别的功能，如服务端渲染、静态站点生成、API 路由等。\n\n## 主要特性\n\n- **App Router**: 新一代路由系统\n- **服务端渲染 (SSR)**: 提升 SEO 和首屏加载速度\n- **静态站点生成 (SSG)**: 构建时预渲染页面\n- **API 路由**: 内置 API 开发能力\n- **图片优化**: 自动图片优化和懒加载\n\n## 适用场景\n\n- 企业级 Web 应用\n- 电商网站\n- 博客和内容网站\n- 营销页面\n",
+          "html": "<h1>Next.js</h1>\n<p>Next.js 是一个基于 React 的全栈框架，提供了生产级别的功能，如服务端渲染、静态站点生成、API 路由等。</p>\n<h2>主要特性</h2>\n<ul>\n<li><strong>App Router</strong>: 新一代路由系统</li>\n<li><strong>服务端渲染 (SSR)</strong>: 提升 SEO 和首屏加载速度</li>\n<li><strong>静态站点生成 (SSG)</strong>: 构建时预渲染页面</li>\n<li><strong>API 路由</strong>: 内置 API 开发能力</li>\n<li><strong>图片优化</strong>: 自动图片优化和懒加载</li>\n</ul>\n<h2>适用场景</h2>\n<ul>\n<li>企业级 Web 应用</li>\n<li>电商网站</li>\n<li>博客和内容网站</li>\n<li>营销页面</li>\n</ul>"
+        },
+        "_id": "tags/nextjs.md",
+        "_raw": {
+          "sourceFilePath": "tags/nextjs.md",
+          "sourceFileName": "nextjs.md",
+          "sourceFileDir": "tags",
+          "contentType": "markdown",
+          "flattenedPath": "tags/nextjs"
+        },
+        "type": "Tag",
+        "slug": "nextjs"
+      },
+      "documentHash": "1750949972842",
+      "hasWarnings": false,
+      "documentTypeName": "Tag"
+    },
+    "tags/react.md": {
+      "document": {
+        "name": "React",
+        "color": "#61DAFB",
+        "description": "React.js 相关技术文章，包括组件开发、状态管理、性能优化等",
+        "featured": true,
+        "body": {
+          "raw": "\n# React\n\nReact 是由 Facebook 开发的用于构建用户界面的 JavaScript 库。它采用组件化的开发模式，让开发者能够构建可复用、可维护的 UI 组件。\n\n## 核心特性\n\n- **组件化**: 将 UI 拆分为独立、可复用的组件\n- **虚拟 DOM**: 提供高效的 DOM 更新机制\n- **单向数据流**: 数据从父组件流向子组件\n- **JSX**: JavaScript 的语法扩展，让编写组件更直观\n\n## 学习资源\n\n- [React 官方文档](https://react.dev)\n- [React 中文文档](https://zh-hans.react.dev)\n- [React 生态系统](https://github.com/enaqx/awesome-react)\n",
+          "html": "<h1>React</h1>\n<p>React 是由 Facebook 开发的用于构建用户界面的 JavaScript 库。它采用组件化的开发模式，让开发者能够构建可复用、可维护的 UI 组件。</p>\n<h2>核心特性</h2>\n<ul>\n<li><strong>组件化</strong>: 将 UI 拆分为独立、可复用的组件</li>\n<li><strong>虚拟 DOM</strong>: 提供高效的 DOM 更新机制</li>\n<li><strong>单向数据流</strong>: 数据从父组件流向子组件</li>\n<li><strong>JSX</strong>: JavaScript 的语法扩展，让编写组件更直观</li>\n</ul>\n<h2>学习资源</h2>\n<ul>\n<li><a href=\"https://react.dev\">React 官方文档</a></li>\n<li><a href=\"https://zh-hans.react.dev\">React 中文文档</a></li>\n<li><a href=\"https://github.com/enaqx/awesome-react\">React 生态系统</a></li>\n</ul>"
+        },
+        "_id": "tags/react.md",
+        "_raw": {
+          "sourceFilePath": "tags/react.md",
+          "sourceFileName": "react.md",
+          "sourceFileDir": "tags",
+          "contentType": "markdown",
+          "flattenedPath": "tags/react"
+        },
+        "type": "Tag",
+        "slug": "react"
+      },
+      "documentHash": "1750949972843",
+      "hasWarnings": false,
+      "documentTypeName": "Tag"
+    },
+    "tags/typescript.md": {
+      "document": {
+        "name": "TypeScript",
+        "color": "#3178C6",
+        "description": "TypeScript 开发技巧，类型系统，高级类型等",
+        "featured": true,
+        "body": {
+          "raw": "\n# TypeScript\n\nTypeScript 是 JavaScript 的超集，添加了静态类型检查。它能够在开发时发现错误，提高代码质量和开发效率。\n\n## 核心优势\n\n- **静态类型检查**: 编译时发现错误\n- **更好的 IDE 支持**: 智能提示、重构等\n- **渐进式采用**: 可以逐步迁移现有 JavaScript 项目\n- **现代 JavaScript 特性**: 支持最新的 ECMAScript 特性\n\n## 学习路径\n\n1. 基础类型和接口\n2. 泛型和高级类型\n3. 装饰器和元数据\n4. 配置和工具链\n",
+          "html": "<h1>TypeScript</h1>\n<p>TypeScript 是 JavaScript 的超集，添加了静态类型检查。它能够在开发时发现错误，提高代码质量和开发效率。</p>\n<h2>核心优势</h2>\n<ul>\n<li><strong>静态类型检查</strong>: 编译时发现错误</li>\n<li><strong>更好的 IDE 支持</strong>: 智能提示、重构等</li>\n<li><strong>渐进式采用</strong>: 可以逐步迁移现有 JavaScript 项目</li>\n<li><strong>现代 JavaScript 特性</strong>: 支持最新的 ECMAScript 特性</li>\n</ul>\n<h2>学习路径</h2>\n<ol>\n<li>基础类型和接口</li>\n<li>泛型和高级类型</li>\n<li>装饰器和元数据</li>\n<li>配置和工具链</li>\n</ol>"
+        },
+        "_id": "tags/typescript.md",
+        "_raw": {
+          "sourceFilePath": "tags/typescript.md",
+          "sourceFileName": "typescript.md",
+          "sourceFileDir": "tags",
+          "contentType": "markdown",
+          "flattenedPath": "tags/typescript"
+        },
+        "type": "Tag",
+        "slug": "typescript"
+      },
+      "documentHash": "1750949972843",
+      "hasWarnings": false,
+      "documentTypeName": "Tag"
     }
   }
 }
