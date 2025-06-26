@@ -125,8 +125,8 @@ export default function UnitConvertTool() {
     if (isNaN(value)) return ''
 
     const categoryData = unitCategories[category as keyof typeof unitCategories]
-    const fromUnitData = categoryData.units[fromUnit as keyof typeof categoryData.units]
-    const toUnitData = categoryData.units[toUnit as keyof typeof categoryData.units]
+    const fromUnitData = categoryData.units[fromUnit as keyof typeof categoryData.units] as any
+    const toUnitData = categoryData.units[toUnit as keyof typeof categoryData.units] as any
 
     if (!fromUnitData || !toUnitData) return ''
 
@@ -311,10 +311,10 @@ export default function UnitConvertTool() {
                   <div className="text-center">
                     <div className="text-sm text-blue-700 mb-1">转换结果</div>
                     <div className="text-2xl font-bold text-blue-900">
-                      {convertValue} {currentCategory.units[toUnit as keyof typeof currentCategory.units]?.name}
+                      {convertValue} {(currentCategory.units[toUnit as keyof typeof currentCategory.units] as any)?.name}
                     </div>
                     <div className="text-sm text-blue-600 mt-2">
-                      {inputValue} {currentCategory.units[fromUnit as keyof typeof currentCategory.units]?.name} = {convertValue} {currentCategory.units[toUnit as keyof typeof currentCategory.units]?.name}
+                      {inputValue} {(currentCategory.units[fromUnit as keyof typeof currentCategory.units] as any)?.name} = {convertValue} {(currentCategory.units[toUnit as keyof typeof currentCategory.units] as any)?.name}
                     </div>
                   </div>
                 </div>
@@ -373,13 +373,13 @@ export default function UnitConvertTool() {
                         convertedValue = value
                       }
                     } else {
-                      const baseValue = value * fromUnitData.factor
-                      convertedValue = baseValue / unit.factor
+                      const baseValue = value * (fromUnitData as any).factor
+                      convertedValue = baseValue / (unit as any).factor
                     }
 
                     return (
                       <tr key={key} className="border-b border-gray-100">
-                        <td className="py-2">{unit.name}</td>
+                        <td className="py-2">{(unit as any).name}</td>
                         <td className="text-right py-2 font-mono">
                           {convertedValue.toFixed(6).replace(/\.?0+$/, '')}
                         </td>

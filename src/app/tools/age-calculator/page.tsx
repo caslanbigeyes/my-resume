@@ -227,19 +227,19 @@ export default function AgeCalculatorTool() {
             {/* 详细统计 */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="bg-white p-4 rounded-lg border border-gray-200 text-center">
-                <div className="text-2xl font-bold text-blue-600">{ageInfo.totalDays.toLocaleString()}</div>
+                <div className="text-2xl font-bold text-blue-600">{ageInfo.totalDays?.toLocaleString()}</div>
                 <div className="text-sm text-gray-600">总天数</div>
               </div>
               <div className="bg-white p-4 rounded-lg border border-gray-200 text-center">
-                <div className="text-2xl font-bold text-green-600">{ageInfo.totalHours.toLocaleString()}</div>
+                <div className="text-2xl font-bold text-green-600">{ageInfo.totalHours?.toLocaleString()}</div>
                 <div className="text-sm text-gray-600">总小时数</div>
               </div>
               <div className="bg-white p-4 rounded-lg border border-gray-200 text-center">
-                <div className="text-2xl font-bold text-purple-600">{ageInfo.totalMinutes.toLocaleString()}</div>
+                <div className="text-2xl font-bold text-purple-600">{ageInfo.totalMinutes?.toLocaleString()}</div>
                 <div className="text-sm text-gray-600">总分钟数</div>
               </div>
               <div className="bg-white p-4 rounded-lg border border-gray-200 text-center">
-                <div className="text-2xl font-bold text-orange-600">{ageInfo.totalSeconds.toLocaleString()}</div>
+                <div className="text-2xl font-bold text-orange-600">{ageInfo.totalSeconds?.toLocaleString()}</div>
                 <div className="text-sm text-gray-600">总秒数</div>
               </div>
             </div>
@@ -292,7 +292,7 @@ export default function AgeCalculatorTool() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {milestones.map((milestone, index) => {
-                  const reached = ageInfo.years >= milestone.age
+                  const reached = (ageInfo.years ?? 0) >= milestone.age
                   return (
                     <div
                       key={index}

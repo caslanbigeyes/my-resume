@@ -121,11 +121,11 @@ function hello() {
 
     // 有序列表
     html = html.replace(/^\d+\. (.*$)/gm, '<li>$1</li>')
-    html = html.replace(/(<li>.*<\/li>)/s, '<ol>$1</ol>')
+    html = html.replace(/(<li>[\s\S]*?<\/li>)/g, '<ol>$1</ol>')
 
     // 无序列表
     html = html.replace(/^- (.*$)/gm, '<li>$1</li>')
-    html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
+    html = html.replace(/(<li>[\s\S]*?<\/li>)/g, '<ul>$1</ul>')
 
     // 段落
     html = html.replace(/\n\n/g, '</p><p>')
@@ -151,6 +151,15 @@ function hello() {
    * HTML转义
    */
   const escapeHtml = (text: string): string => {
+    if (typeof document === 'undefined') {
+      // 服务端渲染时的简单转义
+      return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+    }
     const div = document.createElement('div')
     div.textContent = text
     return div.innerHTML
@@ -191,6 +200,8 @@ function hello() {
    * 下载HTML文件
    */
   const downloadHtml = () => {
+    if (typeof document === 'undefined') return
+
     const fullHtml = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -339,7 +350,7 @@ ${htmlOutput}
               <ul className="space-y-1">
                 <li>• 链接：[文本](URL)</li>
                 <li>• 图片：![alt](URL)</li>
-                <li>• 引用：> 文本</li>
+                <li>• 引用：&gt; 文本</li>
                 <li>• 列表：- 或 1.</li>
               </ul>
             </div>

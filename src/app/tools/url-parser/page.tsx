@@ -171,9 +171,9 @@ export default function UrlParserTool() {
                     <Globe className="w-5 h-5" />
                     基本信息
                     {parsedUrl.isSecure ? (
-                      <Lock className="w-4 h-4 text-green-500" title="安全连接" />
+                      <Lock className="w-4 h-4 text-green-500" />
                     ) : (
-                      <Unlock className="w-4 h-4 text-orange-500" title="非安全连接" />
+                      <Unlock className="w-4 h-4 text-orange-500" />
                     )}
                   </h3>
                   
@@ -186,7 +186,7 @@ export default function UrlParserTool() {
                             {parsedUrl.protocol}
                           </code>
                           <button
-                            onClick={() => copyToClipboard(parsedUrl.protocol, '协议')}
+                            onClick={() => copyToClipboard(parsedUrl.protocol || '', '协议')}
                             className="text-gray-400 hover:text-gray-600"
                           >
                             <Copy className="w-4 h-4" />
@@ -201,7 +201,7 @@ export default function UrlParserTool() {
                             {parsedUrl.hostname}
                           </code>
                           <button
-                            onClick={() => copyToClipboard(parsedUrl.hostname, '主机名')}
+                            onClick={() => copyToClipboard(parsedUrl.hostname || '', '主机名')}
                             className="text-gray-400 hover:text-gray-600"
                           >
                             <Copy className="w-4 h-4" />
@@ -216,7 +216,7 @@ export default function UrlParserTool() {
                             {parsedUrl.port}
                           </code>
                           <button
-                            onClick={() => copyToClipboard(parsedUrl.port, '端口')}
+                            onClick={() => copyToClipboard(parsedUrl.port || '', '端口')}
                             className="text-gray-400 hover:text-gray-600"
                           >
                             <Copy className="w-4 h-4" />
@@ -249,7 +249,7 @@ export default function UrlParserTool() {
                           </code>
                           {parsedUrl.search && (
                             <button
-                              onClick={() => copyToClipboard(parsedUrl.search, '查询字符串')}
+                              onClick={() => copyToClipboard(parsedUrl.search || '', '查询字符串')}
                               className="text-gray-400 hover:text-gray-600"
                             >
                               <Copy className="w-4 h-4" />
@@ -266,7 +266,7 @@ export default function UrlParserTool() {
                           </code>
                           {parsedUrl.hash && (
                             <button
-                              onClick={() => copyToClipboard(parsedUrl.hash, '锚点')}
+                              onClick={() => copyToClipboard(parsedUrl.hash || '', '锚点')}
                               className="text-gray-400 hover:text-gray-600"
                             >
                               <Copy className="w-4 h-4" />
@@ -320,12 +320,12 @@ export default function UrlParserTool() {
                 </div>
 
                 {/* 查询参数 */}
-                {Object.keys(parsedUrl.searchParams).length > 0 && (
+                {parsedUrl.searchParams && Object.keys(parsedUrl.searchParams).length > 0 && (
                   <div className="bg-white border border-gray-200 rounded-lg p-4">
                     <h3 className="font-medium text-gray-900 mb-4">查询参数</h3>
                     
                     <div className="space-y-2">
-                      {Object.entries(parsedUrl.searchParams).map(([key, value], index) => (
+                      {Object.entries(parsedUrl.searchParams || {}).map(([key, value], index) => (
                         <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                           <div className="flex-1">
                             <div className="font-medium text-gray-900">{key}</div>
@@ -354,12 +354,12 @@ export default function UrlParserTool() {
                 )}
 
                 {/* 路径段 */}
-                {parsedUrl.pathSegments.length > 0 && (
+                {parsedUrl.pathSegments && parsedUrl.pathSegments.length > 0 && (
                   <div className="bg-white border border-gray-200 rounded-lg p-4">
                     <h3 className="font-medium text-gray-900 mb-4">路径段</h3>
                     
                     <div className="flex flex-wrap gap-2">
-                      {parsedUrl.pathSegments.map((segment, index) => (
+                      {(parsedUrl.pathSegments || []).map((segment, index) => (
                         <div key={index} className="flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-lg">
                           <span className="font-mono text-sm">{segment}</span>
                           <button
@@ -388,7 +388,7 @@ export default function UrlParserTool() {
                           {parsedUrl.original}
                         </code>
                         <button
-                          onClick={() => copyToClipboard(parsedUrl.original, '原始URL')}
+                          onClick={() => copyToClipboard(parsedUrl.original || '', '原始URL')}
                           className="text-gray-400 hover:text-gray-600"
                         >
                           <Copy className="w-4 h-4" />
@@ -402,10 +402,10 @@ export default function UrlParserTool() {
                       </label>
                       <div className="flex items-center gap-2">
                         <code className="flex-1 bg-gray-100 p-2 rounded text-sm font-mono break-all">
-                          {encodeUrl(parsedUrl.original)}
+                          {encodeUrl(parsedUrl.original || '')}
                         </code>
                         <button
-                          onClick={() => copyToClipboard(encodeUrl(parsedUrl.original), '编码URL')}
+                          onClick={() => copyToClipboard(encodeUrl(parsedUrl.original || ''), '编码URL')}
                           className="text-gray-400 hover:text-gray-600"
                         >
                           <Copy className="w-4 h-4" />

@@ -2,7 +2,7 @@
 
 import React, { useState, useCallback } from 'react'
 import ToolLayout from '@/components/ToolLayout'
-import { Upload, Download, Image as ImageIcon, Compress } from 'lucide-react'
+import { Upload, Download, Image as ImageIcon, FileImage } from 'lucide-react'
 
 /**
  * 图片压缩工具组件
@@ -221,7 +221,7 @@ export default function ImageCompressTool() {
                 disabled={isProcessing}
                 className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
-                <Compress className="w-5 h-5" />
+                <FileImage className="w-5 h-5" />
                 {isProcessing ? '压缩中...' : '开始压缩'}
               </button>
             </div>
