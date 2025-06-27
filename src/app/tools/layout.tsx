@@ -37,10 +37,7 @@ export default function ToolsLayout({
 
             {/* 右侧操作 */}
             <div className="flex items-center gap-4">
-              {/* 主题切换按钮预留位置 */}
-              <button className="p-2 text-gray-600 hover:text-gray-900 transition-colors">
-                🌙
-              </button>
+              {/* 可以在这里添加其他操作按钮 */}
             </div>
           </div>
         </div>

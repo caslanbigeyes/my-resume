@@ -259,14 +259,6 @@ body {
   transform: scale(1.05);
 }
 
-.dark .nav-link {
-  color: rgb(156 163 175);
-}
-
-.dark .nav-link:hover {
-  color: rgb(249 250 251);
-}
-
 .mobile-nav-link {
   display: flex;
   align-items: center;
@@ -281,13 +273,4 @@ body {
   color: rgb(17 24 39);
   background-color: rgb(243 244 246);
   transform: translateX(0.25rem);
-}
-
-.dark .mobile-nav-link {
-  color: rgb(156 163 175);
-}
-
-.dark .mobile-nav-link:hover {
-  color: rgb(249 250 251);
-  background-color: rgb(31 41 55);
 }

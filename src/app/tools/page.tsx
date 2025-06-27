@@ -183,13 +183,13 @@ export default function ToolsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+    <div className="min-h-screen bg-gray-50">
       {/* 页面头部 */}
-      <div className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+      <div className="bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">🛠️ 工具集</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">100款实用小工具，全部在浏览器端运行</p>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">🛠️ 工具集</h1>
+            <p className="text-lg text-gray-600 mb-8">100款实用小工具，全部在浏览器端运行</p>
             
             {/* 搜索栏 */}
             <div className="max-w-md mx-auto relative">
@@ -199,7 +199,7 @@ export default function ToolsPage() {
                 placeholder="搜索工具..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 bg-white text-gray-900 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>
           </div>
@@ -218,7 +218,7 @@ export default function ToolsPage() {
                 className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                   selectedCategory === category.id
                     ? category.color
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
                 {category.name}
@@ -230,13 +230,13 @@ export default function ToolsPage() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setViewMode('grid')}
-              className={`p-2 rounded-lg ${viewMode === 'grid' ? 'bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`}
+              className={`p-2 rounded-lg ${viewMode === 'grid' ? 'bg-blue-100 text-blue-600' : 'text-gray-400 hover:text-gray-600'}`}
             >
               <Grid className="w-5 h-5" />
             </button>
             <button
               onClick={() => setViewMode('list')}
-              className={`p-2 rounded-lg ${viewMode === 'list' ? 'bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`}
+              className={`p-2 rounded-lg ${viewMode === 'list' ? 'bg-blue-100 text-blue-600' : 'text-gray-400 hover:text-gray-600'}`}
             >
               <List className="w-5 h-5" />
             </button>
@@ -245,8 +245,8 @@ export default function ToolsPage() {
 
         {/* 统计信息 */}
         <div className="mb-6">
-          <p className="text-gray-600 dark:text-gray-400">
-            找到 <span className="font-semibold text-gray-900 dark:text-gray-100">{filteredTools.length}</span> 个工具
+          <p className="text-gray-600">
+            找到 <span className="font-semibold text-gray-900">{filteredTools.length}</span> 个工具
             {selectedCategory !== 'all' && (
               <span> · 分类: <span className="font-semibold">{getCategoryInfo(selectedCategory).name}</span></span>
             )}
@@ -260,16 +260,16 @@ export default function ToolsPage() {
               <Link
                 key={tool.id}
                 href={`/tools/${tool.slug}`}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 hover:shadow-md hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-200 group"
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all duration-200 group"
               >
                 <div className="text-center">
                   <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-200">
                     {tool.icon}
                   </div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                  <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">
                     {tool.name}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+                  <p className="text-sm text-gray-600 line-clamp-2">
                     {tool.description}
                   </p>
                   <div className="mt-3">
@@ -287,16 +287,16 @@ export default function ToolsPage() {
               <Link
                 key={tool.id}
                 href={`/tools/${tool.slug}`}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-4 hover:shadow-md hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-200 group flex items-center gap-4"
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md hover:border-blue-300 transition-all duration-200 group flex items-center gap-4"
               >
                 <div className="text-2xl group-hover:scale-110 transition-transform duration-200">
                   {tool.icon}
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 mb-1">
+                  <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-1">
                     {tool.name}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p className="text-sm text-gray-600">
                     {tool.description}
                   </p>
                 </div>
@@ -314,14 +314,14 @@ export default function ToolsPage() {
         {filteredTools.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">未找到相关工具</h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">尝试调整搜索关键词或选择其他分类</p>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">未找到相关工具</h3>
+            <p className="text-gray-600 mb-4">尝试调整搜索关键词或选择其他分类</p>
             <button
               onClick={() => {
                 setSearchTerm('')
                 setSelectedCategory('all')
               }}
-              className="px-4 py-2 bg-blue-500 dark:bg-blue-600 text-white rounded-lg hover:bg-blue-600 dark:hover:bg-blue-700 transition-colors"
+              className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
             >
               重置筛选
             </button>

@@ -32,34 +32,34 @@ export default function ToolLayout({
   children
 }: ToolLayoutProps) {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+    <div className="min-h-screen bg-gray-50">
       {/* 工具头部 */}
-      <div className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+      <div className="bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* 面包屑导航 */}
-          <nav className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-4">
-            <Link href="/" className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
+          <nav className="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <Link href="/" className="hover:text-gray-900 transition-colors">
               首页
             </Link>
             <span>/</span>
-            <Link href="/tools" className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
+            <Link href="/tools" className="hover:text-gray-900 transition-colors">
               工具集
             </Link>
             <span>/</span>
-            <span className="text-gray-900 dark:text-gray-100">{title}</span>
+            <span className="text-gray-900">{title}</span>
           </nav>
 
           {/* 工具信息 */}
           <div className="flex items-start gap-4">
             <div className="text-4xl">{icon}</div>
             <div className="flex-1">
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">{title}</h1>
-              <p className="text-gray-600 dark:text-gray-400 mb-3">{description}</p>
+              <h1 className="text-2xl font-bold text-gray-900 mb-2">{title}</h1>
+              <p className="text-gray-600 mb-3">{description}</p>
               <div className="flex items-center gap-3">
-                <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full font-medium">
+                <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full font-medium">
                   {category}
                 </span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">浏览器端运行</span>
+                <span className="text-xs text-gray-500">浏览器端运行</span>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function ToolLayout({
 
       {/* 工具内容 */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 transition-colors">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           {children}
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function ToolLayout({
       <div className="fixed bottom-6 left-6">
         <Link
           href="/tools"
-          className="flex items-center gap-2 px-4 py-2 bg-blue-500 dark:bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-600 dark:hover:bg-blue-700 transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span className="hidden sm:inline">返回工具集</span>

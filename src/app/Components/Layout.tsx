@@ -1,8 +1,6 @@
 'use client'
 import React, { useState } from "react";
 import Link from "next/link";
-import ThemeToggle from "@/components/ThemeToggle";
-import ThemeDebug from "@/components/ThemeDebug";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -63,7 +61,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                                 </span>
                             </Link>
                         </nav>
-                        <ThemeToggle />
                         <button
                             onClick={toggleNav}
                             className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
@@ -118,9 +115,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <main className="animate-fade-in">
                 {children}
             </main>
-
-            {/* 调试组件 */}
-            <ThemeDebug />
         </div>
     );
 };
