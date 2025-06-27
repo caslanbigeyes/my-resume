@@ -46,7 +46,7 @@
         },
         "url": "/articles/js-to-rust"
       },
-      "documentHash": "1750906278502",
+      "documentHash": "1750949972839",
       "hasWarnings": false,
       "documentTypeName": "Article"
     },
@@ -95,7 +95,7 @@
         },
         "url": "/articles/nextjs-app-router-guide"
       },
-      "documentHash": "1750825318275",
+      "documentHash": "1750949972839",
       "hasWarnings": false,
       "documentTypeName": "Article"
     },
@@ -145,7 +145,7 @@
         },
         "url": "/articles/react-18-concurrent-features"
       },
-      "documentHash": "1750847758051",
+      "documentHash": "1750949972839",
       "hasWarnings": false,
       "documentTypeName": "Article"
     },
@@ -194,7 +194,7 @@
         },
         "url": "/articles/typescript-advanced-types"
       },
-      "documentHash": "1750825356105",
+      "documentHash": "1750949972840",
       "hasWarnings": false,
       "documentTypeName": "Article"
     },
@@ -246,7 +246,7 @@
         },
         "url": "/articles/webhook-to-deploy"
       },
-      "documentHash": "1750918647273",
+      "documentHash": "1750949972840",
       "hasWarnings": false,
       "documentTypeName": "Article"
     },
@@ -275,7 +275,7 @@
         "type": "Author",
         "slug": "li-lingfeng"
       },
-      "documentHash": "1750825277623",
+      "documentHash": "1750949972840",
       "hasWarnings": false,
       "documentTypeName": "Author"
     },
@@ -300,7 +300,7 @@
         "type": "Category",
         "slug": "backend"
       },
-      "documentHash": "1750821435844",
+      "documentHash": "1750949972840",
       "hasWarnings": false,
       "documentTypeName": "Category"
     },
@@ -325,7 +325,7 @@
         "type": "Category",
         "slug": "frontend"
       },
-      "documentHash": "1750821424206",
+      "documentHash": "1750949972841",
       "hasWarnings": false,
       "documentTypeName": "Category"
     },
@@ -350,7 +350,7 @@
         "type": "Category",
         "slug": "fullstack"
       },
-      "documentHash": "1750822110648",
+      "documentHash": "1750949972841",
       "hasWarnings": false,
       "documentTypeName": "Category"
     },
@@ -385,7 +385,7 @@
         "slug": "about",
         "url": "/about"
       },
-      "documentHash": "1750825593271",
+      "documentHash": "1750949972841",
       "hasWarnings": false,
       "documentTypeName": "Page"
     },
@@ -424,7 +424,7 @@
         "slug": "tech-blog",
         "url": "/projects/tech-blog"
       },
-      "documentHash": "1750821599534",
+      "documentHash": "1750949972842",
       "hasWarnings": false,
       "documentTypeName": "Project"
     },
@@ -449,7 +449,7 @@
         "type": "Tag",
         "slug": "javascript"
       },
-      "documentHash": "1750822096823",
+      "documentHash": "1750949972842",
       "hasWarnings": false,
       "documentTypeName": "Tag"
     },
@@ -474,7 +474,7 @@
         "type": "Tag",
         "slug": "nextjs"
       },
-      "documentHash": "1750821398632",
+      "documentHash": "1750949972842",
       "hasWarnings": false,
       "documentTypeName": "Tag"
     },
@@ -499,7 +499,7 @@
         "type": "Tag",
         "slug": "react"
       },
-      "documentHash": "1750821386416",
+      "documentHash": "1750949972843",
       "hasWarnings": false,
       "documentTypeName": "Tag"
     },
@@ -524,7 +524,7 @@
         "type": "Tag",
         "slug": "typescript"
       },
-      "documentHash": "1750821409945",
+      "documentHash": "1750949972843",
       "hasWarnings": false,
       "documentTypeName": "Tag"
     }
