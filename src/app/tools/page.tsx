@@ -66,6 +66,7 @@ const tools: Tool[] = [
   { id: '21', slug: 'image-compress', name: '图片压缩', description: '客户端压缩JPG/PNG/WebP', category: 'image', icon: '🗜️' },
   { id: '22', slug: 'image-resize', name: '图片缩放', description: '调整图片尺寸大小', category: 'image', icon: '📏' },
   { id: '23', slug: 'image-convert', name: '格式转换', description: 'PNG/WebP/JPG格式互转', category: 'image', icon: '🔄' },
+  { id: '23.5', slug: 'webp-converter', name: 'WebP转换器', description: '将WebP转换为JPG/PNG格式', category: 'image', icon: '🔄' },
   { id: '24', slug: 'image-crop', name: '图片裁剪', description: '裁剪图片并导出', category: 'image', icon: '✂️' },
   { id: '25', slug: 'exif-viewer', name: 'EXIF查看器', description: '查看和移除图片元数据', category: 'image', icon: '📷' },
   { id: '26', slug: 'svg-minify', name: 'SVG压缩', description: '压缩优化SVG文件', category: 'image', icon: '🎨' },
