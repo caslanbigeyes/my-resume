@@ -1,0 +1,20 @@
+{
+  "name": "LLM",
+  "color": "#4ECDC4",
+  "description": "大语言模型技术和应用",
+  "featured": false,
+  "body": {
+    "raw": "",
+    "html": ""
+  },
+  "_id": "tags/llm.md",
+  "_raw": {
+    "sourceFilePath": "tags/llm.md",
+    "sourceFileName": "llm.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/llm"
+  },
+  "type": "Tag",
+  "slug": "llm"
+}

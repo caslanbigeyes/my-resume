@@ -1,0 +1,20 @@
+{
+  "name": "Claude",
+  "color": "#96CEB4",
+  "description": "Anthropic Claude模型相关内容",
+  "featured": false,
+  "body": {
+    "raw": "",
+    "html": ""
+  },
+  "_id": "tags/claude.md",
+  "_raw": {
+    "sourceFilePath": "tags/claude.md",
+    "sourceFileName": "claude.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/claude"
+  },
+  "type": "Tag",
+  "slug": "claude"
+}

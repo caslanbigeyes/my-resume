@@ -1,5 +1,65 @@
 [
   {
+    "name": "AI",
+    "color": "#FF6B6B",
+    "description": "人工智能相关技术和应用",
+    "featured": false,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "tags/ai.md",
+    "_raw": {
+      "sourceFilePath": "tags/ai.md",
+      "sourceFileName": "ai.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/ai"
+    },
+    "type": "Tag",
+    "slug": "ai"
+  },
+  {
+    "name": "Claude",
+    "color": "#96CEB4",
+    "description": "Anthropic Claude模型相关内容",
+    "featured": false,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "tags/claude.md",
+    "_raw": {
+      "sourceFilePath": "tags/claude.md",
+      "sourceFileName": "claude.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/claude"
+    },
+    "type": "Tag",
+    "slug": "claude"
+  },
+  {
+    "name": "GPT",
+    "color": "#45B7D1",
+    "description": "GPT系列模型相关内容",
+    "featured": false,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "tags/gpt.md",
+    "_raw": {
+      "sourceFilePath": "tags/gpt.md",
+      "sourceFileName": "gpt.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/gpt"
+    },
+    "type": "Tag",
+    "slug": "gpt"
+  },
+  {
     "name": "JavaScript",
     "color": "#F7DF1E",
     "description": "JavaScript 基础与进阶，包括 ES6+、异步编程、性能优化等",
@@ -18,6 +78,26 @@
     },
     "type": "Tag",
     "slug": "javascript"
+  },
+  {
+    "name": "LLM",
+    "color": "#4ECDC4",
+    "description": "大语言模型技术和应用",
+    "featured": false,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "tags/llm.md",
+    "_raw": {
+      "sourceFilePath": "tags/llm.md",
+      "sourceFileName": "llm.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/llm"
+    },
+    "type": "Tag",
+    "slug": "llm"
   },
   {
     "name": "Next.js",

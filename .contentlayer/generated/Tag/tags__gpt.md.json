@@ -1,0 +1,20 @@
+{
+  "name": "GPT",
+  "color": "#45B7D1",
+  "description": "GPT系列模型相关内容",
+  "featured": false,
+  "body": {
+    "raw": "",
+    "html": ""
+  },
+  "_id": "tags/gpt.md",
+  "_raw": {
+    "sourceFilePath": "tags/gpt.md",
+    "sourceFileName": "gpt.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/gpt"
+  },
+  "type": "Tag",
+  "slug": "gpt"
+}

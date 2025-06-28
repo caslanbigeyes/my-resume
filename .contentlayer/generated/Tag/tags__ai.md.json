@@ -1,0 +1,20 @@
+{
+  "name": "AI",
+  "color": "#FF6B6B",
+  "description": "人工智能相关技术和应用",
+  "featured": false,
+  "body": {
+    "raw": "",
+    "html": ""
+  },
+  "_id": "tags/ai.md",
+  "_raw": {
+    "sourceFilePath": "tags/ai.md",
+    "sourceFileName": "ai.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/ai"
+  },
+  "type": "Tag",
+  "slug": "ai"
+}
