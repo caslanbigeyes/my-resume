@@ -153,6 +153,8 @@ export type Tag = {
   type: 'Tag'
   /** 标签名称 */
   name: string
+  /** 标签URL路径 */
+  slug: string
   /** 标签颜色 */
   color: string
   /** 标签描述 */

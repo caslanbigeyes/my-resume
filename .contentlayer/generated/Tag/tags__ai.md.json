@@ -1,5 +1,6 @@
 {
   "name": "AI",
+  "slug": "ai",
   "color": "#FF6B6B",
   "description": "人工智能相关技术和应用",
   "featured": false,
@@ -15,6 +16,5 @@
     "contentType": "markdown",
     "flattenedPath": "tags/ai"
   },
-  "type": "Tag",
-  "slug": "ai"
+  "type": "Tag"
 }

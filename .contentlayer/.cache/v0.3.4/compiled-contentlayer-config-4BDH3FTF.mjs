@@ -64,6 +64,11 @@ var Tag = defineDocumentType(() => ({
       description: "\u6807\u7B7E\u540D\u79F0",
       required: true
     },
+    slug: {
+      type: "string",
+      description: "\u6807\u7B7EURL\u8DEF\u5F84",
+      required: true
+    },
     color: {
       type: "string",
       description: "\u6807\u7B7E\u989C\u8272",
@@ -348,4 +353,4 @@ export {
   Tag,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-TUP3UKC3.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-4BDH3FTF.mjs.map

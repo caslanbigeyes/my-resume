@@ -1,5 +1,6 @@
 {
   "name": "Claude",
+  "slug": "claude",
   "color": "#96CEB4",
   "description": "Anthropic Claude模型相关内容",
   "featured": false,
@@ -15,6 +16,5 @@
     "contentType": "markdown",
     "flattenedPath": "tags/claude"
   },
-  "type": "Tag",
-  "slug": "claude"
+  "type": "Tag"
 }
