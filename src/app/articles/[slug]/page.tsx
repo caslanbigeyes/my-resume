@@ -5,6 +5,8 @@ import Layout from '../../Components/Layout'
 import { getArticleBySlug, getRelatedArticles, getTagBySlug, getCategoryBySlug } from '@/lib/data'
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
+import WeChatShare from '@/components/WeChatShare'
+import FloatingShareButton from '@/components/FloatingShareButton'
 
 export default function ArticleDetailPage() {
     const params = useParams();
@@ -118,6 +120,16 @@ export default function ArticleDetailPage() {
                                 })}</span>
                             )}
                         </div>
+
+                        {/* 分享按钮 */}
+                        <div className="flex items-center gap-2">
+                            <WeChatShare
+                                title={article.title}
+                                description={article.excerpt}
+                                url={typeof window !== 'undefined' ? window.location.href : `https://yoursite.com/articles/${article.slug}`}
+                                imageUrl={article.image}
+                            />
+                        </div>
                     </div>
                 </header>
 
@@ -218,6 +230,27 @@ export default function ArticleDetailPage() {
                     </section>
                 )}
 
+                {/* 分享区域 */}
+                <div className="bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 rounded-lg p-6 border border-blue-200 dark:border-blue-700 my-8">
+                    <div className="text-center mb-4">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                            觉得这篇文章有用？
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-400">
+                            分享给更多朋友，让知识传播得更远 ✨
+                        </p>
+                    </div>
+
+                    <div className="flex justify-center">
+                        <WeChatShare
+                            title={article.title}
+                            description={article.excerpt}
+                            url={typeof window !== 'undefined' ? window.location.href : `https://yoursite.com/articles/${article.slug}`}
+                            imageUrl={article.image}
+                        />
+                    </div>
+                </div>
+
                 {/* 导航按钮 */}
                 <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
                     <Link
@@ -236,6 +269,13 @@ export default function ArticleDetailPage() {
                     </div>
                 </div>
             </div>
+
+            {/* 浮动分享按钮 */}
+            <FloatingShareButton
+                title={article.title}
+                description={article.excerpt}
+                url={typeof window !== 'undefined' ? window.location.href : `https://yoursite.com/articles/${article.slug}`}
+            />
         </Layout>
     );
 }
