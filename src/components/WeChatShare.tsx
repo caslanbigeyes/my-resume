@@ -19,9 +19,10 @@ export default function WeChatShare({ title, description, url, imageUrl }: WeCha
   const [qrCodeUrl, setQrCodeUrl] = useState('')
   const [copySuccess, setCopySuccess] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
   /**
-   * 检测是否为移动设备
+   * 检测是否为移动设备和客户端挂载状态
    */
   useEffect(() => {
     const checkMobile = () => {
@@ -31,6 +32,7 @@ export default function WeChatShare({ title, description, url, imageUrl }: WeCha
     }
 
     setIsMobile(checkMobile())
+    setIsMounted(true)
   }, [])
 
   /**
@@ -139,7 +141,7 @@ export default function WeChatShare({ title, description, url, imageUrl }: WeCha
       {/* 分享按钮组 */}
       <div className="flex items-center gap-2">
         {/* 主分享按钮 */}
-        {typeof window !== 'undefined' && 'share' in navigator ? (
+        {isMounted && typeof window !== 'undefined' && 'share' in navigator ? (
           <button
             onClick={nativeShare}
             className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors"
