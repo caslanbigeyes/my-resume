@@ -7,6 +7,7 @@ import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import WeChatShare from '@/components/WeChatShare'
 import FloatingShareButton from '@/components/FloatingShareButton'
+import CommentSection from '@/components/CommentSection'
 
 export default function ArticleDetailPage() {
     const params = useParams();
@@ -249,6 +250,14 @@ export default function ArticleDetailPage() {
                             imageUrl={article.image}
                         />
                     </div>
+                </div>
+
+                {/* 评论区域 */}
+                <div className="mt-12">
+                    <CommentSection
+                        articleSlug={article.slug}
+                        articleTitle={article.title}
+                    />
                 </div>
 
                 {/* 导航按钮 */}
