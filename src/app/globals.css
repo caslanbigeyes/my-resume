@@ -18,7 +18,7 @@
   --accent-foreground: 29 78 216; /* blue-700 强调文字 */
   --destructive: 239 68 68; /* red-500 */
   --destructive-foreground: 255 255 255; /* white */
-  --border: 226 232 240; /* slate-200 边框 */
+  --border: 0 0 0; /* slate-200 边框 */
   --input: 241 245 249; /* slate-100 输入框背景 */
   --ring: 59 130 246; /* blue-500 焦点环 */
   --radius: 0.75rem; /* 更圆润的边角 */
@@ -46,7 +46,7 @@
   --accent-foreground: 147 197 253; /* blue-300 强调文字 */
   --destructive: 248 113 113; /* red-400 */
   --destructive-foreground: 15 23 42; /* slate-900 */
-  --border: 51 65 85; /* slate-700 边框 */
+  --border: 0 0 0; /* slate-700 边框 */
   --input: 30 41 59; /* slate-800 输入框背景 */
   --ring: 96 165 250; /* blue-400 焦点环 */
 
