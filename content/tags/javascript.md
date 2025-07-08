@@ -1,5 +1,6 @@
 ---
 name: "JavaScript"
+slug: "javascript"
 color: "#F7DF1E"
 description: "JavaScript 基础与进阶，包括 ES6+、异步编程、性能优化等"
 featured: true

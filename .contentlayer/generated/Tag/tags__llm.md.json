@@ -1,5 +1,6 @@
 {
   "name": "LLM",
+  "slug": "llm",
   "color": "#4ECDC4",
   "description": "大语言模型技术和应用",
   "featured": false,
@@ -15,6 +16,5 @@
     "contentType": "markdown",
     "flattenedPath": "tags/llm"
   },
-  "type": "Tag",
-  "slug": "llm"
+  "type": "Tag"
 }

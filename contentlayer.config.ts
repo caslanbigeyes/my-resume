@@ -67,6 +67,11 @@ export const Tag = defineDocumentType(() => ({
       description: '标签名称',
       required: true,
     },
+    slug: {
+      type: 'string',
+      description: '标签URL路径',
+      required: true,
+    },
     color: {
       type: 'string',
       description: '标签颜色',

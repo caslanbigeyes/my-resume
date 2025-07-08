@@ -1,5 +1,6 @@
 ---
 name: "React"
+slug: "react"
 color: "#61DAFB"
 description: "React.js 相关技术文章，包括组件开发、状态管理、性能优化等"
 featured: true

@@ -1,6 +1,7 @@
 [
   {
     "name": "AI",
+    "slug": "ai",
     "color": "#FF6B6B",
     "description": "人工智能相关技术和应用",
     "featured": false,
@@ -16,11 +17,11 @@
       "contentType": "markdown",
       "flattenedPath": "tags/ai"
     },
-    "type": "Tag",
-    "slug": "ai"
+    "type": "Tag"
   },
   {
     "name": "Claude",
+    "slug": "claude",
     "color": "#96CEB4",
     "description": "Anthropic Claude模型相关内容",
     "featured": false,
@@ -36,11 +37,11 @@
       "contentType": "markdown",
       "flattenedPath": "tags/claude"
     },
-    "type": "Tag",
-    "slug": "claude"
+    "type": "Tag"
   },
   {
     "name": "GPT",
+    "slug": "gpt",
     "color": "#45B7D1",
     "description": "GPT系列模型相关内容",
     "featured": false,
@@ -56,11 +57,11 @@
       "contentType": "markdown",
       "flattenedPath": "tags/gpt"
     },
-    "type": "Tag",
-    "slug": "gpt"
+    "type": "Tag"
   },
   {
     "name": "JavaScript",
+    "slug": "javascript",
     "color": "#F7DF1E",
     "description": "JavaScript 基础与进阶，包括 ES6+、异步编程、性能优化等",
     "featured": true,
@@ -76,11 +77,11 @@
       "contentType": "markdown",
       "flattenedPath": "tags/javascript"
     },
-    "type": "Tag",
-    "slug": "javascript"
+    "type": "Tag"
   },
   {
     "name": "LLM",
+    "slug": "llm",
     "color": "#4ECDC4",
     "description": "大语言模型技术和应用",
     "featured": false,
@@ -96,11 +97,11 @@
       "contentType": "markdown",
       "flattenedPath": "tags/llm"
     },
-    "type": "Tag",
-    "slug": "llm"
+    "type": "Tag"
   },
   {
     "name": "Next.js",
+    "slug": "nextjs",
     "color": "#000000",
     "description": "Next.js 框架相关文章，包括 SSR、SSG、App Router 等",
     "featured": true,
@@ -116,11 +117,11 @@
       "contentType": "markdown",
       "flattenedPath": "tags/nextjs"
     },
-    "type": "Tag",
-    "slug": "nextjs"
+    "type": "Tag"
   },
   {
     "name": "React",
+    "slug": "react",
     "color": "#61DAFB",
     "description": "React.js 相关技术文章，包括组件开发、状态管理、性能优化等",
     "featured": true,
@@ -136,11 +137,11 @@
       "contentType": "markdown",
       "flattenedPath": "tags/react"
     },
-    "type": "Tag",
-    "slug": "react"
+    "type": "Tag"
   },
   {
     "name": "TypeScript",
+    "slug": "typescript",
     "color": "#3178C6",
     "description": "TypeScript 开发技巧，类型系统，高级类型等",
     "featured": true,
@@ -156,7 +157,6 @@
       "contentType": "markdown",
       "flattenedPath": "tags/typescript"
     },
-    "type": "Tag",
-    "slug": "typescript"
+    "type": "Tag"
   }
 ]

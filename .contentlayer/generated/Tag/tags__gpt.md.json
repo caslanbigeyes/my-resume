@@ -1,5 +1,6 @@
 {
   "name": "GPT",
+  "slug": "gpt",
   "color": "#45B7D1",
   "description": "GPT系列模型相关内容",
   "featured": false,
@@ -15,6 +16,5 @@
     "contentType": "markdown",
     "flattenedPath": "tags/gpt"
   },
-  "type": "Tag",
-  "slug": "gpt"
+  "type": "Tag"
 }

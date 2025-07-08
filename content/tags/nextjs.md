@@ -1,5 +1,6 @@
 ---
 name: "Next.js"
+slug: "nextjs"
 color: "#000000"
 description: "Next.js 框架相关文章，包括 SSR、SSG、App Router 等"
 featured: true

@@ -1,5 +1,6 @@
 ---
 name: "TypeScript"
+slug: "typescript"
 color: "#3178C6"
 description: "TypeScript 开发技巧，类型系统，高级类型等"
 featured: true
