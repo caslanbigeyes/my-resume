@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "工具集 - 100款实用小工具",
-  description: "一个包含100个实用小工具的在线工具集合，涵盖文本处理、颜色设计、图片处理、编码加密等多个分类",
-  keywords: "工具集,在线工具,文本处理,颜色选择器,图片压缩,Base64编码,时间戳转换,密码生成器",
+  title: "李凌峰的博客",
+  description: "李凌峰的博客",
+  keywords: "李凌峰,博客,技术分享,个人成长,生活感悟",
   icons: {
     icon: "/me.svg",
   }
