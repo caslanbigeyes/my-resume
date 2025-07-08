@@ -51,6 +51,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
         mono: ['var(--font-geist-mono)', 'monospace'],
+        wenkai: ['"LXGW WenKai Lite"', 'sans-serif'],
       },
     },
   },
