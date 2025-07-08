@@ -5,6 +5,7 @@ import Layout from '../../Components/Layout'
 import { getArticleBySlug, getRelatedArticles, getTagBySlug, getCategoryBySlug } from '@/lib/data'
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import WeChatShare from '@/components/WeChatShare'
 import FloatingShareButton from '@/components/FloatingShareButton'
 import CommentSection from '@/components/CommentSection'
@@ -137,6 +138,7 @@ export default function ArticleDetailPage() {
                 {/* 文章内容 */}
                 <article className="prose prose-lg max-w-none mb-12">
                     <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
                         components={{
                             h1: ({ children }) => <h1 className="text-2xl font-bold mt-8 mb-4 text-gray-800">{children}</h1>,
                             h2: ({ children }) => <h2 className="text-xl font-semibold mt-6 mb-3 text-gray-800">{children}</h2>,
@@ -161,6 +163,26 @@ export default function ArticleDetailPage() {
                             ul: ({ children }) => <ul className="list-disc list-inside mb-4 text-gray-700">{children}</ul>,
                             ol: ({ children }) => <ol className="list-decimal list-inside mb-4 text-gray-700">{children}</ol>,
                             li: ({ children }) => <li className="mb-1">{children}</li>,
+                            table: ({ children }) => (
+                                <div className="overflow-x-auto mb-6">
+                                    <table className="min-w-full border-collapse border border-gray-300">
+                                        {children}
+                                    </table>
+                                </div>
+                            ),
+                            thead: ({ children }) => <thead className="bg-gray-50">{children}</thead>,
+                            tbody: ({ children }) => <tbody>{children}</tbody>,
+                            tr: ({ children }) => <tr className="border-b border-gray-200">{children}</tr>,
+                            th: ({ children }) => (
+                                <th className="border border-gray-300 px-4 py-2 text-left font-semibold text-gray-800">
+                                    {children}
+                                </th>
+                            ),
+                            td: ({ children }) => (
+                                <td className="border border-gray-300 px-4 py-2 text-gray-700">
+                                    {children}
+                                </td>
+                            ),
                         }}
                     >
                         {article.body.raw}
