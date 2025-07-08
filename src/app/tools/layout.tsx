@@ -30,7 +30,6 @@ export default function ToolsLayout({
                 href="/tools"
                 className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
-                <span>🛠️</span>
                 <span>工具集</span>
               </Link>
             </div>
