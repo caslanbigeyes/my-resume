@@ -72,7 +72,7 @@ export default function AboutPage() {
                     </section>
 
                     {/* 精选项目 */}
-                    {featuredProjects && featuredProjects.length > 0 && (
+                    {/* {featuredProjects && featuredProjects.length > 0 && (
                         <section className="mb-12">
                             <h2 className="text-2xl font-semibold mb-6 text-gray-800">精选项目</h2>
                             <div className="grid gap-6 md:grid-cols-2">
@@ -140,7 +140,7 @@ export default function AboutPage() {
                                 ))}
                             </div>
                         </section>
-                    )}
+                    )} */}
 
                     {/* 联系方式 */}
                     <section className="text-center">
@@ -151,13 +151,13 @@ export default function AboutPage() {
                             </p>
                             <div className="flex justify-center gap-4">
                                 <Link
-                                    href="mailto:zhangsan@example.com"
+                                    href="781650249@qq.com"
                                     className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
                                 >
                                     发送邮件
                                 </Link>
                                 <Link
-                                    href="https://github.com/zhangsan"
+                                    href="https://github.com"
                                     target="_blank"
                                     className="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900 transition-colors"
                                 >
