@@ -30,7 +30,6 @@ export default function ToolsLayout({
                 href="/tools"
                 className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
-                <span>🛠️</span>
                 <span>工具集</span>
               </Link>
             </div>
@@ -52,7 +51,7 @@ export default function ToolsLayout({
       <footer className="bg-white border-t mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p className="mb-2">🛠️ 工具集 - 100款实用小工具</p>
+            <p className="mb-2"> 工具集 - 100款实用小工具</p>
             <p className="text-sm">所有工具均在浏览器端运行，无需服务器支持</p>
           </div>
         </div>
