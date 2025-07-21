@@ -1,0 +1,20 @@
+{
+  "name": "Development",
+  "slug": "development",
+  "color": "#4a90e2",
+  "description": "软件开发相关技术和最佳实践",
+  "featured": false,
+  "body": {
+    "raw": "\n软件开发涵盖了从需求分析到部署维护的整个软件生命周期，包括各种开发工具、方法论和最佳实践。\n",
+    "html": "<p>软件开发涵盖了从需求分析到部署维护的整个软件生命周期，包括各种开发工具、方法论和最佳实践。</p>"
+  },
+  "_id": "tags/development.md",
+  "_raw": {
+    "sourceFilePath": "tags/development.md",
+    "sourceFileName": "development.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/development"
+  },
+  "type": "Tag"
+}

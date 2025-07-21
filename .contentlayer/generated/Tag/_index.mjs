@@ -2,11 +2,21 @@
 
 import tags__aiMd from './tags__ai.md.json' assert { type: 'json' }
 import tags__claudeMd from './tags__claude.md.json' assert { type: 'json' }
+import tags__deploymentMd from './tags__deployment.md.json' assert { type: 'json' }
+import tags__developmentMd from './tags__development.md.json' assert { type: 'json' }
+import tags__devopsMd from './tags__devops.md.json' assert { type: 'json' }
+import tags__dockerMd from './tags__docker.md.json' assert { type: 'json' }
+import tags__fullstackMd from './tags__fullstack.md.json' assert { type: 'json' }
 import tags__gptMd from './tags__gpt.md.json' assert { type: 'json' }
+import tags__javaMd from './tags__java.md.json' assert { type: 'json' }
 import tags__javascriptMd from './tags__javascript.md.json' assert { type: 'json' }
 import tags__llmMd from './tags__llm.md.json' assert { type: 'json' }
+import tags__mavenMd from './tags__maven.md.json' assert { type: 'json' }
 import tags__nextjsMd from './tags__nextjs.md.json' assert { type: 'json' }
+import tags__nginxMd from './tags__nginx.md.json' assert { type: 'json' }
 import tags__reactMd from './tags__react.md.json' assert { type: 'json' }
+import tags__springBootMd from './tags__spring-boot.md.json' assert { type: 'json' }
 import tags__typescriptMd from './tags__typescript.md.json' assert { type: 'json' }
+import tags__vscodeMd from './tags__vscode.md.json' assert { type: 'json' }
 
-export const allTags = [tags__aiMd, tags__claudeMd, tags__gptMd, tags__javascriptMd, tags__llmMd, tags__nextjsMd, tags__reactMd, tags__typescriptMd]
+export const allTags = [tags__aiMd, tags__claudeMd, tags__deploymentMd, tags__developmentMd, tags__devopsMd, tags__dockerMd, tags__fullstackMd, tags__gptMd, tags__javaMd, tags__javascriptMd, tags__llmMd, tags__mavenMd, tags__nextjsMd, tags__nginxMd, tags__reactMd, tags__springBootMd, tags__typescriptMd, tags__vscodeMd]

@@ -1,0 +1,20 @@
+{
+  "name": "Docker",
+  "slug": "docker",
+  "color": "#2496ed",
+  "description": "Docker 容器化技术和容器编排相关内容",
+  "featured": true,
+  "body": {
+    "raw": "\nDocker 是一个开源的容器化平台，用于开发、部署和运行应用程序。\n",
+    "html": "<p>Docker 是一个开源的容器化平台，用于开发、部署和运行应用程序。</p>"
+  },
+  "_id": "tags/docker.md",
+  "_raw": {
+    "sourceFilePath": "tags/docker.md",
+    "sourceFileName": "docker.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/docker"
+  },
+  "type": "Tag"
+}

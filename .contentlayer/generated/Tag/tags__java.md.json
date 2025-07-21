@@ -1,0 +1,20 @@
+{
+  "name": "Java",
+  "slug": "java",
+  "color": "#f89820",
+  "description": "Java 编程语言相关技术和开发实践",
+  "featured": true,
+  "body": {
+    "raw": "\nJava 是一种广泛使用的面向对象编程语言，以其\"一次编写，到处运行\"的特性而闻名。\n",
+    "html": "<p>Java 是一种广泛使用的面向对象编程语言，以其\"一次编写，到处运行\"的特性而闻名。</p>"
+  },
+  "_id": "tags/java.md",
+  "_raw": {
+    "sourceFilePath": "tags/java.md",
+    "sourceFileName": "java.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/java"
+  },
+  "type": "Tag"
+}

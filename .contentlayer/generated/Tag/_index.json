@@ -40,6 +40,106 @@
     "type": "Tag"
   },
   {
+    "name": "Deployment",
+    "slug": "deployment",
+    "color": "#ff6b6b",
+    "description": "应用部署、CI/CD 和 DevOps 相关技术",
+    "featured": true,
+    "body": {
+      "raw": "\n应用部署涵盖了从代码到生产环境的整个流程，包括构建、测试、发布和监控。\n",
+      "html": "<p>应用部署涵盖了从代码到生产环境的整个流程，包括构建、测试、发布和监控。</p>"
+    },
+    "_id": "tags/deployment.md",
+    "_raw": {
+      "sourceFilePath": "tags/deployment.md",
+      "sourceFileName": "deployment.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/deployment"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "Development",
+    "slug": "development",
+    "color": "#4a90e2",
+    "description": "软件开发相关技术和最佳实践",
+    "featured": false,
+    "body": {
+      "raw": "\n软件开发涵盖了从需求分析到部署维护的整个软件生命周期，包括各种开发工具、方法论和最佳实践。\n",
+      "html": "<p>软件开发涵盖了从需求分析到部署维护的整个软件生命周期，包括各种开发工具、方法论和最佳实践。</p>"
+    },
+    "_id": "tags/development.md",
+    "_raw": {
+      "sourceFilePath": "tags/development.md",
+      "sourceFileName": "development.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/development"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "DevOps",
+    "slug": "devops",
+    "color": "#326ce5",
+    "description": "DevOps 实践、CI/CD 和自动化运维",
+    "featured": true,
+    "body": {
+      "raw": "\nDevOps 是一种软件开发和运维的实践方法，强调开发和运维团队之间的协作和自动化。\n",
+      "html": "<p>DevOps 是一种软件开发和运维的实践方法，强调开发和运维团队之间的协作和自动化。</p>"
+    },
+    "_id": "tags/devops.md",
+    "_raw": {
+      "sourceFilePath": "tags/devops.md",
+      "sourceFileName": "devops.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/devops"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "Docker",
+    "slug": "docker",
+    "color": "#2496ed",
+    "description": "Docker 容器化技术和容器编排相关内容",
+    "featured": true,
+    "body": {
+      "raw": "\nDocker 是一个开源的容器化平台，用于开发、部署和运行应用程序。\n",
+      "html": "<p>Docker 是一个开源的容器化平台，用于开发、部署和运行应用程序。</p>"
+    },
+    "_id": "tags/docker.md",
+    "_raw": {
+      "sourceFilePath": "tags/docker.md",
+      "sourceFileName": "docker.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/docker"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "Full Stack",
+    "slug": "fullstack",
+    "color": "#8b5cf6",
+    "description": "全栈开发技术和前后端结合的最佳实践",
+    "featured": true,
+    "body": {
+      "raw": "\n全栈开发涵盖前端和后端技术，帮助开发者构建完整的 Web 应用程序。\n",
+      "html": "<p>全栈开发涵盖前端和后端技术，帮助开发者构建完整的 Web 应用程序。</p>"
+    },
+    "_id": "tags/fullstack.md",
+    "_raw": {
+      "sourceFilePath": "tags/fullstack.md",
+      "sourceFileName": "fullstack.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/fullstack"
+    },
+    "type": "Tag"
+  },
+  {
     "name": "GPT",
     "slug": "gpt",
     "color": "#45B7D1",
@@ -56,6 +156,26 @@
       "sourceFileDir": "tags",
       "contentType": "markdown",
       "flattenedPath": "tags/gpt"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "Java",
+    "slug": "java",
+    "color": "#f89820",
+    "description": "Java 编程语言相关技术和开发实践",
+    "featured": true,
+    "body": {
+      "raw": "\nJava 是一种广泛使用的面向对象编程语言，以其\"一次编写，到处运行\"的特性而闻名。\n",
+      "html": "<p>Java 是一种广泛使用的面向对象编程语言，以其\"一次编写，到处运行\"的特性而闻名。</p>"
+    },
+    "_id": "tags/java.md",
+    "_raw": {
+      "sourceFilePath": "tags/java.md",
+      "sourceFileName": "java.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/java"
     },
     "type": "Tag"
   },
@@ -100,6 +220,26 @@
     "type": "Tag"
   },
   {
+    "name": "Maven",
+    "slug": "maven",
+    "color": "#c71a36",
+    "description": "Apache Maven 构建工具和依赖管理",
+    "featured": false,
+    "body": {
+      "raw": "\nApache Maven 是一个项目管理和构建自动化工具，主要用于 Java 项目的依赖管理和构建过程。\n",
+      "html": "<p>Apache Maven 是一个项目管理和构建自动化工具，主要用于 Java 项目的依赖管理和构建过程。</p>"
+    },
+    "_id": "tags/maven.md",
+    "_raw": {
+      "sourceFilePath": "tags/maven.md",
+      "sourceFileName": "maven.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/maven"
+    },
+    "type": "Tag"
+  },
+  {
     "name": "Next.js",
     "slug": "nextjs",
     "color": "#000000",
@@ -116,6 +256,26 @@
       "sourceFileDir": "tags",
       "contentType": "markdown",
       "flattenedPath": "tags/nextjs"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "Nginx",
+    "slug": "nginx",
+    "color": "#009639",
+    "description": "Nginx Web 服务器配置和优化",
+    "featured": false,
+    "body": {
+      "raw": "\nNginx 是一个高性能的 HTTP 和反向代理服务器，广泛用于 Web 应用部署。\n",
+      "html": "<p>Nginx 是一个高性能的 HTTP 和反向代理服务器，广泛用于 Web 应用部署。</p>"
+    },
+    "_id": "tags/nginx.md",
+    "_raw": {
+      "sourceFilePath": "tags/nginx.md",
+      "sourceFileName": "nginx.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/nginx"
     },
     "type": "Tag"
   },
@@ -140,6 +300,26 @@
     "type": "Tag"
   },
   {
+    "name": "Spring Boot",
+    "slug": "spring-boot",
+    "color": "#6db33f",
+    "description": "Spring Boot 框架开发和最佳实践",
+    "featured": true,
+    "body": {
+      "raw": "\nSpring Boot 是基于 Spring 框架的快速开发框架，简化了 Spring 应用的配置和部署。\n",
+      "html": "<p>Spring Boot 是基于 Spring 框架的快速开发框架，简化了 Spring 应用的配置和部署。</p>"
+    },
+    "_id": "tags/spring-boot.md",
+    "_raw": {
+      "sourceFilePath": "tags/spring-boot.md",
+      "sourceFileName": "spring-boot.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/spring-boot"
+    },
+    "type": "Tag"
+  },
+  {
     "name": "TypeScript",
     "slug": "typescript",
     "color": "#3178C6",
@@ -156,6 +336,26 @@
       "sourceFileDir": "tags",
       "contentType": "markdown",
       "flattenedPath": "tags/typescript"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "VS Code",
+    "slug": "vscode",
+    "color": "#007acc",
+    "description": "Visual Studio Code 编辑器相关配置和插件",
+    "featured": true,
+    "body": {
+      "raw": "\nVisual Studio Code 是微软开发的免费、开源的代码编辑器，支持多种编程语言和丰富的插件生态。\n",
+      "html": "<p>Visual Studio Code 是微软开发的免费、开源的代码编辑器，支持多种编程语言和丰富的插件生态。</p>"
+    },
+    "_id": "tags/vscode.md",
+    "_raw": {
+      "sourceFilePath": "tags/vscode.md",
+      "sourceFileName": "vscode.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/vscode"
     },
     "type": "Tag"
   }

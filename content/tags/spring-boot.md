@@ -1,0 +1,9 @@
+---
+name: "Spring Boot"
+slug: "spring-boot"
+color: "#6db33f"
+description: "Spring Boot 框架开发和最佳实践"
+featured: true
+---
+
+Spring Boot 是基于 Spring 框架的快速开发框架，简化了 Spring 应用的配置和部署。

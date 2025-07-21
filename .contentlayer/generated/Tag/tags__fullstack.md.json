@@ -1,0 +1,20 @@
+{
+  "name": "Full Stack",
+  "slug": "fullstack",
+  "color": "#8b5cf6",
+  "description": "全栈开发技术和前后端结合的最佳实践",
+  "featured": true,
+  "body": {
+    "raw": "\n全栈开发涵盖前端和后端技术，帮助开发者构建完整的 Web 应用程序。\n",
+    "html": "<p>全栈开发涵盖前端和后端技术，帮助开发者构建完整的 Web 应用程序。</p>"
+  },
+  "_id": "tags/fullstack.md",
+  "_raw": {
+    "sourceFilePath": "tags/fullstack.md",
+    "sourceFileName": "fullstack.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/fullstack"
+  },
+  "type": "Tag"
+}
