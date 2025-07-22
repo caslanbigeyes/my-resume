@@ -55,7 +55,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <header className="glass-effect rounded-2xl p-6 mb-8 card-shadow animate-fade-in">
                 <div className="flex justify-between items-center">
                     <h1 className="text-2xl font-bold gradient-text">
-                        ✨ 个人记录
+                        ✨ 个人文档
                     </h1>
                     <div className="flex items-center gap-6">
                         <nav className="hidden md:flex items-center space-x-6">
