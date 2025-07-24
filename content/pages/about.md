@@ -11,7 +11,7 @@ seoKeywords: ["李凌峰", "Web3 开发", "区块链开发", "Solidity", "React"
 # 李凌峰 | 资深全栈工程师 (Web3 方向)
 **工作经验**：6年 | **期望城市**：上海  
 **技术专长**：React/Vue 全栈开发 | Web3 DApp 架构 | 智能合约集成 | 区块链应用性能优化 | Node.js 后端服务  
-**联系方式**：17389867465 | 781650249@qq.com | [GitHub](https://github.com/llfzxx)  
+**联系方式**：781650249@qq.com | [GitHub](https://github.com/llfzxx)  
 
 ---
 

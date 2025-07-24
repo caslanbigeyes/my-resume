@@ -39,4 +39,3 @@ linkedin: "li-lingfeng"
 - 🐙 GitHub: [@llfzxx](https://github.com/llfzxx)
 - 🐦 Twitter: [@llfzxx_dev](https://twitter.com/llfzxx_dev)
 - 💼 LinkedIn: [李凌峰](https://linkedin.com/in/li-lingfeng)
-- 📱 电话: 17389867465

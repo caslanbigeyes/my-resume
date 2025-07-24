@@ -4,6 +4,7 @@ import Layout from '../Components/Layout'
 import { getPageBySlug, getFeaturedProjects } from '@/lib/data'
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 export default function AboutPage() {
     // 使用 try-catch 包裹数据获取逻辑
@@ -46,6 +47,7 @@ export default function AboutPage() {
                             <div className="prose prose-lg max-w-none">
                                 {aboutPage.body && aboutPage.body.raw ? (
                                     <ReactMarkdown
+                                        remarkPlugins={[remarkGfm]}
                                         components={{
                                             h1: ({ children }) => <h1 className="text-2xl font-bold mt-8 mb-4 text-gray-800">{children}</h1>,
                                             h2: ({ children }) => <h2 className="text-xl font-semibold mt-6 mb-3 text-gray-800">{children}</h2>,
@@ -59,6 +61,38 @@ export default function AboutPage() {
                                                 <blockquote className="border-l-4 border-blue-500 pl-4 py-2 my-4 bg-blue-50 text-gray-700 italic">
                                                     {children}
                                                 </blockquote>
+                                            ),
+                                            table: ({ children }) => (
+                                                <div className="overflow-x-auto my-6">
+                                                    <table className="min-w-full border-collapse border border-gray-300">
+                                                        {children}
+                                                    </table>
+                                                </div>
+                                            ),
+                                            thead: ({ children }) => (
+                                                <thead className="bg-gray-50">
+                                                    {children}
+                                                </thead>
+                                            ),
+                                            tbody: ({ children }) => (
+                                                <tbody className="bg-white">
+                                                    {children}
+                                                </tbody>
+                                            ),
+                                            tr: ({ children }) => (
+                                                <tr className="border-b border-gray-200 hover:bg-gray-50">
+                                                    {children}
+                                                </tr>
+                                            ),
+                                            th: ({ children }) => (
+                                                <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800 bg-gray-100">
+                                                    {children}
+                                                </th>
+                                            ),
+                                            td: ({ children }) => (
+                                                <td className="border border-gray-300 px-4 py-3 text-gray-700">
+                                                    {children}
+                                                </td>
                                             ),
                                         }}
                                     >
