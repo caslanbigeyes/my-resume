@@ -40,6 +40,26 @@
     "type": "Tag"
   },
   {
+    "name": "Deep Learning",
+    "slug": "deep-learning",
+    "color": "#2196f3",
+    "description": "深度学习技术、神经网络和模型架构",
+    "featured": true,
+    "body": {
+      "raw": "\n深度学习是机器学习的子领域，使用多层神经网络来学习数据的复杂模式和表示。\n",
+      "html": "<p>深度学习是机器学习的子领域，使用多层神经网络来学习数据的复杂模式和表示。</p>"
+    },
+    "_id": "tags/deep-learning.md",
+    "_raw": {
+      "sourceFilePath": "tags/deep-learning.md",
+      "sourceFileName": "deep-learning.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/deep-learning"
+    },
+    "type": "Tag"
+  },
+  {
     "name": "Deployment",
     "slug": "deployment",
     "color": "#ff6b6b",
@@ -200,6 +220,46 @@
     "type": "Tag"
   },
   {
+    "name": "Jupyter",
+    "slug": "jupyter",
+    "color": "#f37626",
+    "description": "Jupyter Notebook 交互式开发环境",
+    "featured": false,
+    "body": {
+      "raw": "\nJupyter Notebook 是一个开源的 Web 应用程序，支持创建和共享包含代码、方程式、可视化和文本的文档。\n",
+      "html": "<p>Jupyter Notebook 是一个开源的 Web 应用程序，支持创建和共享包含代码、方程式、可视化和文本的文档。</p>"
+    },
+    "_id": "tags/jupyter.md",
+    "_raw": {
+      "sourceFilePath": "tags/jupyter.md",
+      "sourceFileName": "jupyter.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/jupyter"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "KNN",
+    "slug": "knn",
+    "color": "#28a745",
+    "description": "K 近邻算法和分类技术",
+    "featured": false,
+    "body": {
+      "raw": "\nK 近邻（K-Nearest Neighbors）是一种简单而有效的机器学习算法，用于分类和回归问题。\n",
+      "html": "<p>K 近邻（K-Nearest Neighbors）是一种简单而有效的机器学习算法，用于分类和回归问题。</p>"
+    },
+    "_id": "tags/knn.md",
+    "_raw": {
+      "sourceFilePath": "tags/knn.md",
+      "sourceFileName": "knn.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/knn"
+    },
+    "type": "Tag"
+  },
+  {
     "name": "LLM",
     "slug": "llm",
     "color": "#4ECDC4",
@@ -216,6 +276,26 @@
       "sourceFileDir": "tags",
       "contentType": "markdown",
       "flattenedPath": "tags/llm"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "Machine Learning",
+    "slug": "machine-learning",
+    "color": "#4caf50",
+    "description": "机器学习算法、模型和应用实践",
+    "featured": true,
+    "body": {
+      "raw": "\n机器学习是人工智能的核心分支，通过算法让计算机从数据中学习模式和规律。\n",
+      "html": "<p>机器学习是人工智能的核心分支，通过算法让计算机从数据中学习模式和规律。</p>"
+    },
+    "_id": "tags/machine-learning.md",
+    "_raw": {
+      "sourceFilePath": "tags/machine-learning.md",
+      "sourceFileName": "machine-learning.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/machine-learning"
     },
     "type": "Tag"
   },
@@ -280,6 +360,26 @@
     "type": "Tag"
   },
   {
+    "name": "NLP",
+    "slug": "nlp",
+    "color": "#9c27b0",
+    "description": "自然语言处理技术和文本分析",
+    "featured": true,
+    "body": {
+      "raw": "\n自然语言处理（Natural Language Processing）是计算机科学和人工智能的交叉领域，专注于计算机与人类语言的交互。\n",
+      "html": "<p>自然语言处理（Natural Language Processing）是计算机科学和人工智能的交叉领域，专注于计算机与人类语言的交互。</p>"
+    },
+    "_id": "tags/nlp.md",
+    "_raw": {
+      "sourceFilePath": "tags/nlp.md",
+      "sourceFileName": "nlp.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/nlp"
+    },
+    "type": "Tag"
+  },
+  {
     "name": "React",
     "slug": "react",
     "color": "#61DAFB",
@@ -296,6 +396,26 @@
       "sourceFileDir": "tags",
       "contentType": "markdown",
       "flattenedPath": "tags/react"
+    },
+    "type": "Tag"
+  },
+  {
+    "name": "Scikit-learn",
+    "slug": "scikit-learn",
+    "color": "#f7931e",
+    "description": "Scikit-learn 机器学习库和算法实现",
+    "featured": true,
+    "body": {
+      "raw": "\nScikit-learn 是 Python 中最流行的机器学习库，提供了简单高效的数据挖掘和数据分析工具。\n",
+      "html": "<p>Scikit-learn 是 Python 中最流行的机器学习库，提供了简单高效的数据挖掘和数据分析工具。</p>"
+    },
+    "_id": "tags/scikit-learn.md",
+    "_raw": {
+      "sourceFilePath": "tags/scikit-learn.md",
+      "sourceFileName": "scikit-learn.md",
+      "sourceFileDir": "tags",
+      "contentType": "markdown",
+      "flattenedPath": "tags/scikit-learn"
     },
     "type": "Tag"
   },

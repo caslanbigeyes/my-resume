@@ -1,0 +1,9 @@
+---
+name: "Machine Learning"
+slug: "machine-learning"
+color: "#4caf50"
+description: "机器学习算法、模型和应用实践"
+featured: true
+---
+
+机器学习是人工智能的核心分支，通过算法让计算机从数据中学习模式和规律。

@@ -1,0 +1,20 @@
+{
+  "name": "Deep Learning",
+  "slug": "deep-learning",
+  "color": "#2196f3",
+  "description": "深度学习技术、神经网络和模型架构",
+  "featured": true,
+  "body": {
+    "raw": "\n深度学习是机器学习的子领域，使用多层神经网络来学习数据的复杂模式和表示。\n",
+    "html": "<p>深度学习是机器学习的子领域，使用多层神经网络来学习数据的复杂模式和表示。</p>"
+  },
+  "_id": "tags/deep-learning.md",
+  "_raw": {
+    "sourceFilePath": "tags/deep-learning.md",
+    "sourceFileName": "deep-learning.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/deep-learning"
+  },
+  "type": "Tag"
+}

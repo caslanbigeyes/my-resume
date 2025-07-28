@@ -1,0 +1,20 @@
+{
+  "name": "NLP",
+  "slug": "nlp",
+  "color": "#9c27b0",
+  "description": "自然语言处理技术和文本分析",
+  "featured": true,
+  "body": {
+    "raw": "\n自然语言处理（Natural Language Processing）是计算机科学和人工智能的交叉领域，专注于计算机与人类语言的交互。\n",
+    "html": "<p>自然语言处理（Natural Language Processing）是计算机科学和人工智能的交叉领域，专注于计算机与人类语言的交互。</p>"
+  },
+  "_id": "tags/nlp.md",
+  "_raw": {
+    "sourceFilePath": "tags/nlp.md",
+    "sourceFileName": "nlp.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/nlp"
+  },
+  "type": "Tag"
+}

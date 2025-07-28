@@ -1,0 +1,20 @@
+{
+  "name": "Jupyter",
+  "slug": "jupyter",
+  "color": "#f37626",
+  "description": "Jupyter Notebook 交互式开发环境",
+  "featured": false,
+  "body": {
+    "raw": "\nJupyter Notebook 是一个开源的 Web 应用程序，支持创建和共享包含代码、方程式、可视化和文本的文档。\n",
+    "html": "<p>Jupyter Notebook 是一个开源的 Web 应用程序，支持创建和共享包含代码、方程式、可视化和文本的文档。</p>"
+  },
+  "_id": "tags/jupyter.md",
+  "_raw": {
+    "sourceFilePath": "tags/jupyter.md",
+    "sourceFileName": "jupyter.md",
+    "sourceFileDir": "tags",
+    "contentType": "markdown",
+    "flattenedPath": "tags/jupyter"
+  },
+  "type": "Tag"
+}

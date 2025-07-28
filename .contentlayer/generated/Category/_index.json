@@ -1,5 +1,25 @@
 [
   {
+    "name": "AI & Machine Learning",
+    "color": "#ff6b35",
+    "description": "人工智能、机器学习和深度学习相关技术文章",
+    "order": 0,
+    "body": {
+      "raw": "\n人工智能和机器学习是当今最前沿的技术领域，涵盖了从基础算法到大语言模型的各种技术。\n",
+      "html": "<p>人工智能和机器学习是当今最前沿的技术领域，涵盖了从基础算法到大语言模型的各种技术。</p>"
+    },
+    "_id": "categories/ai.md",
+    "_raw": {
+      "sourceFilePath": "categories/ai.md",
+      "sourceFileName": "ai.md",
+      "sourceFileDir": "categories",
+      "contentType": "markdown",
+      "flattenedPath": "categories/ai"
+    },
+    "type": "Category",
+    "slug": "ai"
+  },
+  {
     "name": "后端开发",
     "color": "#4ECDC4",
     "description": "后端技术、API 设计和服务器开发，包括 Node.js、Python、数据库等",
