@@ -3,12 +3,12 @@ title: "关于我"
 description: "了解我的技术背景、工作经历和个人项目"
 lastUpdated: "2024-12-25"
 layout: "about"
-seoTitle: "关于我 - 李凌峰的个人简介 | Web3 开发者"
-seoDescription: "资深全栈工程师李凌峰的个人简介，专注于将现代Web技术应用于Web3领域，包括技术背景、工作经历和项目经验"
-seoKeywords: ["李凌峰", "Web3 开发", "区块链开发", "Solidity", "React", "Vue", "Node.js", "前端开发", "智能合约", "DApp"]
+seoTitle: "关于我 - hero的个人简介 | Web3 开发者"
+seoDescription: "资深全栈工程师hero的个人简介，专注于将现代Web技术应用于Web3领域，包括技术背景、工作经历和项目经验"
+seoKeywords: ["hero", "Web3 开发", "区块链开发", "Solidity", "React", "Vue", "Node.js", "前端开发", "智能合约", "DApp"]
 ---
 
-# 李凌峰 | 资深全栈工程师 (Web3 方向)
+# hero | 资深全栈工程师 (Web3 方向)
 **工作经验**：6年 | **期望城市**：上海  
 **技术专长**：React/Vue 全栈开发 | Web3 DApp 架构 | 智能合约集成 | 区块链应用性能优化 | Node.js 后端服务  
 **联系方式**：781650249@qq.com | [GitHub](https://github.com/llfzxx)  

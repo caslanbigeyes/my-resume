@@ -2,7 +2,7 @@
   "title": "Java 转 VS Code 开发环境配置完整指南",
   "excerpt": "详细介绍如何从传统的 Java IDE 转向使用 VS Code 进行 Java 开发，包括环境搭建、插件配置、项目创建和开发实践。",
   "publishedAt": "2025-01-21T00:00:00.000Z",
-  "author": "li-lingfeng",
+  "author": "hero",
   "category": "backend",
   "tags": [
     "java",

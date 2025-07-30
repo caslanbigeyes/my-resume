@@ -2,7 +2,7 @@
 title: "TypeScript 高级类型实战指南"
 excerpt: "深入探索 TypeScript 的高级类型系统，包括条件类型、映射类型、模板字面量类型等，通过实际案例学习如何构建类型安全的应用。"
 publishedAt: "2024-01-28"
-author: "li-lingfeng"
+author: "hero"
 category: "frontend"
 tags: ["typescript", "javascript"]
 featured: false

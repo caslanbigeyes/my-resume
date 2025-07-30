@@ -2,7 +2,7 @@
 title: "GitHub Webhook 实现服务器自动化部署"
 excerpt: "详细介绍如何使用 GitHub Webhook 实现代码推送后的自动化部署，包括服务器配置、脚本编写和 PM2 进程管理。"
 publishedAt: "2024-02-01"
-author: "li-lingfeng"
+author: "hero"
 category: "devops"
 tags: ["webhook", "deployment", "github", "pm2", "automation"]
 featured: true

@@ -1,15 +1,15 @@
 ---
-name: "李凌峰"
-avatar: "/avatars/li-lingfeng.jpg"
+name: "hero"
+avatar: "/avatars/hero.jpg"
 bio: "前端开发工程师，6年工作经验，专注于React、Vue等现代前端技术栈。擅长微前端、性能优化、组件库建设。"
 email: "781650249@qq.com"
 website: "https://www.llfzxx.com"
 github: "llfzxx"
 twitter: "llfzxx_dev"
-linkedin: "li-lingfeng"
+linkedin: "hero"
 ---
 
-# 关于李凌峰
+# 关于hero
 
 我是一名充满激情的前端开发工程师，拥有 6 年的 Web 开发经验。我专注于：
 
@@ -38,4 +38,4 @@ linkedin: "li-lingfeng"
 - 🌐 个人网站: [www.llfzxx.com](https://www.llfzxx.com)
 - 🐙 GitHub: [@llfzxx](https://github.com/llfzxx)
 - 🐦 Twitter: [@llfzxx_dev](https://twitter.com/llfzxx_dev)
-- 💼 LinkedIn: [李凌峰](https://linkedin.com/in/li-lingfeng)
+- 💼 LinkedIn: [hero](https://linkedin.com/in/hero)

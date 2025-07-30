@@ -3,7 +3,7 @@ title: "React 18 并发特性深度解析"
 excerpt: "深入探讨 React 18 的并发渲染机制，包括 useTransition、useDeferredValue 等新 Hook 的使用场景和最佳实践。"
 publishedAt: "2024-01-15"
 updatedAt: "2024-01-20"
-author: "li-lingfeng"
+author: "hero"
 category: "frontend"
 tags: ["react", "typescript"]
 featured: true

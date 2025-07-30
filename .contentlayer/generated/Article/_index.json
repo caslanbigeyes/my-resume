@@ -1,9 +1,50 @@
 [
   {
+    "title": "VSCode Augment (修改版)",
+    "excerpt": "augment无限使用教程",
+    "publishedAt": "2025-07-28T00:00:00.000Z",
+    "author": "hero",
+    "category": "fullstack",
+    "tags": [
+      "augment",
+      "Claude"
+    ],
+    "featured": true,
+    "published": true,
+    "image": "/images/articles/ai-models-comparison-2025.jpg",
+    "seoTitle": "augment无限使用教程",
+    "seoDescription": "augment无限使用教程",
+    "seoKeywords": [
+      "AI对比",
+      "2025年AI"
+    ],
+    "body": {
+      "raw": "\n# VSCode Augment (修改版)\n\n\n一个增强 Visual Studio Code 功能的扩展插件。\n\n## 🚨 重要说明 - 请务必阅读\n\n> **关于风控与免费试用**\n>\n> 最近 Augment 加强了风控，之前为了能免费试用出现了好些清理工具，但是最近好些工具都失效了，能不能有一个不需要任何清理的情况下，也能正常继续使用呢？\n>\n> **这是一个仅供学习和研究试用的版本**；现在提供一个月的使用时间，有时间可能会定时更新~~ 如 [v0.5091-25-0728](https://github.com/agassiz/vscode-augment/releases/tag/v0.5091-25-0728) 这个版本，有效期是25年08月31\n>\n> **这个是一个月的，到08月31，这个时候基本上augment官方都已经出来下一个更新版本了；**\n\n### 🌍 地区限制解决方案 - 新增重要说明\n\n> **⚠️ 如果遇到注册地区限制问题**\n>\n> 如果在注册时出现以下提示：\n> `Due to increased demand, we're limiting signups in certain regions to maintain performance for existing customers`\n>\n> **解决方案**：\n> 1. **下载指纹浏览器**：[AdsPower 指纹浏览器](https://www.adspower.net/download)\n> 2. **配置代理**：使用梯子（推荐日本、新加坡等地区节点）\n> 3. **重要设置**：一定要设置指纹浏览器的 IP 设置的地方走代理\n> 4. **验证步骤**：\n>    - 访问 Google 搜索\n>    - 在 Google 随便搜索内容 如 ip; 在下面的 定位是否正确\n>    - 确保google定位不到位置或定位显示为国外 ;我看augment 就使用了 google 定位\n>    - 如果显示为国外或无法定位，则设置成功,又能正常的注册了（可以使用自己的域名邮箱，千万不要用什么临时邮箱），我也只能帮到这里了\n> 5. **完成后**：在此环境下进行 Augment 账号注册\n\n### ⚡ 快速使用指南\n- **首次安装**：安装好插件后，**一定要重启 VSCode**\n- **换账号**：只需要退出后，正常的官方重新注册登录就行，**不需要清理任何 augment 相关数据**\n\n### 📝 版本说明\n1. **功能一致**：和官方插件一模一样，只是学习的时候，通过逆向删除了官方收集个人信息用于风控的代码\n2. **时效限制**：加有效期是为了防止别人拿去滥用~~~ 现在延长到一个月，目标是到9月时官方基本上都已经出来下一个更新版本了\n3. **研究目的**：没事时研究了插件怎么收集的个人信息，就一直想把它去了；不为别的~\n4. **使用态度**：没有交流群~ 你觉得好就拿去用，不好请忽略~\n\n---\n\n## 📋 功能特性\n\n- 🚀 增强的代码编辑体验\n- 🔧 智能代码辅助功能\n- 📊 提升开发效率的工具集\n- 🎨 优化的用户界面体验\n\n## 📦 安装方法\n\n### 本地 VSIX 安装包安装\n\n**重要说明**：这是一个本地安装包，需要手动下载并安装，不能通过 VSCode 扩展市场直接安装。\n\n#### 方法一：图形界面安装（推荐，适合一般用户）\n\n1. 访问 [Releases 页面](https://github.com/agassiz/vscode-augment/releases)\n2. 下载最新版本 `v0.5091-25-0728` 的 `.vsix` 文件\n3. 打开 VSCode，点击左侧扩展图标 (或按 `Ctrl+Shift+X` / `Cmd+Shift+X`)\n4. 点击扩展面板右上角的 `...` (更多操作) 按钮\n5. 选择 `从 VSIX 安装...` (Install from VSIX...)\n6. 浏览并选择下载的 `.vsix` 文件\n7. **重要**：安装完成后必须重启 VSCode\n\n#### 方法二：命令面板安装\n\n1. 下载 `.vsix` 文件后，在 VSCode 中按 `Ctrl+Shift+P` (Windows/Linux) 或 `Cmd+Shift+P` (macOS)\n2. 输入 `Extensions: Install from VSIX...`\n3. 选择下载的 `.vsix` 文件进行安装\n4. **重要**：安装完成后必须重启 VSCode\n\n#### 方法三：命令行安装（适合开发者）\n\n```bash\n# 下载 .vsix 文件后，在文件所在目录执行：\ncode --install-extension vscode-augment-0.5091.vsix\n```\n\n#### 方法四：直接拖拽安装（最简单）\n\n1. 下载 `.vsix` 文件到本地\n2. 打开 VSCode 扩展面板 (`Ctrl+Shift+X` / `Cmd+Shift+X`)\n3. 将 `.vsix` 文件直接拖拽到扩展面板中\n4. 确认安装并重启 VSCode\n\n> **💡 安装提示**：推荐使用方法一（图形界面）或方法四（拖拽），这两种方式对一般用户最友好，不需要使用命令行。\n\n## 🚀 使用说明\n\n**本地安装包特点**：\n- 这是一个修改版的本地安装包，不依赖官方扩展市场\n- 安装完成后**必须重启 VSCode** 才能正常使用\n- 功能与官方版本完全一致，只是移除了部分风控代码\n\n安装完成后，插件将自动激活。您可以通过以下方式使用：\n\n1. **功能访问**：通过命令面板 (`Ctrl+Shift+P` / `Cmd+Shift+P`) 搜索相关命令\n2. **快捷键**：查看插件设置中的快捷键配置\n3. **设置配置**：在 VSCode 设置中搜索 \"augment\" 进行个性化配置\n\n## ⚙️ 配置选项\n\n插件提供了丰富的配置选项，您可以在 VSCode 设置中进行调整：\n\n- 打开设置：`File > Preferences > Settings` (Windows/Linux) 或 `Code > Preferences > Settings` (macOS)\n- 搜索 \"augment\" 查看所有可配置项\n\n## 🔧 开发环境\n\n- **VSCode 版本要求**：>= 1.60.0\n- **Node.js 版本**：>= 14.0.0\n\n## ⏰ 版本说明\n\n- **版本类型**：修改版 (Modified Version)\n- **有效期**：约一个月（至2025年09月）\n- **基于版本**：VSCode Augment 官方版本\n- **使用建议**：建议用户关注官方版本的后续更新\n\n## 📝 更新日志\n\n### v0.5091-25-0728 (修改版)\n- 基于官方版本的功能增强和修改\n- 性能优化和用户体验改进\n- 修复已知问题\n- **重要更新**：延长有效期至 2025年09月（一个月使用时间）\n- 目标是到9月时，augment官方基本上都已经出来下一个更新版本了\n- **注意**：此修改版本有效期约为一个月，请及时关注官方版本更新\n\n### v0.509.1-25-0727 (修改版)\n- 基于官方版本的功能增强和修改\n- 性能优化和用户体验改进\n- 修复已知问题\n- **注意**：此修改版本有效期约为一周，请及时关注官方版本更新\n\n## 💡 重要使用说明\n\n### 📧 邮箱要求\n- **必须使用正常邮箱**：Gmail、Outlook、QQ邮箱等主流邮箱服务\n- **禁止使用临时邮箱**：如 2925.com、10minutemail 等临时邮箱服务\n- **风控提醒**：临时邮箱可能触发系统风控机制，导致功能异常\n- **地区限制**：如遇到地区限制，请参考上方\"地区限制解决方案\"\n\n### � 邮箱使用经验分享 - 重要提醒\n\n> [!WARNING]\n> **作者实际使用经验**：\n>\n> 我之前一直使用 **2925.com 临时邮箱**，用了好几个月，一直很好用，突然 **7月底（前几天）**，官方加强了风控，邮箱不好用了，开始以为是我的插件出问题了，后来使用 **自己的域名邮箱现在一直很稳定**；其它的像 **qq 邮箱我也没试过**；\n>\n> **⚠️ 重要建议**：如果您之前使用临时邮箱没问题，但最近突然失效，这很可能是 **官方风控升级** 导致的，建议立即切换到稳定的邮箱服务！\n\n### 🔧 使用建议\n- 建议在稳定的开发环境中使用\n- 使用前请备份重要的项目文件\n- 本版本包含特殊功能优化，请谨慎使用\n- **注册提醒**：如遇到地区限制无法注册，请使用指纹浏览器+代理的方式\n\n## 📄 免责声明\n\n- 本扩展仅供学习和研究使用\n- 使用前请备份重要数据\n- 作者不承担因使用本扩展造成的任何损失\n\n## 🐛 问题反馈\n\n如果您遇到任何问题或有功能建议，请：\n\n1. 查看 [Issues](https://github.com/agassiz/vscode-augment/issues) 页面\n2. 创建新的 Issue 并详细描述问题\n3. 提供必要的环境信息和重现步骤\n\n## 📞 联系方式\n\n- GitHub Issues: [https://github.com/agassiz/vscode-augment/issues](https://github.com/agassiz/vscode-augment/issues)\n\n## 💖 支持作者\n\n\n\n### ☕ 赞赏支持\n如果您觉得这个插件为您节省了时间或提高了效率，欢迎请作者喝杯咖啡：\n\n ![图](/IMG_2171.JPG)\n\n\n",
+      "html": "<h1>VSCode Augment (修改版)</h1>\n<p>一个增强 Visual Studio Code 功能的扩展插件。</p>\n<h2>🚨 重要说明 - 请务必阅读</h2>\n<blockquote>\n<p><strong>关于风控与免费试用</strong></p>\n<p>最近 Augment 加强了风控，之前为了能免费试用出现了好些清理工具，但是最近好些工具都失效了，能不能有一个不需要任何清理的情况下，也能正常继续使用呢？</p>\n<p><strong>这是一个仅供学习和研究试用的版本</strong>；现在提供一个月的使用时间，有时间可能会定时更新~~ 如 <a href=\"https://github.com/agassiz/vscode-augment/releases/tag/v0.5091-25-0728\">v0.5091-25-0728</a> 这个版本，有效期是25年08月31</p>\n<p><strong>这个是一个月的，到08月31，这个时候基本上augment官方都已经出来下一个更新版本了；</strong></p>\n</blockquote>\n<h3>🌍 地区限制解决方案 - 新增重要说明</h3>\n<blockquote>\n<p><strong>⚠️ 如果遇到注册地区限制问题</strong></p>\n<p>如果在注册时出现以下提示：\n<code>Due to increased demand, we're limiting signups in certain regions to maintain performance for existing customers</code></p>\n<p><strong>解决方案</strong>：</p>\n<ol>\n<li><strong>下载指纹浏览器</strong>：<a href=\"https://www.adspower.net/download\">AdsPower 指纹浏览器</a></li>\n<li><strong>配置代理</strong>：使用梯子（推荐日本、新加坡等地区节点）</li>\n<li><strong>重要设置</strong>：一定要设置指纹浏览器的 IP 设置的地方走代理</li>\n<li><strong>验证步骤</strong>：\n<ul>\n<li>访问 Google 搜索</li>\n<li>在 Google 随便搜索内容 如 ip; 在下面的 定位是否正确</li>\n<li>确保google定位不到位置或定位显示为国外 ;我看augment 就使用了 google 定位</li>\n<li>如果显示为国外或无法定位，则设置成功,又能正常的注册了（可以使用自己的域名邮箱，千万不要用什么临时邮箱），我也只能帮到这里了</li>\n</ul>\n</li>\n<li><strong>完成后</strong>：在此环境下进行 Augment 账号注册</li>\n</ol>\n</blockquote>\n<h3>⚡ 快速使用指南</h3>\n<ul>\n<li><strong>首次安装</strong>：安装好插件后，<strong>一定要重启 VSCode</strong></li>\n<li><strong>换账号</strong>：只需要退出后，正常的官方重新注册登录就行，<strong>不需要清理任何 augment 相关数据</strong></li>\n</ul>\n<h3>📝 版本说明</h3>\n<ol>\n<li><strong>功能一致</strong>：和官方插件一模一样，只是学习的时候，通过逆向删除了官方收集个人信息用于风控的代码</li>\n<li><strong>时效限制</strong>：加有效期是为了防止别人拿去滥用~~~ 现在延长到一个月，目标是到9月时官方基本上都已经出来下一个更新版本了</li>\n<li><strong>研究目的</strong>：没事时研究了插件怎么收集的个人信息，就一直想把它去了；不为别的~</li>\n<li><strong>使用态度</strong>：没有交流群~ 你觉得好就拿去用，不好请忽略~</li>\n</ol>\n<hr>\n<h2>📋 功能特性</h2>\n<ul>\n<li>🚀 增强的代码编辑体验</li>\n<li>🔧 智能代码辅助功能</li>\n<li>📊 提升开发效率的工具集</li>\n<li>🎨 优化的用户界面体验</li>\n</ul>\n<h2>📦 安装方法</h2>\n<h3>本地 VSIX 安装包安装</h3>\n<p><strong>重要说明</strong>：这是一个本地安装包，需要手动下载并安装，不能通过 VSCode 扩展市场直接安装。</p>\n<h4>方法一：图形界面安装（推荐，适合一般用户）</h4>\n<ol>\n<li>访问 <a href=\"https://github.com/agassiz/vscode-augment/releases\">Releases 页面</a></li>\n<li>下载最新版本 <code>v0.5091-25-0728</code> 的 <code>.vsix</code> 文件</li>\n<li>打开 VSCode，点击左侧扩展图标 (或按 <code>Ctrl+Shift+X</code> / <code>Cmd+Shift+X</code>)</li>\n<li>点击扩展面板右上角的 <code>...</code> (更多操作) 按钮</li>\n<li>选择 <code>从 VSIX 安装...</code> (Install from VSIX...)</li>\n<li>浏览并选择下载的 <code>.vsix</code> 文件</li>\n<li><strong>重要</strong>：安装完成后必须重启 VSCode</li>\n</ol>\n<h4>方法二：命令面板安装</h4>\n<ol>\n<li>下载 <code>.vsix</code> 文件后，在 VSCode 中按 <code>Ctrl+Shift+P</code> (Windows/Linux) 或 <code>Cmd+Shift+P</code> (macOS)</li>\n<li>输入 <code>Extensions: Install from VSIX...</code></li>\n<li>选择下载的 <code>.vsix</code> 文件进行安装</li>\n<li><strong>重要</strong>：安装完成后必须重启 VSCode</li>\n</ol>\n<h4>方法三：命令行安装（适合开发者）</h4>\n<pre><code class=\"language-bash\"># 下载 .vsix 文件后，在文件所在目录执行：\ncode --install-extension vscode-augment-0.5091.vsix\n</code></pre>\n<h4>方法四：直接拖拽安装（最简单）</h4>\n<ol>\n<li>下载 <code>.vsix</code> 文件到本地</li>\n<li>打开 VSCode 扩展面板 (<code>Ctrl+Shift+X</code> / <code>Cmd+Shift+X</code>)</li>\n<li>将 <code>.vsix</code> 文件直接拖拽到扩展面板中</li>\n<li>确认安装并重启 VSCode</li>\n</ol>\n<blockquote>\n<p><strong>💡 安装提示</strong>：推荐使用方法一（图形界面）或方法四（拖拽），这两种方式对一般用户最友好，不需要使用命令行。</p>\n</blockquote>\n<h2>🚀 使用说明</h2>\n<p><strong>本地安装包特点</strong>：</p>\n<ul>\n<li>这是一个修改版的本地安装包，不依赖官方扩展市场</li>\n<li>安装完成后<strong>必须重启 VSCode</strong> 才能正常使用</li>\n<li>功能与官方版本完全一致，只是移除了部分风控代码</li>\n</ul>\n<p>安装完成后，插件将自动激活。您可以通过以下方式使用：</p>\n<ol>\n<li><strong>功能访问</strong>：通过命令面板 (<code>Ctrl+Shift+P</code> / <code>Cmd+Shift+P</code>) 搜索相关命令</li>\n<li><strong>快捷键</strong>：查看插件设置中的快捷键配置</li>\n<li><strong>设置配置</strong>：在 VSCode 设置中搜索 \"augment\" 进行个性化配置</li>\n</ol>\n<h2>⚙️ 配置选项</h2>\n<p>插件提供了丰富的配置选项，您可以在 VSCode 设置中进行调整：</p>\n<ul>\n<li>打开设置：<code>File > Preferences > Settings</code> (Windows/Linux) 或 <code>Code > Preferences > Settings</code> (macOS)</li>\n<li>搜索 \"augment\" 查看所有可配置项</li>\n</ul>\n<h2>🔧 开发环境</h2>\n<ul>\n<li><strong>VSCode 版本要求</strong>：>= 1.60.0</li>\n<li><strong>Node.js 版本</strong>：>= 14.0.0</li>\n</ul>\n<h2>⏰ 版本说明</h2>\n<ul>\n<li><strong>版本类型</strong>：修改版 (Modified Version)</li>\n<li><strong>有效期</strong>：约一个月（至2025年09月）</li>\n<li><strong>基于版本</strong>：VSCode Augment 官方版本</li>\n<li><strong>使用建议</strong>：建议用户关注官方版本的后续更新</li>\n</ul>\n<h2>📝 更新日志</h2>\n<h3>v0.5091-25-0728 (修改版)</h3>\n<ul>\n<li>基于官方版本的功能增强和修改</li>\n<li>性能优化和用户体验改进</li>\n<li>修复已知问题</li>\n<li><strong>重要更新</strong>：延长有效期至 2025年09月（一个月使用时间）</li>\n<li>目标是到9月时，augment官方基本上都已经出来下一个更新版本了</li>\n<li><strong>注意</strong>：此修改版本有效期约为一个月，请及时关注官方版本更新</li>\n</ul>\n<h3>v0.509.1-25-0727 (修改版)</h3>\n<ul>\n<li>基于官方版本的功能增强和修改</li>\n<li>性能优化和用户体验改进</li>\n<li>修复已知问题</li>\n<li><strong>注意</strong>：此修改版本有效期约为一周，请及时关注官方版本更新</li>\n</ul>\n<h2>💡 重要使用说明</h2>\n<h3>📧 邮箱要求</h3>\n<ul>\n<li><strong>必须使用正常邮箱</strong>：Gmail、Outlook、QQ邮箱等主流邮箱服务</li>\n<li><strong>禁止使用临时邮箱</strong>：如 2925.com、10minutemail 等临时邮箱服务</li>\n<li><strong>风控提醒</strong>：临时邮箱可能触发系统风控机制，导致功能异常</li>\n<li><strong>地区限制</strong>：如遇到地区限制，请参考上方\"地区限制解决方案\"</li>\n</ul>\n<h3>� 邮箱使用经验分享 - 重要提醒</h3>\n<blockquote>\n<p>[!WARNING]\n<strong>作者实际使用经验</strong>：</p>\n<p>我之前一直使用 <strong>2925.com 临时邮箱</strong>，用了好几个月，一直很好用，突然 <strong>7月底（前几天）</strong>，官方加强了风控，邮箱不好用了，开始以为是我的插件出问题了，后来使用 <strong>自己的域名邮箱现在一直很稳定</strong>；其它的像 <strong>qq 邮箱我也没试过</strong>；</p>\n<p><strong>⚠️ 重要建议</strong>：如果您之前使用临时邮箱没问题，但最近突然失效，这很可能是 <strong>官方风控升级</strong> 导致的，建议立即切换到稳定的邮箱服务！</p>\n</blockquote>\n<h3>🔧 使用建议</h3>\n<ul>\n<li>建议在稳定的开发环境中使用</li>\n<li>使用前请备份重要的项目文件</li>\n<li>本版本包含特殊功能优化，请谨慎使用</li>\n<li><strong>注册提醒</strong>：如遇到地区限制无法注册，请使用指纹浏览器+代理的方式</li>\n</ul>\n<h2>📄 免责声明</h2>\n<ul>\n<li>本扩展仅供学习和研究使用</li>\n<li>使用前请备份重要数据</li>\n<li>作者不承担因使用本扩展造成的任何损失</li>\n</ul>\n<h2>🐛 问题反馈</h2>\n<p>如果您遇到任何问题或有功能建议，请：</p>\n<ol>\n<li>查看 <a href=\"https://github.com/agassiz/vscode-augment/issues\">Issues</a> 页面</li>\n<li>创建新的 Issue 并详细描述问题</li>\n<li>提供必要的环境信息和重现步骤</li>\n</ol>\n<h2>📞 联系方式</h2>\n<ul>\n<li>GitHub Issues: <a href=\"https://github.com/agassiz/vscode-augment/issues\">https://github.com/agassiz/vscode-augment/issues</a></li>\n</ul>\n<h2>💖 支持作者</h2>\n<h3>☕ 赞赏支持</h3>\n<p>如果您觉得这个插件为您节省了时间或提高了效率，欢迎请作者喝杯咖啡：</p>\n<p><img src=\"/IMG_2171.JPG\" alt=\"图\"></p>"
+    },
+    "_id": "articles/agument-free.md",
+    "_raw": {
+      "sourceFilePath": "articles/agument-free.md",
+      "sourceFileName": "agument-free.md",
+      "sourceFileDir": "articles",
+      "contentType": "markdown",
+      "flattenedPath": "articles/agument-free"
+    },
+    "type": "Article",
+    "slug": "agument-free",
+    "readingTime": {
+      "text": "11 min read",
+      "minutes": 10.09,
+      "time": 605400,
+      "words": 2018
+    },
+    "url": "/articles/agument-free"
+  },
+  {
     "title": "2025年6月主流大语言模型核心对比分析",
     "excerpt": "深度对比分析GPT-5、Claude 4、Gemini 2.0等2025年最新主流大语言模型的技术特性、优势领域及适用场景。",
     "publishedAt": "2025-06-28T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "fullstack",
     "tags": [
       "AI",
@@ -50,7 +91,7 @@
     "title": "前端项目容器化部署完全指南：从 Docker 环境配置到生产部署",
     "excerpt": "详细介绍前端项目的 Docker 容器化部署流程，包括 Mac 环境下 Docker 配置、多阶段构建、Nginx 配置和生产环境部署最佳实践。",
     "publishedAt": "2025-01-21T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "frontend",
     "tags": [
       "docker",
@@ -98,7 +139,7 @@
     "title": "前端程序员学 Java：用熟悉的概念理解 Spring Boot",
     "excerpt": "通过前端开发的概念类比，帮助资深前端程序员快速理解 Java Spring Boot 开发，包括依赖管理、实体类、数据库操作等核心概念。",
     "publishedAt": "2025-01-21T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "fullstack",
     "tags": [
       "java",
@@ -145,7 +186,7 @@
     "title": "Java 转 VS Code 开发环境配置完整指南",
     "excerpt": "详细介绍如何从传统的 Java IDE 转向使用 VS Code 进行 Java 开发，包括环境搭建、插件配置、项目创建和开发实践。",
     "publishedAt": "2025-01-21T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "backend",
     "tags": [
       "java",
@@ -193,7 +234,7 @@
     "title": "用 JavaScript 的视角学习 Rust 编程",
     "excerpt": "从 JavaScript 开发者的角度深入学习 Rust 编程语言，通过对比和实例帮助前端开发者快速掌握 Rust 的核心概念。",
     "publishedAt": "2024-10-10T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "backend",
     "tags": [
       "rust",
@@ -238,7 +279,7 @@
     "title": "LLM 大语言模型学习路径完全指南：从入门到实战",
     "excerpt": "全面的大语言模型学习路径，涵盖基础理论、技术栈、实战项目和职业发展，帮助开发者系统性掌握 LLM 技术。",
     "publishedAt": "2025-01-22T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "ai",
     "tags": [
       "llm",
@@ -286,7 +327,7 @@
     "title": "Next.js App Router 完全指南",
     "excerpt": "全面介绍 Next.js 14 的 App Router，包括路由系统、布局、加载状态、错误处理等核心概念和最佳实践。",
     "publishedAt": "2024-02-01T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "frontend",
     "tags": [
       "nextjs",
@@ -327,11 +368,59 @@
     "url": "/articles/nextjs-app-router-guide"
   },
   {
+    "title": "Python 机器学习入门指南：从 Jupyter 环境到 KNN 算法实战",
+    "excerpt": "全面介绍 Python 机器学习基础知识，包括 Jupyter Notebook 使用、机器学习基本概念和 KNN 算法实战案例。",
+    "publishedAt": "2025-01-22T00:00:00.000Z",
+    "author": "hero",
+    "category": "ai",
+    "tags": [
+      "python",
+      "machine-learning",
+      "jupyter",
+      "knn",
+      "scikit-learn"
+    ],
+    "featured": true,
+    "published": true,
+    "image": "/images/articles/python-ml-basics.jpg",
+    "seoTitle": "Python 机器学习入门 - Jupyter 环境配置与 KNN 算法实战",
+    "seoDescription": "学习 Python 机器学习基础，掌握 Jupyter Notebook 使用技巧和 KNN 算法实现",
+    "seoKeywords": [
+      "Python",
+      "机器学习",
+      "Jupyter",
+      "KNN算法",
+      "scikit-learn",
+      "数据科学"
+    ],
+    "body": {
+      "raw": "\n# Python 机器学习入门指南：从 Jupyter 环境到 KNN 算法实战\n\n本文将带您从零开始学习 Python 机器学习，涵盖 Jupyter Notebook 环境配置、机器学习基本概念，以及通过鸢尾花分类项目实战 KNN 算法。\n\n## 🚀 Jupyter Notebook 环境配置\n\n### 启动 Jupyter Notebook\n\n```bash\n# 启动 Jupyter Notebook\n/Users/a1-4/Library/Python/3.9/bin/jupyter notebook\n\n# 或者使用系统路径（如果已配置）\njupyter notebook\n```\n\n### Jupyter 基本操作\n\n#### Cell 单元格的两种模式\n\n**1. Code 模式**\n- 执行 CMD 命令：`!pip install numpy`\n- 执行 Python 代码：直接编写 Python 代码\n\n**2. Markdown 模式**\n- Markdown 标记语法\n- LaTeX 数学公式支持\n\n#### 快捷键操作\n\n**命令模式（ESC）**\n- `A`：在上方添加单元格\n- `B`：在下方添加单元格\n- `M`：切换至 Markdown 模式\n- `Y`：切换至 Code 模式\n- `DD`：删除当前单元格\n\n**编辑模式（Enter）**\n- `Ctrl + Enter`：执行当前单元格\n- `Shift + Enter`：执行当前单元格并移至下一行\n- `Tab`：代码补全\n- `Ctrl + /`：注释或取消注释\n- `Shift + Tab`：查看函数参数\n\n### 在线开发环境\n\n#### ModelScope 平台\n- **网址**：[modelscope.cn](https://modelscope.cn)\n- **配置步骤**：\n  1. 注册账号\n  2. 关联阿里云\n  3. 申请免费资源\n  4. 作为备用环境使用\n\n#### 笔记格式建议\n- 文本文件\n- Markdown 格式\n- 结构化组织\n\n#### AI 编程助手推荐\n- **TONGYI Lingma**（阿里）\n- **Baidu Comate**（百度）\n- **MarsCode**（字节跳动）\n\n---\n\n## 🧠 机器学习基本概念\n\n### 核心定义\n\n#### 基本术语\n- **算法**：计算机解决问题的抽象步骤和流程\n- **模型**：算法的具体代码实现\n\n#### 数学本质\n```\nX：样本特征（输入）\ny：样本标签（输出）\n目标：将 X 映射为 y，即 y = f(X)\n```\n\n### 机器学习项目流程\n\n#### Step 1：项目分析\n**关注外部特性**：\n- 输入是什么？\n- 输出是什么？\n- 是分类项目还是回归项目？\n\n#### Step 2：数据采集\n- 根据输入和输出构建数据集\n- **本质**：数理统计问题\n- 从总体中采集样本集，用样本统计量估计总体统计量\n- 采用分层采样方法\n\n**结构化数据特点**：\n- **每行一个样本**：独立同分布\n- **每列一个特征**：相互独立\n  - **离散型变量**：不同状态值（如高/低）\n  - **连续型变量**：如长度、深度等（例如长度 10.5 米）\n\n#### Step 3：数据预处理\n\n**数据清洗**：\n- 重复值处理\n- 缺失值处理\n- 异常值处理\n- 无效特征删除\n\n**数据切分**：\n- **训练集**：用于训练模型\n- **测试集**：用于评估模型\n- **验证集**：用于调参\n\n**特征工程**：\n- 特征提取\n- 特征选择\n- 特征降维\n\n#### Step 4：模型训练\n- 选择合适的模型\n- 进行模型训练\n\n#### Step 5：模型评估\n- 分类问题的评估指标\n- 回归问题的评估指标\n\n#### Step 6：模型调优\n- 调整超参数\n- 正则化\n- 交叉验证\n\n#### Step 7：模型应用\n- 模型的保存和加载\n- 模型的部署和应用\n\n---\n\n## 🌸 KNN 算法实战：鸢尾花分类\n\n### 项目分析\n\n#### 项目背景\n**鸢尾花识别（Iris Classification）**\n- **项目需求**：鸢尾花有 3 个子品种，通过机器学习算法进行分类预测\n- **任务**：给定一朵花，让模型识别是哪个子品种\n\n#### 输入输出定义\n**输入**：一朵花的数字化特征\n- 花萼长度（Sepal Length）\n- 花萼宽度（Sepal Width）\n- 花瓣长度（Petal Length）\n- 花瓣宽度（Petal Width）\n\n**输出**：子品种分类\n- Setosa（山鸢尾）\n- Versicolour（变色鸢尾）\n- Virginica（维吉尼亚鸢尾）\n\n### 数据采集\n\n#### 鸢尾花数据集特点\n- **总数据量**：150 条数据\n- **特征数量**：4 个特征\n- **标签数量**：3 个类别\n- **数据平衡性**：每个类别 50 个样本\n\n```python\n# 加载鸢尾花数据集\nfrom sklearn.datasets import load_iris\nimport pandas as pd\n\n# 加载数据\niris = load_iris()\nX = iris.data  # 特征数据\ny = iris.target  # 标签数据\n\n# 查看数据结构\nprint(\"特征名称:\", iris.feature_names)\nprint(\"标签名称:\", iris.target_names)\nprint(\"数据形状:\", X.shape)\n```\n\n### 数据预处理\n\n#### 数据切分\n```python\nfrom sklearn.model_selection import train_test_split\n\n# 数据切分：80% 训练集，20% 测试集\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, \n    test_size=0.2, \n    random_state=42,\n    stratify=y  # 分层采样，保持类别比例\n)\n\nprint(f\"训练集大小: {X_train.shape[0]}\")\nprint(f\"测试集大小: {X_test.shape[0]}\")\n```\n\n#### 特征工程\n- **特征提取**：已经提取好了（4 个数值特征）\n- **特征选择**：已经选择好了（所有特征都有用）\n- **特征降维**：不需要（特征数量较少）\n\n### 模型训练\n\n#### KNN 算法实现\n```python\nfrom sklearn.neighbors import KNeighborsClassifier\n\n# 创建 KNN 分类器\nknn = KNeighborsClassifier(\n    n_neighbors=5,  # 邻居数量\n    weights='uniform',  # 权重方式\n    p=2  # 距离度量（欧几里得距离）\n)\n\n# 训练模型\nknn.fit(X=X_train, y=y_train)\n\n# 进行预测\ny_pred = knn.predict(X_test)\n```\n\n### 模型评估\n\n#### 准确率评估\n```python\nfrom sklearn.metrics import accuracy_score, classification_report\n\n# 计算准确率\naccuracy = accuracy_score(y_true=y_test, y_pred=y_pred)\nprint(f\"模型准确率: {accuracy:.4f}\")\n\n# 详细分类报告\nprint(\"\\n分类报告:\")\nprint(classification_report(y_test, y_pred, target_names=iris.target_names))\n```\n\n### 模型调优\n\n#### 超参数调优\n```python\nfrom sklearn.model_selection import GridSearchCV\n\n# 定义参数网格\nparam_grid = {\n    'n_neighbors': [3, 5, 7, 9, 11],\n    'weights': ['uniform', 'distance'],\n    'p': [1, 2]  # 1: 曼哈顿距离, 2: 欧几里得距离\n}\n\n# 网格搜索\ngrid_search = GridSearchCV(\n    KNeighborsClassifier(),\n    param_grid,\n    cv=5,  # 5 折交叉验证\n    scoring='accuracy'\n)\n\n# 执行搜索\ngrid_search.fit(X_train, y_train)\n\n# 最佳参数\nprint(\"最佳参数:\", grid_search.best_params_)\nprint(\"最佳得分:\", grid_search.best_score_)\n```\n\n### 模型应用\n\n#### 模型保存和加载\n```python\nimport joblib\n\n# 保存模型\njoblib.dump(value=knn, filename=\"knn_model.pkl\")\n\n# 加载模型\nloaded_model = joblib.load(filename=\"knn_model.pkl\")\n```\n\n#### 实际预测应用\n```python\ndef predict_iris_species(sepal_length, sepal_width, petal_length, petal_width):\n    \"\"\"预测鸢尾花品种\"\"\"\n    input_data = [[sepal_length, sepal_width, petal_length, petal_width]]\n    prediction = loaded_model.predict(input_data)\n    species_name = iris.target_names[prediction[0]]\n    return species_name\n\n# 示例预测\nresult = predict_iris_species(5.1, 3.5, 1.4, 0.2)\nprint(f\"预测品种: {result}\")\n```\n\n---\n\n## 🎯 学习总结\n\n### 关键知识点\n1. **Jupyter Notebook**：数据科学的标准开发环境\n2. **机器学习流程**：从问题分析到模型部署的完整流程\n3. **KNN 算法**：简单而有效的分类算法\n4. **模型评估**：准确率、分类报告等评估指标\n5. **超参数调优**：网格搜索和交叉验证\n\n### 实践技能\n- Jupyter Notebook 熟练使用\n- scikit-learn 库的基本操作\n- 数据预处理和特征工程\n- 模型训练、评估和调优\n- 模型保存和部署\n\n### 下一步学习建议\n1. 学习更多机器学习算法（决策树、随机森林、SVM 等）\n2. 深入理解特征工程和数据预处理\n3. 学习深度学习基础知识\n4. 实践更复杂的数据科学项目\n\n通过本文的学习，您已经掌握了 Python 机器学习的基础知识和实战技能。继续练习和探索，您将在数据科学的道路上越走越远！🚀\n",
+      "html": "<h1>Python 机器学习入门指南：从 Jupyter 环境到 KNN 算法实战</h1>\n<p>本文将带您从零开始学习 Python 机器学习，涵盖 Jupyter Notebook 环境配置、机器学习基本概念，以及通过鸢尾花分类项目实战 KNN 算法。</p>\n<h2>🚀 Jupyter Notebook 环境配置</h2>\n<h3>启动 Jupyter Notebook</h3>\n<pre><code class=\"language-bash\"># 启动 Jupyter Notebook\n/Users/a1-4/Library/Python/3.9/bin/jupyter notebook\n\n# 或者使用系统路径（如果已配置）\njupyter notebook\n</code></pre>\n<h3>Jupyter 基本操作</h3>\n<h4>Cell 单元格的两种模式</h4>\n<p><strong>1. Code 模式</strong></p>\n<ul>\n<li>执行 CMD 命令：<code>!pip install numpy</code></li>\n<li>执行 Python 代码：直接编写 Python 代码</li>\n</ul>\n<p><strong>2. Markdown 模式</strong></p>\n<ul>\n<li>Markdown 标记语法</li>\n<li>LaTeX 数学公式支持</li>\n</ul>\n<h4>快捷键操作</h4>\n<p><strong>命令模式（ESC）</strong></p>\n<ul>\n<li><code>A</code>：在上方添加单元格</li>\n<li><code>B</code>：在下方添加单元格</li>\n<li><code>M</code>：切换至 Markdown 模式</li>\n<li><code>Y</code>：切换至 Code 模式</li>\n<li><code>DD</code>：删除当前单元格</li>\n</ul>\n<p><strong>编辑模式（Enter）</strong></p>\n<ul>\n<li><code>Ctrl + Enter</code>：执行当前单元格</li>\n<li><code>Shift + Enter</code>：执行当前单元格并移至下一行</li>\n<li><code>Tab</code>：代码补全</li>\n<li><code>Ctrl + /</code>：注释或取消注释</li>\n<li><code>Shift + Tab</code>：查看函数参数</li>\n</ul>\n<h3>在线开发环境</h3>\n<h4>ModelScope 平台</h4>\n<ul>\n<li><strong>网址</strong>：<a href=\"https://modelscope.cn\">modelscope.cn</a></li>\n<li><strong>配置步骤</strong>：\n<ol>\n<li>注册账号</li>\n<li>关联阿里云</li>\n<li>申请免费资源</li>\n<li>作为备用环境使用</li>\n</ol>\n</li>\n</ul>\n<h4>笔记格式建议</h4>\n<ul>\n<li>文本文件</li>\n<li>Markdown 格式</li>\n<li>结构化组织</li>\n</ul>\n<h4>AI 编程助手推荐</h4>\n<ul>\n<li><strong>TONGYI Lingma</strong>（阿里）</li>\n<li><strong>Baidu Comate</strong>（百度）</li>\n<li><strong>MarsCode</strong>（字节跳动）</li>\n</ul>\n<hr>\n<h2>🧠 机器学习基本概念</h2>\n<h3>核心定义</h3>\n<h4>基本术语</h4>\n<ul>\n<li><strong>算法</strong>：计算机解决问题的抽象步骤和流程</li>\n<li><strong>模型</strong>：算法的具体代码实现</li>\n</ul>\n<h4>数学本质</h4>\n<pre><code>X：样本特征（输入）\ny：样本标签（输出）\n目标：将 X 映射为 y，即 y = f(X)\n</code></pre>\n<h3>机器学习项目流程</h3>\n<h4>Step 1：项目分析</h4>\n<p><strong>关注外部特性</strong>：</p>\n<ul>\n<li>输入是什么？</li>\n<li>输出是什么？</li>\n<li>是分类项目还是回归项目？</li>\n</ul>\n<h4>Step 2：数据采集</h4>\n<ul>\n<li>根据输入和输出构建数据集</li>\n<li><strong>本质</strong>：数理统计问题</li>\n<li>从总体中采集样本集，用样本统计量估计总体统计量</li>\n<li>采用分层采样方法</li>\n</ul>\n<p><strong>结构化数据特点</strong>：</p>\n<ul>\n<li><strong>每行一个样本</strong>：独立同分布</li>\n<li><strong>每列一个特征</strong>：相互独立\n<ul>\n<li><strong>离散型变量</strong>：不同状态值（如高/低）</li>\n<li><strong>连续型变量</strong>：如长度、深度等（例如长度 10.5 米）</li>\n</ul>\n</li>\n</ul>\n<h4>Step 3：数据预处理</h4>\n<p><strong>数据清洗</strong>：</p>\n<ul>\n<li>重复值处理</li>\n<li>缺失值处理</li>\n<li>异常值处理</li>\n<li>无效特征删除</li>\n</ul>\n<p><strong>数据切分</strong>：</p>\n<ul>\n<li><strong>训练集</strong>：用于训练模型</li>\n<li><strong>测试集</strong>：用于评估模型</li>\n<li><strong>验证集</strong>：用于调参</li>\n</ul>\n<p><strong>特征工程</strong>：</p>\n<ul>\n<li>特征提取</li>\n<li>特征选择</li>\n<li>特征降维</li>\n</ul>\n<h4>Step 4：模型训练</h4>\n<ul>\n<li>选择合适的模型</li>\n<li>进行模型训练</li>\n</ul>\n<h4>Step 5：模型评估</h4>\n<ul>\n<li>分类问题的评估指标</li>\n<li>回归问题的评估指标</li>\n</ul>\n<h4>Step 6：模型调优</h4>\n<ul>\n<li>调整超参数</li>\n<li>正则化</li>\n<li>交叉验证</li>\n</ul>\n<h4>Step 7：模型应用</h4>\n<ul>\n<li>模型的保存和加载</li>\n<li>模型的部署和应用</li>\n</ul>\n<hr>\n<h2>🌸 KNN 算法实战：鸢尾花分类</h2>\n<h3>项目分析</h3>\n<h4>项目背景</h4>\n<p><strong>鸢尾花识别（Iris Classification）</strong></p>\n<ul>\n<li><strong>项目需求</strong>：鸢尾花有 3 个子品种，通过机器学习算法进行分类预测</li>\n<li><strong>任务</strong>：给定一朵花，让模型识别是哪个子品种</li>\n</ul>\n<h4>输入输出定义</h4>\n<p><strong>输入</strong>：一朵花的数字化特征</p>\n<ul>\n<li>花萼长度（Sepal Length）</li>\n<li>花萼宽度（Sepal Width）</li>\n<li>花瓣长度（Petal Length）</li>\n<li>花瓣宽度（Petal Width）</li>\n</ul>\n<p><strong>输出</strong>：子品种分类</p>\n<ul>\n<li>Setosa（山鸢尾）</li>\n<li>Versicolour（变色鸢尾）</li>\n<li>Virginica（维吉尼亚鸢尾）</li>\n</ul>\n<h3>数据采集</h3>\n<h4>鸢尾花数据集特点</h4>\n<ul>\n<li><strong>总数据量</strong>：150 条数据</li>\n<li><strong>特征数量</strong>：4 个特征</li>\n<li><strong>标签数量</strong>：3 个类别</li>\n<li><strong>数据平衡性</strong>：每个类别 50 个样本</li>\n</ul>\n<pre><code class=\"language-python\"># 加载鸢尾花数据集\nfrom sklearn.datasets import load_iris\nimport pandas as pd\n\n# 加载数据\niris = load_iris()\nX = iris.data  # 特征数据\ny = iris.target  # 标签数据\n\n# 查看数据结构\nprint(\"特征名称:\", iris.feature_names)\nprint(\"标签名称:\", iris.target_names)\nprint(\"数据形状:\", X.shape)\n</code></pre>\n<h3>数据预处理</h3>\n<h4>数据切分</h4>\n<pre><code class=\"language-python\">from sklearn.model_selection import train_test_split\n\n# 数据切分：80% 训练集，20% 测试集\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, \n    test_size=0.2, \n    random_state=42,\n    stratify=y  # 分层采样，保持类别比例\n)\n\nprint(f\"训练集大小: {X_train.shape[0]}\")\nprint(f\"测试集大小: {X_test.shape[0]}\")\n</code></pre>\n<h4>特征工程</h4>\n<ul>\n<li><strong>特征提取</strong>：已经提取好了（4 个数值特征）</li>\n<li><strong>特征选择</strong>：已经选择好了（所有特征都有用）</li>\n<li><strong>特征降维</strong>：不需要（特征数量较少）</li>\n</ul>\n<h3>模型训练</h3>\n<h4>KNN 算法实现</h4>\n<pre><code class=\"language-python\">from sklearn.neighbors import KNeighborsClassifier\n\n# 创建 KNN 分类器\nknn = KNeighborsClassifier(\n    n_neighbors=5,  # 邻居数量\n    weights='uniform',  # 权重方式\n    p=2  # 距离度量（欧几里得距离）\n)\n\n# 训练模型\nknn.fit(X=X_train, y=y_train)\n\n# 进行预测\ny_pred = knn.predict(X_test)\n</code></pre>\n<h3>模型评估</h3>\n<h4>准确率评估</h4>\n<pre><code class=\"language-python\">from sklearn.metrics import accuracy_score, classification_report\n\n# 计算准确率\naccuracy = accuracy_score(y_true=y_test, y_pred=y_pred)\nprint(f\"模型准确率: {accuracy:.4f}\")\n\n# 详细分类报告\nprint(\"\\n分类报告:\")\nprint(classification_report(y_test, y_pred, target_names=iris.target_names))\n</code></pre>\n<h3>模型调优</h3>\n<h4>超参数调优</h4>\n<pre><code class=\"language-python\">from sklearn.model_selection import GridSearchCV\n\n# 定义参数网格\nparam_grid = {\n    'n_neighbors': [3, 5, 7, 9, 11],\n    'weights': ['uniform', 'distance'],\n    'p': [1, 2]  # 1: 曼哈顿距离, 2: 欧几里得距离\n}\n\n# 网格搜索\ngrid_search = GridSearchCV(\n    KNeighborsClassifier(),\n    param_grid,\n    cv=5,  # 5 折交叉验证\n    scoring='accuracy'\n)\n\n# 执行搜索\ngrid_search.fit(X_train, y_train)\n\n# 最佳参数\nprint(\"最佳参数:\", grid_search.best_params_)\nprint(\"最佳得分:\", grid_search.best_score_)\n</code></pre>\n<h3>模型应用</h3>\n<h4>模型保存和加载</h4>\n<pre><code class=\"language-python\">import joblib\n\n# 保存模型\njoblib.dump(value=knn, filename=\"knn_model.pkl\")\n\n# 加载模型\nloaded_model = joblib.load(filename=\"knn_model.pkl\")\n</code></pre>\n<h4>实际预测应用</h4>\n<pre><code class=\"language-python\">def predict_iris_species(sepal_length, sepal_width, petal_length, petal_width):\n    \"\"\"预测鸢尾花品种\"\"\"\n    input_data = [[sepal_length, sepal_width, petal_length, petal_width]]\n    prediction = loaded_model.predict(input_data)\n    species_name = iris.target_names[prediction[0]]\n    return species_name\n\n# 示例预测\nresult = predict_iris_species(5.1, 3.5, 1.4, 0.2)\nprint(f\"预测品种: {result}\")\n</code></pre>\n<hr>\n<h2>🎯 学习总结</h2>\n<h3>关键知识点</h3>\n<ol>\n<li><strong>Jupyter Notebook</strong>：数据科学的标准开发环境</li>\n<li><strong>机器学习流程</strong>：从问题分析到模型部署的完整流程</li>\n<li><strong>KNN 算法</strong>：简单而有效的分类算法</li>\n<li><strong>模型评估</strong>：准确率、分类报告等评估指标</li>\n<li><strong>超参数调优</strong>：网格搜索和交叉验证</li>\n</ol>\n<h3>实践技能</h3>\n<ul>\n<li>Jupyter Notebook 熟练使用</li>\n<li>scikit-learn 库的基本操作</li>\n<li>数据预处理和特征工程</li>\n<li>模型训练、评估和调优</li>\n<li>模型保存和部署</li>\n</ul>\n<h3>下一步学习建议</h3>\n<ol>\n<li>学习更多机器学习算法（决策树、随机森林、SVM 等）</li>\n<li>深入理解特征工程和数据预处理</li>\n<li>学习深度学习基础知识</li>\n<li>实践更复杂的数据科学项目</li>\n</ol>\n<p>通过本文的学习，您已经掌握了 Python 机器学习的基础知识和实战技能。继续练习和探索，您将在数据科学的道路上越走越远！🚀</p>"
+    },
+    "_id": "articles/python-basic-codes.md",
+    "_raw": {
+      "sourceFilePath": "articles/python-basic-codes.md",
+      "sourceFileName": "python-basic-codes.md",
+      "sourceFileDir": "articles",
+      "contentType": "markdown",
+      "flattenedPath": "articles/python-basic-codes"
+    },
+    "type": "Article",
+    "slug": "python-basic-codes",
+    "readingTime": {
+      "text": "9 min read",
+      "minutes": 8.315,
+      "time": 498900,
+      "words": 1663
+    },
+    "url": "/articles/python-basic-codes"
+  },
+  {
     "title": "React 18 并发特性深度解析",
     "excerpt": "深入探讨 React 18 的并发渲染机制，包括 useTransition、useDeferredValue 等新 Hook 的使用场景和最佳实践。",
     "publishedAt": "2024-01-15T00:00:00.000Z",
     "updatedAt": "2024-01-20T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "frontend",
     "tags": [
       "react",
@@ -375,7 +464,7 @@
     "title": "TypeScript 高级类型实战指南",
     "excerpt": "深入探索 TypeScript 的高级类型系统，包括条件类型、映射类型、模板字面量类型等，通过实际案例学习如何构建类型安全的应用。",
     "publishedAt": "2024-01-28T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "frontend",
     "tags": [
       "typescript",
@@ -419,7 +508,7 @@
     "title": "GitHub Webhook 实现服务器自动化部署",
     "excerpt": "详细介绍如何使用 GitHub Webhook 实现代码推送后的自动化部署，包括服务器配置、脚本编写和 PM2 进程管理。",
     "publishedAt": "2024-02-01T00:00:00.000Z",
-    "author": "li-lingfeng",
+    "author": "hero",
     "category": "devops",
     "tags": [
       "webhook",
@@ -461,53 +550,5 @@
       "words": 2970
     },
     "url": "/articles/webhook-to-deploy"
-  },
-  {
-    "title": "Python 机器学习入门指南：从 Jupyter 环境到 KNN 算法实战",
-    "excerpt": "全面介绍 Python 机器学习基础知识，包括 Jupyter Notebook 使用、机器学习基本概念和 KNN 算法实战案例。",
-    "publishedAt": "2025-01-22T00:00:00.000Z",
-    "author": "li-lingfeng",
-    "category": "ai",
-    "tags": [
-      "python",
-      "machine-learning",
-      "jupyter",
-      "knn",
-      "scikit-learn"
-    ],
-    "featured": true,
-    "published": true,
-    "image": "/images/articles/python-ml-basics.jpg",
-    "seoTitle": "Python 机器学习入门 - Jupyter 环境配置与 KNN 算法实战",
-    "seoDescription": "学习 Python 机器学习基础，掌握 Jupyter Notebook 使用技巧和 KNN 算法实现",
-    "seoKeywords": [
-      "Python",
-      "机器学习",
-      "Jupyter",
-      "KNN算法",
-      "scikit-learn",
-      "数据科学"
-    ],
-    "body": {
-      "raw": "\n# Python 机器学习入门指南：从 Jupyter 环境到 KNN 算法实战\n\n本文将带您从零开始学习 Python 机器学习，涵盖 Jupyter Notebook 环境配置、机器学习基本概念，以及通过鸢尾花分类项目实战 KNN 算法。\n\n## 🚀 Jupyter Notebook 环境配置\n\n### 启动 Jupyter Notebook\n\n```bash\n# 启动 Jupyter Notebook\n/Users/a1-4/Library/Python/3.9/bin/jupyter notebook\n\n# 或者使用系统路径（如果已配置）\njupyter notebook\n```\n\n### Jupyter 基本操作\n\n#### Cell 单元格的两种模式\n\n**1. Code 模式**\n- 执行 CMD 命令：`!pip install numpy`\n- 执行 Python 代码：直接编写 Python 代码\n\n**2. Markdown 模式**\n- Markdown 标记语法\n- LaTeX 数学公式支持\n\n#### 快捷键操作\n\n**命令模式（ESC）**\n- `A`：在上方添加单元格\n- `B`：在下方添加单元格\n- `M`：切换至 Markdown 模式\n- `Y`：切换至 Code 模式\n- `DD`：删除当前单元格\n\n**编辑模式（Enter）**\n- `Ctrl + Enter`：执行当前单元格\n- `Shift + Enter`：执行当前单元格并移至下一行\n- `Tab`：代码补全\n- `Ctrl + /`：注释或取消注释\n- `Shift + Tab`：查看函数参数\n\n### 在线开发环境\n\n#### ModelScope 平台\n- **网址**：[modelscope.cn](https://modelscope.cn)\n- **配置步骤**：\n  1. 注册账号\n  2. 关联阿里云\n  3. 申请免费资源\n  4. 作为备用环境使用\n\n#### 笔记格式建议\n- 文本文件\n- Markdown 格式\n- 结构化组织\n\n#### AI 编程助手推荐\n- **TONGYI Lingma**（阿里）\n- **Baidu Comate**（百度）\n- **MarsCode**（字节跳动）\n\n---\n\n## 🧠 机器学习基本概念\n\n### 核心定义\n\n#### 基本术语\n- **算法**：计算机解决问题的抽象步骤和流程\n- **模型**：算法的具体代码实现\n\n#### 数学本质\n```\nX：样本特征（输入）\ny：样本标签（输出）\n目标：将 X 映射为 y，即 y = f(X)\n```\n\n### 机器学习项目流程\n\n#### Step 1：项目分析\n**关注外部特性**：\n- 输入是什么？\n- 输出是什么？\n- 是分类项目还是回归项目？\n\n#### Step 2：数据采集\n- 根据输入和输出构建数据集\n- **本质**：数理统计问题\n- 从总体中采集样本集，用样本统计量估计总体统计量\n- 采用分层采样方法\n\n**结构化数据特点**：\n- **每行一个样本**：独立同分布\n- **每列一个特征**：相互独立\n  - **离散型变量**：不同状态值（如高/低）\n  - **连续型变量**：如长度、深度等（例如长度 10.5 米）\n\n#### Step 3：数据预处理\n\n**数据清洗**：\n- 重复值处理\n- 缺失值处理\n- 异常值处理\n- 无效特征删除\n\n**数据切分**：\n- **训练集**：用于训练模型\n- **测试集**：用于评估模型\n- **验证集**：用于调参\n\n**特征工程**：\n- 特征提取\n- 特征选择\n- 特征降维\n\n#### Step 4：模型训练\n- 选择合适的模型\n- 进行模型训练\n\n#### Step 5：模型评估\n- 分类问题的评估指标\n- 回归问题的评估指标\n\n#### Step 6：模型调优\n- 调整超参数\n- 正则化\n- 交叉验证\n\n#### Step 7：模型应用\n- 模型的保存和加载\n- 模型的部署和应用\n\n---\n\n## 🌸 KNN 算法实战：鸢尾花分类\n\n### 项目分析\n\n#### 项目背景\n**鸢尾花识别（Iris Classification）**\n- **项目需求**：鸢尾花有 3 个子品种，通过机器学习算法进行分类预测\n- **任务**：给定一朵花，让模型识别是哪个子品种\n\n#### 输入输出定义\n**输入**：一朵花的数字化特征\n- 花萼长度（Sepal Length）\n- 花萼宽度（Sepal Width）\n- 花瓣长度（Petal Length）\n- 花瓣宽度（Petal Width）\n\n**输出**：子品种分类\n- Setosa（山鸢尾）\n- Versicolour（变色鸢尾）\n- Virginica（维吉尼亚鸢尾）\n\n### 数据采集\n\n#### 鸢尾花数据集特点\n- **总数据量**：150 条数据\n- **特征数量**：4 个特征\n- **标签数量**：3 个类别\n- **数据平衡性**：每个类别 50 个样本\n\n```python\n# 加载鸢尾花数据集\nfrom sklearn.datasets import load_iris\nimport pandas as pd\n\n# 加载数据\niris = load_iris()\nX = iris.data  # 特征数据\ny = iris.target  # 标签数据\n\n# 查看数据结构\nprint(\"特征名称:\", iris.feature_names)\nprint(\"标签名称:\", iris.target_names)\nprint(\"数据形状:\", X.shape)\n```\n\n### 数据预处理\n\n#### 数据切分\n```python\nfrom sklearn.model_selection import train_test_split\n\n# 数据切分：80% 训练集，20% 测试集\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, \n    test_size=0.2, \n    random_state=42,\n    stratify=y  # 分层采样，保持类别比例\n)\n\nprint(f\"训练集大小: {X_train.shape[0]}\")\nprint(f\"测试集大小: {X_test.shape[0]}\")\n```\n\n#### 特征工程\n- **特征提取**：已经提取好了（4 个数值特征）\n- **特征选择**：已经选择好了（所有特征都有用）\n- **特征降维**：不需要（特征数量较少）\n\n### 模型训练\n\n#### KNN 算法实现\n```python\nfrom sklearn.neighbors import KNeighborsClassifier\n\n# 创建 KNN 分类器\nknn = KNeighborsClassifier(\n    n_neighbors=5,  # 邻居数量\n    weights='uniform',  # 权重方式\n    p=2  # 距离度量（欧几里得距离）\n)\n\n# 训练模型\nknn.fit(X=X_train, y=y_train)\n\n# 进行预测\ny_pred = knn.predict(X_test)\n```\n\n### 模型评估\n\n#### 准确率评估\n```python\nfrom sklearn.metrics import accuracy_score, classification_report\n\n# 计算准确率\naccuracy = accuracy_score(y_true=y_test, y_pred=y_pred)\nprint(f\"模型准确率: {accuracy:.4f}\")\n\n# 详细分类报告\nprint(\"\\n分类报告:\")\nprint(classification_report(y_test, y_pred, target_names=iris.target_names))\n```\n\n### 模型调优\n\n#### 超参数调优\n```python\nfrom sklearn.model_selection import GridSearchCV\n\n# 定义参数网格\nparam_grid = {\n    'n_neighbors': [3, 5, 7, 9, 11],\n    'weights': ['uniform', 'distance'],\n    'p': [1, 2]  # 1: 曼哈顿距离, 2: 欧几里得距离\n}\n\n# 网格搜索\ngrid_search = GridSearchCV(\n    KNeighborsClassifier(),\n    param_grid,\n    cv=5,  # 5 折交叉验证\n    scoring='accuracy'\n)\n\n# 执行搜索\ngrid_search.fit(X_train, y_train)\n\n# 最佳参数\nprint(\"最佳参数:\", grid_search.best_params_)\nprint(\"最佳得分:\", grid_search.best_score_)\n```\n\n### 模型应用\n\n#### 模型保存和加载\n```python\nimport joblib\n\n# 保存模型\njoblib.dump(value=knn, filename=\"knn_model.pkl\")\n\n# 加载模型\nloaded_model = joblib.load(filename=\"knn_model.pkl\")\n```\n\n#### 实际预测应用\n```python\ndef predict_iris_species(sepal_length, sepal_width, petal_length, petal_width):\n    \"\"\"预测鸢尾花品种\"\"\"\n    input_data = [[sepal_length, sepal_width, petal_length, petal_width]]\n    prediction = loaded_model.predict(input_data)\n    species_name = iris.target_names[prediction[0]]\n    return species_name\n\n# 示例预测\nresult = predict_iris_species(5.1, 3.5, 1.4, 0.2)\nprint(f\"预测品种: {result}\")\n```\n\n---\n\n## 🎯 学习总结\n\n### 关键知识点\n1. **Jupyter Notebook**：数据科学的标准开发环境\n2. **机器学习流程**：从问题分析到模型部署的完整流程\n3. **KNN 算法**：简单而有效的分类算法\n4. **模型评估**：准确率、分类报告等评估指标\n5. **超参数调优**：网格搜索和交叉验证\n\n### 实践技能\n- Jupyter Notebook 熟练使用\n- scikit-learn 库的基本操作\n- 数据预处理和特征工程\n- 模型训练、评估和调优\n- 模型保存和部署\n\n### 下一步学习建议\n1. 学习更多机器学习算法（决策树、随机森林、SVM 等）\n2. 深入理解特征工程和数据预处理\n3. 学习深度学习基础知识\n4. 实践更复杂的数据科学项目\n\n通过本文的学习，您已经掌握了 Python 机器学习的基础知识和实战技能。继续练习和探索，您将在数据科学的道路上越走越远！🚀\n",
-      "html": "<h1>Python 机器学习入门指南：从 Jupyter 环境到 KNN 算法实战</h1>\n<p>本文将带您从零开始学习 Python 机器学习，涵盖 Jupyter Notebook 环境配置、机器学习基本概念，以及通过鸢尾花分类项目实战 KNN 算法。</p>\n<h2>🚀 Jupyter Notebook 环境配置</h2>\n<h3>启动 Jupyter Notebook</h3>\n<pre><code class=\"language-bash\"># 启动 Jupyter Notebook\n/Users/a1-4/Library/Python/3.9/bin/jupyter notebook\n\n# 或者使用系统路径（如果已配置）\njupyter notebook\n</code></pre>\n<h3>Jupyter 基本操作</h3>\n<h4>Cell 单元格的两种模式</h4>\n<p><strong>1. Code 模式</strong></p>\n<ul>\n<li>执行 CMD 命令：<code>!pip install numpy</code></li>\n<li>执行 Python 代码：直接编写 Python 代码</li>\n</ul>\n<p><strong>2. Markdown 模式</strong></p>\n<ul>\n<li>Markdown 标记语法</li>\n<li>LaTeX 数学公式支持</li>\n</ul>\n<h4>快捷键操作</h4>\n<p><strong>命令模式（ESC）</strong></p>\n<ul>\n<li><code>A</code>：在上方添加单元格</li>\n<li><code>B</code>：在下方添加单元格</li>\n<li><code>M</code>：切换至 Markdown 模式</li>\n<li><code>Y</code>：切换至 Code 模式</li>\n<li><code>DD</code>：删除当前单元格</li>\n</ul>\n<p><strong>编辑模式（Enter）</strong></p>\n<ul>\n<li><code>Ctrl + Enter</code>：执行当前单元格</li>\n<li><code>Shift + Enter</code>：执行当前单元格并移至下一行</li>\n<li><code>Tab</code>：代码补全</li>\n<li><code>Ctrl + /</code>：注释或取消注释</li>\n<li><code>Shift + Tab</code>：查看函数参数</li>\n</ul>\n<h3>在线开发环境</h3>\n<h4>ModelScope 平台</h4>\n<ul>\n<li><strong>网址</strong>：<a href=\"https://modelscope.cn\">modelscope.cn</a></li>\n<li><strong>配置步骤</strong>：\n<ol>\n<li>注册账号</li>\n<li>关联阿里云</li>\n<li>申请免费资源</li>\n<li>作为备用环境使用</li>\n</ol>\n</li>\n</ul>\n<h4>笔记格式建议</h4>\n<ul>\n<li>文本文件</li>\n<li>Markdown 格式</li>\n<li>结构化组织</li>\n</ul>\n<h4>AI 编程助手推荐</h4>\n<ul>\n<li><strong>TONGYI Lingma</strong>（阿里）</li>\n<li><strong>Baidu Comate</strong>（百度）</li>\n<li><strong>MarsCode</strong>（字节跳动）</li>\n</ul>\n<hr>\n<h2>🧠 机器学习基本概念</h2>\n<h3>核心定义</h3>\n<h4>基本术语</h4>\n<ul>\n<li><strong>算法</strong>：计算机解决问题的抽象步骤和流程</li>\n<li><strong>模型</strong>：算法的具体代码实现</li>\n</ul>\n<h4>数学本质</h4>\n<pre><code>X：样本特征（输入）\ny：样本标签（输出）\n目标：将 X 映射为 y，即 y = f(X)\n</code></pre>\n<h3>机器学习项目流程</h3>\n<h4>Step 1：项目分析</h4>\n<p><strong>关注外部特性</strong>：</p>\n<ul>\n<li>输入是什么？</li>\n<li>输出是什么？</li>\n<li>是分类项目还是回归项目？</li>\n</ul>\n<h4>Step 2：数据采集</h4>\n<ul>\n<li>根据输入和输出构建数据集</li>\n<li><strong>本质</strong>：数理统计问题</li>\n<li>从总体中采集样本集，用样本统计量估计总体统计量</li>\n<li>采用分层采样方法</li>\n</ul>\n<p><strong>结构化数据特点</strong>：</p>\n<ul>\n<li><strong>每行一个样本</strong>：独立同分布</li>\n<li><strong>每列一个特征</strong>：相互独立\n<ul>\n<li><strong>离散型变量</strong>：不同状态值（如高/低）</li>\n<li><strong>连续型变量</strong>：如长度、深度等（例如长度 10.5 米）</li>\n</ul>\n</li>\n</ul>\n<h4>Step 3：数据预处理</h4>\n<p><strong>数据清洗</strong>：</p>\n<ul>\n<li>重复值处理</li>\n<li>缺失值处理</li>\n<li>异常值处理</li>\n<li>无效特征删除</li>\n</ul>\n<p><strong>数据切分</strong>：</p>\n<ul>\n<li><strong>训练集</strong>：用于训练模型</li>\n<li><strong>测试集</strong>：用于评估模型</li>\n<li><strong>验证集</strong>：用于调参</li>\n</ul>\n<p><strong>特征工程</strong>：</p>\n<ul>\n<li>特征提取</li>\n<li>特征选择</li>\n<li>特征降维</li>\n</ul>\n<h4>Step 4：模型训练</h4>\n<ul>\n<li>选择合适的模型</li>\n<li>进行模型训练</li>\n</ul>\n<h4>Step 5：模型评估</h4>\n<ul>\n<li>分类问题的评估指标</li>\n<li>回归问题的评估指标</li>\n</ul>\n<h4>Step 6：模型调优</h4>\n<ul>\n<li>调整超参数</li>\n<li>正则化</li>\n<li>交叉验证</li>\n</ul>\n<h4>Step 7：模型应用</h4>\n<ul>\n<li>模型的保存和加载</li>\n<li>模型的部署和应用</li>\n</ul>\n<hr>\n<h2>🌸 KNN 算法实战：鸢尾花分类</h2>\n<h3>项目分析</h3>\n<h4>项目背景</h4>\n<p><strong>鸢尾花识别（Iris Classification）</strong></p>\n<ul>\n<li><strong>项目需求</strong>：鸢尾花有 3 个子品种，通过机器学习算法进行分类预测</li>\n<li><strong>任务</strong>：给定一朵花，让模型识别是哪个子品种</li>\n</ul>\n<h4>输入输出定义</h4>\n<p><strong>输入</strong>：一朵花的数字化特征</p>\n<ul>\n<li>花萼长度（Sepal Length）</li>\n<li>花萼宽度（Sepal Width）</li>\n<li>花瓣长度（Petal Length）</li>\n<li>花瓣宽度（Petal Width）</li>\n</ul>\n<p><strong>输出</strong>：子品种分类</p>\n<ul>\n<li>Setosa（山鸢尾）</li>\n<li>Versicolour（变色鸢尾）</li>\n<li>Virginica（维吉尼亚鸢尾）</li>\n</ul>\n<h3>数据采集</h3>\n<h4>鸢尾花数据集特点</h4>\n<ul>\n<li><strong>总数据量</strong>：150 条数据</li>\n<li><strong>特征数量</strong>：4 个特征</li>\n<li><strong>标签数量</strong>：3 个类别</li>\n<li><strong>数据平衡性</strong>：每个类别 50 个样本</li>\n</ul>\n<pre><code class=\"language-python\"># 加载鸢尾花数据集\nfrom sklearn.datasets import load_iris\nimport pandas as pd\n\n# 加载数据\niris = load_iris()\nX = iris.data  # 特征数据\ny = iris.target  # 标签数据\n\n# 查看数据结构\nprint(\"特征名称:\", iris.feature_names)\nprint(\"标签名称:\", iris.target_names)\nprint(\"数据形状:\", X.shape)\n</code></pre>\n<h3>数据预处理</h3>\n<h4>数据切分</h4>\n<pre><code class=\"language-python\">from sklearn.model_selection import train_test_split\n\n# 数据切分：80% 训练集，20% 测试集\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, \n    test_size=0.2, \n    random_state=42,\n    stratify=y  # 分层采样，保持类别比例\n)\n\nprint(f\"训练集大小: {X_train.shape[0]}\")\nprint(f\"测试集大小: {X_test.shape[0]}\")\n</code></pre>\n<h4>特征工程</h4>\n<ul>\n<li><strong>特征提取</strong>：已经提取好了（4 个数值特征）</li>\n<li><strong>特征选择</strong>：已经选择好了（所有特征都有用）</li>\n<li><strong>特征降维</strong>：不需要（特征数量较少）</li>\n</ul>\n<h3>模型训练</h3>\n<h4>KNN 算法实现</h4>\n<pre><code class=\"language-python\">from sklearn.neighbors import KNeighborsClassifier\n\n# 创建 KNN 分类器\nknn = KNeighborsClassifier(\n    n_neighbors=5,  # 邻居数量\n    weights='uniform',  # 权重方式\n    p=2  # 距离度量（欧几里得距离）\n)\n\n# 训练模型\nknn.fit(X=X_train, y=y_train)\n\n# 进行预测\ny_pred = knn.predict(X_test)\n</code></pre>\n<h3>模型评估</h3>\n<h4>准确率评估</h4>\n<pre><code class=\"language-python\">from sklearn.metrics import accuracy_score, classification_report\n\n# 计算准确率\naccuracy = accuracy_score(y_true=y_test, y_pred=y_pred)\nprint(f\"模型准确率: {accuracy:.4f}\")\n\n# 详细分类报告\nprint(\"\\n分类报告:\")\nprint(classification_report(y_test, y_pred, target_names=iris.target_names))\n</code></pre>\n<h3>模型调优</h3>\n<h4>超参数调优</h4>\n<pre><code class=\"language-python\">from sklearn.model_selection import GridSearchCV\n\n# 定义参数网格\nparam_grid = {\n    'n_neighbors': [3, 5, 7, 9, 11],\n    'weights': ['uniform', 'distance'],\n    'p': [1, 2]  # 1: 曼哈顿距离, 2: 欧几里得距离\n}\n\n# 网格搜索\ngrid_search = GridSearchCV(\n    KNeighborsClassifier(),\n    param_grid,\n    cv=5,  # 5 折交叉验证\n    scoring='accuracy'\n)\n\n# 执行搜索\ngrid_search.fit(X_train, y_train)\n\n# 最佳参数\nprint(\"最佳参数:\", grid_search.best_params_)\nprint(\"最佳得分:\", grid_search.best_score_)\n</code></pre>\n<h3>模型应用</h3>\n<h4>模型保存和加载</h4>\n<pre><code class=\"language-python\">import joblib\n\n# 保存模型\njoblib.dump(value=knn, filename=\"knn_model.pkl\")\n\n# 加载模型\nloaded_model = joblib.load(filename=\"knn_model.pkl\")\n</code></pre>\n<h4>实际预测应用</h4>\n<pre><code class=\"language-python\">def predict_iris_species(sepal_length, sepal_width, petal_length, petal_width):\n    \"\"\"预测鸢尾花品种\"\"\"\n    input_data = [[sepal_length, sepal_width, petal_length, petal_width]]\n    prediction = loaded_model.predict(input_data)\n    species_name = iris.target_names[prediction[0]]\n    return species_name\n\n# 示例预测\nresult = predict_iris_species(5.1, 3.5, 1.4, 0.2)\nprint(f\"预测品种: {result}\")\n</code></pre>\n<hr>\n<h2>🎯 学习总结</h2>\n<h3>关键知识点</h3>\n<ol>\n<li><strong>Jupyter Notebook</strong>：数据科学的标准开发环境</li>\n<li><strong>机器学习流程</strong>：从问题分析到模型部署的完整流程</li>\n<li><strong>KNN 算法</strong>：简单而有效的分类算法</li>\n<li><strong>模型评估</strong>：准确率、分类报告等评估指标</li>\n<li><strong>超参数调优</strong>：网格搜索和交叉验证</li>\n</ol>\n<h3>实践技能</h3>\n<ul>\n<li>Jupyter Notebook 熟练使用</li>\n<li>scikit-learn 库的基本操作</li>\n<li>数据预处理和特征工程</li>\n<li>模型训练、评估和调优</li>\n<li>模型保存和部署</li>\n</ul>\n<h3>下一步学习建议</h3>\n<ol>\n<li>学习更多机器学习算法（决策树、随机森林、SVM 等）</li>\n<li>深入理解特征工程和数据预处理</li>\n<li>学习深度学习基础知识</li>\n<li>实践更复杂的数据科学项目</li>\n</ol>\n<p>通过本文的学习，您已经掌握了 Python 机器学习的基础知识和实战技能。继续练习和探索，您将在数据科学的道路上越走越远！🚀</p>"
-    },
-    "_id": "articles/python-basic-codes.md",
-    "_raw": {
-      "sourceFilePath": "articles/python-basic-codes.md",
-      "sourceFileName": "python-basic-codes.md",
-      "sourceFileDir": "articles",
-      "contentType": "markdown",
-      "flattenedPath": "articles/python-basic-codes"
-    },
-    "type": "Article",
-    "slug": "python-basic-codes",
-    "readingTime": {
-      "text": "9 min read",
-      "minutes": 8.315,
-      "time": 498900,
-      "words": 1663
-    },
-    "url": "/articles/python-basic-codes"
   }
 ]

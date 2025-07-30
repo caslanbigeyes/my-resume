@@ -2,7 +2,7 @@
 title: "用 JavaScript 的视角学习 Rust 编程"
 excerpt: "从 JavaScript 开发者的角度深入学习 Rust 编程语言，通过对比和实例帮助前端开发者快速掌握 Rust 的核心概念。"
 publishedAt: "2024-10-10"
-author: "li-lingfeng"
+author: "hero"
 category: "backend"
 tags: ["rust", "javascript", "programming"]
 featured: true

@@ -14,9 +14,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "李凌峰的博客",
-  description: "李凌峰的博客",
-  keywords: "李凌峰,博客,技术分享,个人成长,生活感悟",
+  title: "hero的博客",
+  description: "hero的博客",
+  keywords: "hero,博客,技术分享,个人成长,生活感悟",
   icons: {
     icon: "/me.svg",
   }
