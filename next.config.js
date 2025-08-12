@@ -11,14 +11,15 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
-    turbo: {
-      rules: {
-        '*.md': {
-          loaders: ['@mdx-js/loader'],
-          as: '*.js',
-        },
-      },
-    },
+    // 暂时禁用 turbo 以避免字体加载问题
+    // turbo: {
+    //   rules: {
+    //     '*.md': {
+    //       loaders: ['@mdx-js/loader'],
+    //       as: '*.js',
+    //     },
+    //   },
+    // },
   },
 }
 
