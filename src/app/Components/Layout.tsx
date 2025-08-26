@@ -95,6 +95,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
                                 </span>
                             </Link>
+                            <Link href="/learning-notes" className="nav-link group">
+                                <span className="relative">
+                                    学习笔记
+                                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                                </span>
+                            </Link>
                         </nav>
                         <button
                             onClick={toggleNav}
@@ -138,7 +144,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                             { href: "/tools", icon: "🛠️", label: "工具集", delay: "delay-[150ms]" },
                             { href: "/About", icon: "👤", label: "关于", delay: "delay-[200ms]" },
                             { href: "/Tags", icon: "🏷️", label: "标签", delay: "delay-[250ms]" },
-                            { href: "/Categories", icon: "📂", label: "分类", delay: "delay-[300ms]" }
+                            { href: "/Categories", icon: "📂", label: "分类", delay: "delay-[300ms]" },
+                            { href: "/learning-notes", icon: "🧠", label: "学习笔记", delay: "delay-[350ms]" }
                         ].map((item) => (
                             <Link
                                 key={item.href}

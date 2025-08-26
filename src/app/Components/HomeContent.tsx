@@ -194,6 +194,13 @@ export default function HomeContent() {
                         <div className="text-sm font-medium text-gray-700">工具集</div>
                     </Link>
                     <Link
+                        href="/learning-notes"
+                        className="text-center p-4 bg-indigo-50 rounded-lg hover:bg-indigo-100 transition-colors"
+                    >
+                        <div className="text-2xl mb-2">🧠</div>
+                        <div className="text-sm font-medium text-gray-700">学习笔记</div>
+                    </Link>
+                    <Link
                         href="/About"
                         className="text-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                     >
