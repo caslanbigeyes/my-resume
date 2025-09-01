@@ -220,7 +220,7 @@ export default function LearningNotesPage() {
         </div>
 
         {/* 添加新笔记按钮 */}
-        <div className="text-center py-8">
+        {/* <div className="text-center py-8">
           <Link
             href="/learning-notes/new"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 font-medium"
@@ -228,7 +228,7 @@ export default function LearningNotesPage() {
             <FileText className="w-5 h-5" />
             添加新的学习笔记
           </Link>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );
