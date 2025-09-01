@@ -847,7 +847,7 @@
     },
     "learning-notes/2024-06-14-getting-started.md": {
       "document": {
-        "title": "机器学习02 - AIE54 Day02学习笔记上册",
+        "title": "机器学习02 - AIE54 Day02学习笔记",
         "date": "2024-06-14T00:00:00.000Z",
         "summary": "机器学习第二天学习内容，包括NumPy基本操作、向量化操作、特征工程和K近邻算法",
         "tags": [
@@ -876,7 +876,7 @@
         "type": "LearningNote",
         "url": "/learning-notes/2024-06-14-getting-started"
       },
-      "documentHash": "1756718336063",
+      "documentHash": "1756721510523",
       "hasWarnings": false,
       "documentTypeName": "LearningNote"
     },
