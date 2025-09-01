@@ -336,9 +336,58 @@ var Project = defineDocumentType(() => ({
     }
   }
 }));
+var LearningNote = defineDocumentType(() => ({
+  name: "LearningNote",
+  filePathPattern: `learning-notes/**/*.md`,
+  contentType: "markdown",
+  fields: {
+    title: {
+      type: "string",
+      description: "\u7B14\u8BB0\u6807\u9898",
+      required: true
+    },
+    date: {
+      type: "date",
+      description: "\u5B66\u4E60\u65E5\u671F",
+      required: true
+    },
+    summary: {
+      type: "string",
+      description: "\u7B14\u8BB0\u6458\u8981",
+      required: true
+    },
+    tags: {
+      type: "list",
+      of: { type: "string" },
+      description: "\u6807\u7B7E",
+      default: []
+    },
+    readingTime: {
+      type: "number",
+      description: "\u9605\u8BFB\u65F6\u957F\uFF08\u5206\u949F\uFF09",
+      required: true
+    },
+    hasImages: {
+      type: "boolean",
+      description: "\u662F\u5426\u5305\u542B\u56FE\u7247",
+      default: false
+    },
+    slug: {
+      type: "string",
+      description: "URL\u8DEF\u5F84",
+      required: true
+    }
+  },
+  computedFields: {
+    url: {
+      type: "string",
+      resolve: (doc) => `/learning-notes/${doc.slug}`
+    }
+  }
+}));
 var contentlayer_config_default = makeSource({
   contentDirPath: "./content",
-  documentTypes: [Author, Tag, Category, Article, Page, Project],
+  documentTypes: [Author, Tag, Category, Article, Page, Project, LearningNote],
   markdown: {
     remarkPlugins: [],
     rehypePlugins: []
@@ -348,9 +397,10 @@ export {
   Article,
   Author,
   Category,
+  LearningNote,
   Page,
   Project,
   Tag,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-4BDH3FTF.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-5FYBMBWW.mjs.map

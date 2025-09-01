@@ -10,9 +10,10 @@ import { allCategories } from './Category/_index.mjs'
 import { allArticles } from './Article/_index.mjs'
 import { allPages } from './Page/_index.mjs'
 import { allProjects } from './Project/_index.mjs'
+import { allLearningNotes } from './LearningNote/_index.mjs'
 
-export { allAuthors, allTags, allCategories, allArticles, allPages, allProjects }
+export { allAuthors, allTags, allCategories, allArticles, allPages, allProjects, allLearningNotes }
 
-export const allDocuments = [...allAuthors, ...allTags, ...allCategories, ...allArticles, ...allPages, ...allProjects]
+export const allDocuments = [...allAuthors, ...allTags, ...allCategories, ...allArticles, ...allPages, ...allProjects, ...allLearningNotes]
 
 

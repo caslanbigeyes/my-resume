@@ -1,5 +1,5 @@
-import { allArticles, allTags, allCategories, allAuthors, allPages, allProjects } from 'contentlayer/generated';
-import type { Article, Tag, Category, Author, Page, Project } from 'contentlayer/generated';
+import { allArticles, allTags, allCategories, allAuthors, allPages, allProjects, allLearningNotes } from 'contentlayer/generated';
+import type { Article, Tag, Category, Author, Page, Project, LearningNote } from 'contentlayer/generated';
 
 // 导出所有数据
 export const articles = allArticles;
@@ -8,6 +8,7 @@ export const categories = allCategories;
 export const authors = allAuthors;
 export const pages = allPages;
 export const projects = allProjects;
+export const learningNotes = allLearningNotes;
 
 // 文章相关函数
 export function getArticleById(id: string): Article | undefined {
@@ -189,6 +190,16 @@ export function formatDate(dateString: string): string {
     month: 'long',
     day: 'numeric'
   });
+}
+
+// 获取学习笔记
+export function getLearningNoteBySlug(slug: string): LearningNote | undefined {
+  return allLearningNotes.find(note => note.slug === slug);
+}
+
+// 获取所有学习笔记
+export function getAllLearningNotes(): LearningNote[] {
+  return allLearningNotes;
 }
 
 // 生成文章摘要

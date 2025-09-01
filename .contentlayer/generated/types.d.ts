@@ -90,6 +90,30 @@ export type Category = {
   slug: string
 }
 
+export type LearningNote = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'LearningNote'
+  /** 笔记标题 */
+  title: string
+  /** 学习日期 */
+  date: IsoDateTimeString
+  /** 笔记摘要 */
+  summary: string
+  /** 标签 */
+  tags: string[]
+  /** 阅读时长（分钟） */
+  readingTime: number
+  /** 是否包含图片 */
+  hasImages: boolean
+  /** URL路径 */
+  slug: string
+  /** Markdown file body */
+  body: Markdown
+  url: string
+}
+
 export type Page = {
   /** File path relative to `contentDirPath` */
   _id: string
@@ -174,8 +198,8 @@ export type Tag = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Article | Author | Category | Page | Project | Tag
-export type DocumentTypeNames = 'Article' | 'Author' | 'Category' | 'Page' | 'Project' | 'Tag'
+export type DocumentTypes = Article | Author | Category | LearningNote | Page | Project | Tag
+export type DocumentTypeNames = 'Article' | 'Author' | 'Category' | 'LearningNote' | 'Page' | 'Project' | 'Tag'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -188,6 +212,7 @@ export type DataExports = {
   allArticles: Article[]
   allPages: Page[]
   allProjects: Project[]
+  allLearningNotes: LearningNote[]
 }
 
 
@@ -210,6 +235,7 @@ export type DocumentTypeMap = {
   Article: Article
   Author: Author
   Category: Category
+  LearningNote: LearningNote
   Page: Page
   Project: Project
   Tag: Tag

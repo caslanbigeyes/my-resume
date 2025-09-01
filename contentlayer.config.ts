@@ -348,9 +348,60 @@ export const Project = defineDocumentType(() => ({
   },
 }))
 
+// 学习笔记类型
+export const LearningNote = defineDocumentType(() => ({
+  name: 'LearningNote',
+  filePathPattern: `learning-notes/**/*.md`,
+  contentType: 'markdown',
+  fields: {
+    title: {
+      type: 'string',
+      description: '笔记标题',
+      required: true,
+    },
+    date: {
+      type: 'date',
+      description: '学习日期',
+      required: true,
+    },
+    summary: {
+      type: 'string',
+      description: '笔记摘要',
+      required: true,
+    },
+    tags: {
+      type: 'list',
+      of: { type: 'string' },
+      description: '标签',
+      default: [],
+    },
+    readingTime: {
+      type: 'number',
+      description: '阅读时长（分钟）',
+      required: true,
+    },
+    hasImages: {
+      type: 'boolean',
+      description: '是否包含图片',
+      default: false,
+    },
+    slug: {
+      type: 'string',
+      description: 'URL路径',
+      required: true,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => `/learning-notes/${doc.slug}`,
+    },
+  },
+}))
+
 export default makeSource({
   contentDirPath: './content',
-  documentTypes: [Author, Tag, Category, Article, Page, Project],
+  documentTypes: [Author, Tag, Category, Article, Page, Project, LearningNote],
   markdown: {
     remarkPlugins: [],
     rehypePlugins: [],

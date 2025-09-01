@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../Components/Layout';
 import Link from 'next/link';
 import { Calendar, Clock, BookOpen, Image, FileText } from 'lucide-react';
+import { allLearningNotes } from 'contentlayer/generated';
 
 interface LearningNote {
-  id: string;
+  _id: string;
   title: string;
   date: string;
   summary: string;
@@ -13,6 +14,7 @@ interface LearningNote {
   readingTime: number;
   hasImages: boolean;
   slug: string;
+  url: string;
 }
 
 export default function LearningNotesPage() {
@@ -21,52 +23,25 @@ export default function LearningNotesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
 
-  // 模拟数据 - 实际项目中这些数据会从文件系统或数据库中获取
+  // 从 contentlayer 获取学习笔记数据
   useEffect(() => {
-    const mockNotes: LearningNote[] = [
-      {
-        id: '1',
-        title: '测试0826今天',
-        date: '2024-08-26',
-        summary: '今天开始学习大模型应用开发，了解了基本概念和开发环境搭建',
-        tags: ['大模型', '入门', '环境搭建'],
-        readingTime: 5,
-        hasImages: true,
-        slug: '2024-08-26-getting-started'
-      },
-      {
-        id: '2',
-        title: 'Transformer架构深入理解',
-        date: '2024-08-25',
-        summary: '深入学习Transformer架构，包括注意力机制、编码器解码器结构等核心概念',
-        tags: ['Transformer', '注意力机制', '深度学习'],
-        readingTime: 15,
-        hasImages: true,
-        slug: '2024-08-25-transformer-architecture'
-      },
-      {
-        id: '3',
-        title: 'LangChain框架实践',
-        date: '2024-08-24',
-        summary: '学习LangChain框架的基本使用，包括链式调用、提示工程等',
-        tags: ['LangChain', '框架', '实践'],
-        readingTime: 12,
-        hasImages: false,
-        slug: '2024-08-24-langchain-practice'
-      },
-      {
-        id: '4',
-        title: 'RAG系统设计与实现',
-        date: '2024-08-23',
-        summary: '学习检索增强生成(RAG)系统的设计原理和实现方法',
-        tags: ['RAG', '检索', '生成'],
-        readingTime: 20,
-        hasImages: true,
-        slug: '2024-08-23-rag-system'
-      }
-    ];
-    setNotes(mockNotes);
-    setFilteredNotes(mockNotes);
+    const learningNotesData: LearningNote[] = allLearningNotes.map((note) => ({
+      _id: note._id,
+      title: note.title,
+      date: new Date(note.date).toISOString().split('T')[0], // 格式化日期为 YYYY-MM-DD
+      summary: note.summary,
+      tags: note.tags,
+      readingTime: note.readingTime,
+      hasImages: note.hasImages,
+      slug: note.slug,
+      url: note.url
+    }));
+    
+    // 按日期降序排序（最新的在前面）
+    learningNotesData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    
+    setNotes(learningNotesData);
+    setFilteredNotes(learningNotesData);
   }, []);
 
   // 搜索和过滤功能
@@ -165,7 +140,7 @@ export default function LearningNotesPage() {
             </div>
           ) : (
             filteredNotes.map((note) => (
-              <div key={note.id} className="glass-effect rounded-2xl p-6 card-shadow hover:shadow-lg transition-all duration-300 group">
+              <div key={note._id} className="glass-effect rounded-2xl p-6 card-shadow hover:shadow-lg transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row md:items-start gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-3">
@@ -182,7 +157,7 @@ export default function LearningNotesPage() {
                     </div>
                     
                     <h2 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
-                      <Link href={`/learning-notes/${note.slug}`} className="hover:underline">
+                      <Link href={note.url} className="hover:underline">
                         {note.title}
                       </Link>
                     </h2>
@@ -206,7 +181,7 @@ export default function LearningNotesPage() {
                   
                   <div className="flex flex-col gap-2">
                     <Link
-                      href={`/learning-notes/${note.slug}`}
+                      href={note.url}
                       className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-center text-sm font-medium flex items-center gap-2"
                     >
                       <BookOpen className="w-4 h-4" />
